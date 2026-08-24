@@ -1,3 +1,4 @@
 date,id,tibtre,category,notes
 2026-08-14,T-83DE,700,code,retroactive seed
 2026-08-14,T-3BF2,80,code,retroactive seed
+2026-08-24,T-83DE,90,code,PRs 122-164 engine sweep; A145.5 + H90 -> 90 (reconciled; owner priced operator-hours for AI-assisted throughput; rubric v1.3)
