@@ -1,6 +1,6 @@
 # tibtre-ledger
 
-Home of **tibtre**, the contribution currency of the Yrvera cooperative. This repository holds the policy, the append-only ledger, the generated balances, and the tooling that makes every number in the system independently verifiable.
+Home of **tibtre**, the contribution currency of the YuriPlanet cooperative. This repository holds the policy, the append-only ledger, the generated balances, and the tooling that makes every number in the system independently verifiable.
 
 ## Why tibtre exists
 
