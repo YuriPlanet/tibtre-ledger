@@ -1,3 +1,7 @@
+<p align="center" dir="ltr">
+  <a href="README.sv.md" lang="sv">Svenska</a> · <a href="README.zh-CN.md" lang="zh-CN">简体中文</a> · <a href="README.de.md" lang="de">Deutsch</a> · <a href="README.ar.md" lang="ar" dir="rtl">العربية</a> · <a href="README.ru.md" lang="ru">Русский</a> · <a href="README.th.md" lang="th">ไทย</a> · <a href="README.tr.md" lang="tr">Türkçe</a> · <strong>English</strong>
+</p>
+
 # tibtre-ledger
 
 Home of **tibtre**, the contribution currency of the YuriPlanet cooperative. This repository holds the policy, the append-only ledger, the generated balances, and the tooling that makes every number in the system independently verifiable.
