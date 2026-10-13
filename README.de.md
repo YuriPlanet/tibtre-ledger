@@ -2,19 +2,23 @@
   <a href="README.sv.md" lang="sv">Svenska</a> · <a href="README.zh-CN.md" lang="zh-CN">简体中文</a> · <strong>Deutsch</strong> · <a href="README.ar.md" lang="ar" dir="rtl">العربية</a> · <a href="README.ru.md" lang="ru">Русский</a> · <a href="README.th.md" lang="th">ไทย</a> · <a href="README.tr.md" lang="tr">Türkçe</a> · <a href="README.md" lang="en">English</a>
 </p>
 
-# tibtre-ledger
+# TIBTRE — das Beitragssystem für VERA20k
 
-Hier ist **tibtre** zu Hause, die Beitragswährung der YuriPlanet-Kooperative. Dieses Repository enthält die Regeln, das Hauptbuch, in dem Einträge nur hinzukommen, die generierten Kontostände und die Werkzeuge, mit denen sich jede Zahl im System unabhängig überprüfen lässt.
+**TIBTRE** ist das Beitragssystem von [VERA20k](https://github.com/YuriPlanet/vera20k). Es legt fest, wie angenommene Beiträge bewertet, gutgeschrieben und bei Projektentscheidungen berücksichtigt werden.
 
-## Warum es tibtre gibt
+Dieses Repository enthält die [Regeln](RULES.md), das [Hauptbuch der Beiträge](LEDGER.csv), in dem Einträge nur hinzugefügt werden, die automatisch erzeugten [Kontostände](BALANCES.md) und Werkzeuge zur unabhängigen Prüfung der Aufzeichnungen.
 
-Yrvera wird von seinen Mitwirkenden gebaut, und die Grundidee ist, dass es ihnen auch *gehören* soll. Mit tibtre wird diese Idee greifbar, bevor es darauf ankommt:
+VERA20k und dieses Repository werden unter [YuriPlanet](https://github.com/YuriPlanet) gehostet, unserer GitHub-Organisation.
 
-- **Fairness im Voraus.** Sollte Yrvera jemals eine juristische Person gründen oder Einnahmen zu verteilen haben, ist die schwierige Frage – *wer hat das gebaut, und wie viel davon?* – bereits beantwortet: öffentlich und überprüfbar, vom ersten Tag an. Dieses Hauptbuch ist die erklärte Grundlage für jede solche Verteilung.
-- **Echte Mitsprache, schon heute.** Entscheidungen über Yrveras Richtung werden nach tibtre gewichtet – mit einer Obergrenze, damit niemand mit großem Bestand jemals allein bestimmen kann ([`voteweight.py`](voteweight.py)).
+## Warum es TIBTRE gibt
+
+VERA20k wird von seinen Mitwirkenden gebaut, und die Grundidee ist, dass es ihnen auch *gehören* soll. Mit tibtre wird diese Idee greifbar, bevor es darauf ankommt:
+
+- **Fairness im Voraus.** Sollte VERA20k jemals eine juristische Person gründen oder Einnahmen zu verteilen haben, ist die schwierige Frage – *wer hat das gebaut, und wie viel davon?* – bereits beantwortet: öffentlich und überprüfbar, vom ersten Tag an. Dieses Hauptbuch ist die erklärte Grundlage für jede solche Verteilung.
+- **Echte Mitsprache, schon heute.** Entscheidungen über die Ausrichtung des Projekts werden nach tibtre gewichtet – mit einer Obergrenze, damit niemand mit großem Bestand jemals allein bestimmen kann ([`voteweight.py`](voteweight.py)).
 - **Eine dauerhafte Aufzeichnung.** Beiträge werden nach öffentlichen Regeln bewertet ([das Bewertungsschema](docs/grading-rubric.md)), dauerhaft festgehalten und sind für alle überprüfbar – auch für die Mitwirkenden selbst, ohne jemandem vertrauen zu müssen ([`identity.py`](identity.py)).
 
-Ein tibtre ≈ eine Stunde hochwertiger Arbeit an etwas, das Yrvera wirklich braucht – Qualität und Wert zählen beide, und beide werden nach den öffentlichen Regeln bepreist. Du musst nichts beantragen: beitragen, bewertet werden, eingetragen werden.
+Ein tibtre ≈ eine Stunde hochwertiger Arbeit an etwas, das VERA20k wirklich braucht – Qualität und Wert zählen beide, und beide werden nach den öffentlichen Regeln bepreist. Du musst nichts beantragen: beitragen, bewertet werden, eingetragen werden.
 
 ## Übersicht
 

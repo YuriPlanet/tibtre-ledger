@@ -2,19 +2,23 @@
   <strong>Svenska</strong> · <a href="README.zh-CN.md" lang="zh-CN">简体中文</a> · <a href="README.de.md" lang="de">Deutsch</a> · <a href="README.ar.md" lang="ar" dir="rtl">العربية</a> · <a href="README.ru.md" lang="ru">Русский</a> · <a href="README.th.md" lang="th">ไทย</a> · <a href="README.tr.md" lang="tr">Türkçe</a> · <a href="README.md" lang="en">English</a>
 </p>
 
-# tibtre-ledger
+# TIBTRE — bidragssystemet för VERA20k
 
-Här finns **tibtre**, bidragsvalutan i kooperativet YuriPlanet. Det här repot innehåller policyn, huvudboken där rader bara läggs till, de genererade saldona och verktygen som gör att varje siffra i systemet kan kontrolleras oberoende.
+**TIBTRE** är bidragssystemet som används av [VERA20k](https://github.com/YuriPlanet/vera20k). Det anger hur godkända bidrag värderas, tilldelas poäng och vägs in i projektets beslut.
 
-## Varför tibtre finns
+Det här repot innehåller [reglerna](RULES.md), [huvudboken över bidrag](LEDGER.csv) där rader bara läggs till, automatiskt genererade [saldon](BALANCES.md) och verktyg för att kontrollera uppgifterna oberoende.
 
-Yrvera byggs av sina bidragsgivare, och grundtanken är att projektet ska *tillhöra* dem. Tibtre gör den tanken konkret innan den hinner spela roll:
+VERA20k och det här repot ligger under [YuriPlanet](https://github.com/YuriPlanet), vår GitHub-organisation.
 
-- **Rättvisa i förväg.** Om Yrvera någon gång bildar en juridisk person eller får intäkter att fördela är den svåra frågan – *vem byggde det här, och hur mycket?* – redan besvarad: öppet och kontrollerbart, från första dagen. Den här huvudboken är den uttalade grunden för en sådan fördelning.
-- **Verkligt inflytande, redan nu.** Beslut om Yrveras riktning viktas med tibtre – med ett tak, så att ingen enskild innehavare någonsin kan dominera ([`voteweight.py`](voteweight.py)).
+## Varför TIBTRE finns
+
+VERA20k byggs av sina bidragsgivare, och grundtanken är att projektet ska *tillhöra* dem. TIBTRE gör den tanken konkret innan den hinner spela roll:
+
+- **Rättvisa i förväg.** Om VERA20k någon gång bildar en juridisk person eller får intäkter att fördela är den svåra frågan – *vem byggde det här, och hur mycket?* – redan besvarad: öppet och kontrollerbart, från första dagen. Den här huvudboken är den uttalade grunden för en sådan fördelning.
+- **Verkligt inflytande, redan nu.** Beslut om projektets inriktning viktas med tibtre – med ett tak, så att ingen enskild innehavare någonsin kan dominera ([`voteweight.py`](voteweight.py)).
 - **Ett bestående register.** Bidrag värderas enligt offentliga regler ([bedömningsmallen](docs/grading-rubric.md)), registreras för alltid och kan kontrolleras av vem som helst – även av bidragsgivaren själv, utan att behöva lita på någon ([`identity.py`](identity.py)).
 
-En tibtre ≈ en timmes högkvalitativt arbete med något som Yrvera verkligen behöver – både kvalitet och värde räknas, och båda prissätts enligt de offentliga reglerna. Inget att ansöka om: bidra, bli värderad, bli registrerad.
+En tibtre ≈ en timmes högkvalitativt arbete med något som VERA20k verkligen behöver – både kvalitet och värde räknas, och båda prissätts enligt de offentliga reglerna. Inget att ansöka om: bidra, bli värderad, bli registrerad.
 
 ## Karta
 

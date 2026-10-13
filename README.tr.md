@@ -2,19 +2,23 @@
   <a href="README.sv.md" lang="sv">Svenska</a> · <a href="README.zh-CN.md" lang="zh-CN">简体中文</a> · <a href="README.de.md" lang="de">Deutsch</a> · <a href="README.ar.md" lang="ar" dir="rtl">العربية</a> · <a href="README.ru.md" lang="ru">Русский</a> · <a href="README.th.md" lang="th">ไทย</a> · <strong>Türkçe</strong> · <a href="README.md" lang="en">English</a>
 </p>
 
-# tibtre-ledger
+# TIBTRE — VERA20k katkı sistemi
 
-Burası, YuriPlanet kooperatifinin katkı para birimi **tibtre**'nin evi. Bu depo; politikayı, yalnızca ekleme yapılabilen defteri, otomatik oluşturulan bakiyeleri ve sistemdeki her sayının bağımsız olarak doğrulanabilmesini sağlayan araçları barındırır.
+**TIBTRE**, [VERA20k](https://github.com/YuriPlanet/vera20k) projesinde kullanılan katkı sistemidir. Kabul edilen katkıların nasıl değerlendirileceğini, puanlandırılacağını ve proje kararlarına nasıl yansıyacağını belirler.
 
-## tibtre neden var
+Bu depo; [kuralları](RULES.md), yalnızca yeni kayıt eklenebilen [katkı defterini](LEDGER.csv), otomatik oluşturulan [bakiyeleri](BALANCES.md) ve kayıtları bağımsız olarak doğrulamaya yarayan araçları içerir.
 
-Yrvera'yı ona katkıda bulunanlar inşa ediyor ve kuruluş fikri, projenin onlara *ait* olmasıdır. Tibtre, bu fikri daha önem kazanmadan somut hâle getirmenin yoludur:
+VERA20k ve bu depo, GitHub kuruluşumuz olan [YuriPlanet](https://github.com/YuriPlanet) altında barındırılır.
 
-- **Önceden güvence altına alınan adalet.** Yrvera bir gün tüzel kişilik kurarsa ya da dağıtılacak bir geliri olursa, o zor sorunun — *bunu kim yaptı ve ne kadarını?* — yanıtı zaten hazırdır: ilk günden itibaren herkese açık ve doğrulanabilir biçimde. Bu defter, böyle bir dağıtımın açıkça belirtilmiş dayanağıdır.
-- **Bugünden gerçek bir söz hakkı.** Yrvera'nın yönüyle ilgili kararlar tibtre ile ağırlıklandırılır — tek bir sahibin asla baskın çıkamaması için bir üst sınırla ([`voteweight.py`](voteweight.py)).
+## TIBTRE neden var
+
+VERA20k projesini ona katkıda bulunanlar inşa ediyor ve kuruluş fikri, projenin onlara *ait* olmasıdır. TIBTRE, bu fikri daha önem kazanmadan somut hâle getirmenin yoludur:
+
+- **Önceden güvence altına alınan adalet.** VERA20k bir gün tüzel kişilik kurarsa ya da dağıtılacak bir geliri olursa, o zor sorunun — *bunu kim yaptı ve ne kadarını?* — yanıtı zaten hazırdır: ilk günden itibaren herkese açık ve doğrulanabilir biçimde. Bu defter, böyle bir dağıtımın açıkça belirtilmiş dayanağıdır.
+- **Bugünden gerçek bir söz hakkı.** VERA20k projesinin yönüyle ilgili kararlar tibtre ile ağırlıklandırılır — tek bir sahibin asla baskın çıkamaması için bir üst sınırla ([`voteweight.py`](voteweight.py)).
 - **Kalıcı bir kayıt.** Katkılar herkese açık kurallarla değerlendirilir ([puanlama ölçütleri](docs/grading-rubric.md)), sonsuza dek kaydedilir ve herkes tarafından doğrulanabilir — kimseye güvenmek zorunda kalmadan, katkıda bulunan kişinin kendisi tarafından da ([`identity.py`](identity.py)).
 
-Bir tibtre ≈ Yrvera'nın gerçekten ihtiyaç duyduğu bir iş üzerinde bir saatlik yüksek kaliteli çalışma — hem kalite hem değer hesaba katılır ve ikisi de herkese açık kurallarla fiyatlandırılır. Başvurmanız gereken bir şey yok: katkıda bulunun, değerlendirilin, kayda geçin.
+Bir tibtre ≈ VERA20k projesinin gerçekten ihtiyaç duyduğu bir iş üzerinde bir saatlik yüksek kaliteli çalışma — hem kalite hem değer hesaba katılır ve ikisi de herkese açık kurallarla fiyatlandırılır. Başvurmanız gereken bir şey yok: katkıda bulunun, değerlendirilin, kayda geçin.
 
 ## Harita
 

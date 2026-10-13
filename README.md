@@ -2,19 +2,23 @@
   <a href="README.sv.md" lang="sv">Svenska</a> · <a href="README.zh-CN.md" lang="zh-CN">简体中文</a> · <a href="README.de.md" lang="de">Deutsch</a> · <a href="README.ar.md" lang="ar" dir="rtl">العربية</a> · <a href="README.ru.md" lang="ru">Русский</a> · <a href="README.th.md" lang="th">ไทย</a> · <a href="README.tr.md" lang="tr">Türkçe</a> · <strong>English</strong>
 </p>
 
-# tibtre-ledger
+# TIBTRE — the VERA20k contribution system
 
-Home of **tibtre**, the contribution currency of the YuriPlanet cooperative. This repository holds the policy, the append-only ledger, the generated balances, and the tooling that makes every number in the system independently verifiable.
+**TIBTRE** is the contribution system used by [VERA20k](https://github.com/YuriPlanet/vera20k). It defines how accepted contributions are evaluated, credited, and reflected in project decisions.
 
-## Why tibtre exists
+This repository contains the [rules](RULES.md), the append-only [contribution ledger](LEDGER.csv), generated [balances](BALANCES.md), and tools for independently checking the records.
 
-Yrvera is built by its contributors, and the founding idea is that it should *belong* to them. Tibtre is how that idea is made concrete before it matters:
+VERA20k and this repository are hosted under [YuriPlanet](https://github.com/YuriPlanet), our GitHub organization.
 
-- **Preemptive fairness.** If Yrvera ever forms a legal entity or ever has income to distribute, the hard question — *who built this, and how much?* — is already answered: publicly, verifiably, from day one. This ledger is the stated basis for any such allocation.
-- **A real say, today.** Decisions about Yrvera's direction are weighted by tibtre — capped so no single holder can ever dominate ([`voteweight.py`](voteweight.py)).
+## Why TIBTRE exists
+
+VERA20k is built by its contributors, and the founding idea is that it should *belong* to them. TIBTRE is how that idea is made concrete before it matters:
+
+- **Preemptive fairness.** If VERA20k ever forms a legal entity or ever has income to distribute, the hard question — *who built this, and how much?* — is already answered: publicly, verifiably, from day one. This ledger is the stated basis for any such allocation.
+- **A real say, today.** Decisions about VERA20k's direction are weighted by tibtre — capped so no single holder can ever dominate ([`voteweight.py`](voteweight.py)).
 - **A permanent record.** Contributions are valued by public rules ([the rubric](docs/grading-rubric.md)), recorded forever, and verifiable by anyone — including by the contributor themselves, without trusting anyone ([`identity.py`](identity.py)).
 
-One tibtre ≈ one hour of high-quality work on something Yrvera genuinely needs — quality and value both count, and both are priced by the public rules. Nothing to apply for: contribute, get valued, get recorded.
+One tibtre ≈ one hour of high-quality work on something VERA20k genuinely needs — quality and value both count, and both are priced by the public rules. Nothing to apply for: contribute, get valued, get recorded.
 
 ## Map
 

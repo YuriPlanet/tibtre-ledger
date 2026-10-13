@@ -2,19 +2,23 @@
   <a href="README.sv.md" lang="sv">Svenska</a> · <strong>简体中文</strong> · <a href="README.de.md" lang="de">Deutsch</a> · <a href="README.ar.md" lang="ar" dir="rtl">العربية</a> · <a href="README.ru.md" lang="ru">Русский</a> · <a href="README.th.md" lang="th">ไทย</a> · <a href="README.tr.md" lang="tr">Türkçe</a> · <a href="README.md" lang="en">English</a>
 </p>
 
-# tibtre-ledger
+# TIBTRE — VERA20k 的贡献体系
 
-**tibtre** 是 YuriPlanet 合作社的贡献货币，这里是它的大本营。本仓库存放着相关政策、只追加不修改的账本、自动生成的余额，以及让系统中每一个数字都能被独立核验的工具。
+**TIBTRE** 是 [VERA20k](https://github.com/YuriPlanet/vera20k) 使用的贡献体系。它规定如何评估和认可已采纳的贡献、授予贡献积分，以及如何将这些积分用于项目决策。
 
-## 为什么要有 tibtre
+本仓库包含[规则](RULES.md)、只追加不修改的[贡献账本](LEDGER.csv)、自动生成的[余额](BALANCES.md)，以及用于独立核验记录的工具。
 
-Yrvera 由贡献者共同打造，我们最初的理念是：它应当*属于*这些贡献者。在这件事真正变得重要之前，tibtre 就让这一理念落到了实处：
+VERA20k 和本仓库均托管在我们的 GitHub 组织 [YuriPlanet](https://github.com/YuriPlanet) 下。
 
-- **公平先行。** 如果 Yrvera 将来成立法律实体，或有收入需要分配，那个难题——*这是谁做的，各做了多少？*——早已有了答案：从第一天起就公开、可核验。本账本就是任何此类分配的既定依据。
-- **现在就有真正的话语权。** 关于 Yrvera 发展方向的决策按 tibtre 加权，但设有上限，任何单个持有者都无法一家独大（[`voteweight.py`](voteweight.py)）。
+## 为什么要有 TIBTRE
+
+VERA20k 由贡献者共同打造，我们最初的理念是：它应当*属于*这些贡献者。在这件事真正变得重要之前，tibtre 就让这一理念落到了实处：
+
+- **公平先行。** 如果 VERA20k 将来成立法律实体，或有收入需要分配，那个难题——*这是谁做的，各做了多少？*——早已有了答案：从第一天起就公开、可核验。本账本就是任何此类分配的既定依据。
+- **现在就有真正的话语权。** 关于 VERA20k 发展方向的决策按 tibtre 加权，但设有上限，任何单个持有者都无法一家独大（[`voteweight.py`](voteweight.py)）。
 - **永久的记录。** 贡献按公开规则估值（[评分标准](docs/grading-rubric.md)），被永久记录，任何人都能核验——包括贡献者本人，而且无需信任任何人（[`identity.py`](identity.py)）。
 
-1 tibtre ≈ 为 Yrvera 真正需要的事情做一小时高质量的工作。质量和价值都算数，两者都按公开规则定价。无需申请：做出贡献，获得估值，记录在案。
+1 tibtre ≈ 为 VERA20k 真正需要的事情做一小时高质量的工作。质量和价值都算数，两者都按公开规则定价。无需申请：做出贡献，获得估值，记录在案。
 
 ## 文件一览
 
