@@ -8,7 +8,7 @@
 
 ## Nasıl çalışır
 
-1. **Katkıda bulunursunuz.** Kod, araştırma, sanat çalışmaları, haritalar, oyun testleri, çeviriler ve topluluk çalışmaları sayılır. GitHub hesabına ihtiyacınız yok: çalışmanızı Discord'da veya QQ grubunda paylaşabilirsiniz.
+1. **Katkıda bulunursunuz.** Kod, araştırma, sanat çalışmaları, haritalar, oyun testleri, çeviriler ve topluluk çalışmaları sayılır. GitHub hesabına ihtiyacınız yok: çalışmanızı [Discord](https://discord.gg/kmjRUn5m5F) üzerinden veya QQ grubunda (1097193563) paylaşabilirsiniz.
 2. **Çalışmanız değerlendirilir.** Bunu istemenize gerek yok: büyük olasılıkla bir proje yöneticisi çalışmanızı fark eder ve tibtre'nizi otomatik olarak alırsınız. Kabul edilen çalışmalar, bir yapay zekâ ve bir proje yöneticisi tarafından [herkese açık puanlama kurallarına](docs/grading-rubric.md) göre birlikte değerlendirilir. Bir tibtre, VERA20k projesinin ihtiyaç duyduğu bir iş üzerinde yaklaşık bir saatlik iyi bir çalışmaya karşılık gelir. Kurallar, proje yöneticileri dahil herkes için aynıdır.
 3. **Kayda geçer.** Her puan verme işlemi, herkese açık [defterde](LEDGER.csv) adınızla değil, katkıda bulunan ID'nizle (örneğin `T-83DE`) bir satır olarak kaydedilir. Satırlar asla değiştirilmez veya silinmez. Bir hata yeni bir satırla düzeltilir.
 4. **Herkes kontrol edebilir.** Herkesin toplamı [BALANCES.md](BALANCES.md) dosyasındadır.

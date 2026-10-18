@@ -4,7 +4,7 @@ Tibtre are points that record who helped build VERA20k, and how much.
 
 ## Earning tibtre
 
-- **Anyone can earn it.** Code, research, art, maps, playtesting, docs, translations and community work all count. Send code as a GitHub pull request, or post your work in the Discord or the QQ group. You don't need a GitHub account.
+- **Anyone can earn it.** Code, research, art, maps, playtesting, docs, translations and community work all count. Send code as a GitHub pull request, or post your work on [Discord](https://discord.gg/kmjRUn5m5F) or in the QQ group (1097193563). You don't need a GitHub account.
 - **There is nothing to apply for.** A maintainer will most likely pick up your work, and you get tibtre automatically.
 - **It is for accepted work, not for time.** One tibtre is about one hour of good work on something the project needs. You never report your hours.
 - **An AI and a maintainer value it together**, with the public [grading rules](docs/grading-rubric.md). What counts is what the work does for the project, not who made it, how many lines it has or how many PRs it took.
@@ -49,4 +49,4 @@ Think a grant is wrong, yours or anyone's? Tell a maintainer. It is valued again
 
 ## Changes
 
-Rule changes are announced in the Discord and the QQ group.
+Rule changes are announced on Discord and in the QQ group.

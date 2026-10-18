@@ -8,7 +8,7 @@
 
 ## How it works
 
-1. **You contribute.** Code, research, art, maps, playtesting, translations and community work all count. You don't need a GitHub account: you can post your work in the Discord or the QQ group.
+1. **You contribute.** Code, research, art, maps, playtesting, translations and community work all count. You don't need a GitHub account: you can post your work on [Discord](https://discord.gg/kmjRUn5m5F) or in the QQ group (1097193563).
 2. **Your work is valued.** You don't need to ask: a maintainer will most likely pick up your work, and you get tibtre automatically. Accepted work is valued by an AI and a maintainer together, with the [public grading rules](docs/grading-rubric.md). One tibtre is about one hour of good work on something VERA20k needs. The same rules apply to everyone, maintainers included.
 3. **It is recorded.** Each grant is a row in the public [ledger](LEDGER.csv), under your contributor ID (like `T-83DE`), not your name. Rows are never changed or deleted. A mistake is fixed with a new row.
 4. **Anyone can check it.** Everyone's total is in [BALANCES.md](BALANCES.md).
