@@ -29,7 +29,5 @@ Alle Regeln stehen in [RULES.md](RULES.md) (auf Englisch).
 | [`BALANCES.md`](BALANCES.md) | Die Kontostände aller |
 | [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv) | Mitwirkenden-IDs und die Namen, die sie zeigen möchten |
 | [`docs/`](docs) | Die Bewertungsregeln, die Anweisungen für die KI und der Leitfaden für Maintainer |
-| `assets/` | Angenommene Grafiken und andere Arbeit, die kein Code ist |
-| `tally.py`, `voteweight.py`, `identity.py` | Skripte, die die Kontostände neu berechnen, Stimmgewichte ermitteln und Identitäten prüfen |
 
 Übersetzung von [README.md](README.md); bei Abweichungen gilt die englische Version.

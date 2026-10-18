@@ -29,5 +29,3 @@ The full rules are in [RULES.md](RULES.md).
 | [`BALANCES.md`](BALANCES.md) | Everyone's total |
 | [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv) | Contributor IDs and the names they chose to show |
 | [`docs/`](docs) | The grading rules, the AI's instructions and the maintainers' guide |
-| `assets/` | Accepted art and other work that isn't code |
-| `tally.py`, `voteweight.py`, `identity.py` | Scripts that rebuild the totals, work out vote weights and check identities |

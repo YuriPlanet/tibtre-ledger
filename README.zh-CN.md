@@ -29,7 +29,5 @@
 | [`BALANCES.md`](BALANCES.md) | 每个人的总数 |
 | [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv) | 贡献者 ID 和他们选择显示的名字 |
 | [`docs/`](docs) | 评分规则、给 AI 的说明和维护者指南 |
-| `assets/` | 已采纳的美术作品和其他非代码作品 |
-| `tally.py`、`voteweight.py`、`identity.py` | 用于重新计算总数、计算投票权重和核验身份的脚本 |
 
 本文件译自 [README.md](README.md)；如有出入，以英文版为准。

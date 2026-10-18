@@ -9,15 +9,9 @@ Tibtre are points that record who helped build VERA20k, and how much.
 - **It is for accepted work, not for time.** One tibtre is about one hour of good work on something the project needs. You never report your hours.
 - **An AI and a maintainer value it together**, with the public [grading rules](docs/grading-rubric.md). What counts is what the work does for the project, not who made it, how many lines it has or how many PRs it took.
 - **The same rules apply to everyone**, maintainers and founders included.
+- **Every grant is public.** Each one is a row in [`LEDGER.csv`](LEDGER.csv), and everyone's total is in [`BALANCES.md`](BALANCES.md). Rows are never changed or deleted: a mistake is fixed with a new row. The detailed values for each update are in `valuations/`.
 - **Bringing people in counts.** When someone you brought to the project gets their first grant, you get 2 tibtre. They name you when they join.
 - **You can opt out.** If you'd rather not be scored, say so. Your work is just as welcome.
-
-## The ledger
-
-- Each grant is a row in [`LEDGER.csv`](LEDGER.csv): the date, your contributor ID, the amount, the kind of work and a note on what it was.
-- Rows are never changed or deleted. A mistake is fixed with a new row.
-- Everyone's total is in [`BALANCES.md`](BALANCES.md).
-- How each update was valued, piece by piece, is published in `valuations/`.
 
 ## What tibtre is worth
 
@@ -33,11 +27,7 @@ Tibtre are points that record who helped build VERA20k, and how much.
 - Ask a maintainer to change or remove your name or link at any time. Your balance doesn't change.
 - Only the maintainers know who is behind each ID.
 
-**If you want to disappear later:**
-
-- **Right away:** ask a maintainer to blank your name. Every page then shows only your ID.
-- **From the history too:** old versions of the contributors file stay in this repository's history. On request we rewrite that history to remove your name, and ask GitHub to clear its caches. We can't remove copies other people made before your request.
-- **Your work:** we remove your name from it on request. Work already in the game or merged stays there, but we stop showcasing it where we can.
+**Want to disappear later?** Ask a maintainer, and we remove your name everywhere we control, including this repository's history. Work already in the game stays, and we can't remove copies others made before you asked.
 
 ## Licensing
 

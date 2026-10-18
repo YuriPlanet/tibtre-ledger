@@ -29,7 +29,5 @@ Alla regler finns i [RULES.md](RULES.md) (på engelska).
 | [`BALANCES.md`](BALANCES.md) | Allas saldon |
 | [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv) | Bidragsgivar-ID:n och de namn de har valt att visa |
 | [`docs/`](docs) | Bedömningsreglerna, AI:ns instruktioner och guiden för projektansvariga |
-| `assets/` | Godkänd grafik och annat arbete som inte är kod |
-| `tally.py`, `voteweight.py`, `identity.py` | Skript som räknar om saldona, räknar ut röstvikter och kontrollerar identiteter |
 
 Översättning av [README.md](README.md); vid skillnader gäller den engelska versionen.

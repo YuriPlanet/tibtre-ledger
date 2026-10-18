@@ -29,7 +29,5 @@ Kuralların tamamı [RULES.md](RULES.md) dosyasındadır (İngilizce).
 | [`BALANCES.md`](BALANCES.md) | Herkesin toplamı |
 | [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv) | Katkıda bulunanların ID'leri ve göstermeyi seçtikleri adlar |
 | [`docs/`](docs) | Puanlama kuralları, yapay zekâ talimatları ve proje yöneticileri için rehber |
-| `assets/` | Kabul edilen sanat çalışmaları ve kod olmayan diğer işler |
-| `tally.py`, `voteweight.py`, `identity.py` | Toplamları yeniden hesaplayan, oy ağırlıklarını bulan ve kimlikleri doğrulayan betikler |
 
 [README.md](README.md) dosyasının çevirisidir; farklılık olması durumunda İngilizce sürüm geçerlidir.
