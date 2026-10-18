@@ -14,9 +14,9 @@ VERA20k und dieses Repository werden unter [YuriPlanet](https://github.com/YuriP
 
 VERA20k wird von seinen Mitwirkenden gebaut, und die Grundidee ist, dass es ihnen auch *gehören* soll. Mit tibtre wird diese Idee greifbar, bevor es darauf ankommt:
 
-- **Fairness im Voraus.** Sollte VERA20k jemals eine juristische Person gründen oder Einnahmen zu verteilen haben, ist die schwierige Frage – *wer hat das gebaut, und wie viel davon?* – bereits beantwortet: öffentlich und überprüfbar, vom ersten Tag an. Dieses Hauptbuch ist die erklärte Grundlage für jede solche Verteilung.
+- **Fairness im Voraus.** Sollte VERA20k jemals eine juristische Person gründen oder Einnahmen zu verteilen haben, ist die schwierige Frage – *wer hat das gebaut, und wie viel davon?* – bereits beantwortet: öffentlich und überprüfbar, vom ersten Tag an. Dieses Hauptbuch ist die erklärte Grundlage für jede solche Verteilung. Das ist ausschließlich eine Absicht in gutem Glauben, keine rechtliche Verpflichtung: tibtre begründet keinen Rechtsanspruch gegen irgendjemanden, auch nicht gegen die Maintainer oder deren Nachlass und Erben.
 - **Echte Mitsprache, schon heute.** Entscheidungen über die Ausrichtung des Projekts werden nach tibtre gewichtet – mit einer Obergrenze, damit niemand mit großem Bestand jemals allein bestimmen kann ([`voteweight.py`](voteweight.py)).
-- **Eine dauerhafte Aufzeichnung.** Beiträge werden nach öffentlichen Regeln bewertet ([das Bewertungsschema](docs/grading-rubric.md)), dauerhaft festgehalten und sind für alle überprüfbar – auch für die Mitwirkenden selbst, ohne jemandem vertrauen zu müssen ([`identity.py`](identity.py)).
+- **Eine dauerhafte Aufzeichnung.** Beiträge werden nach öffentlichen Regeln bewertet ([das Bewertungsschema](docs/grading-rubric.md)), dauerhaft festgehalten und sind für alle überprüfbar.
 
 Ein tibtre ≈ eine Stunde hochwertiger Arbeit an etwas, das VERA20k wirklich braucht – Qualität und Wert zählen beide, und beide werden nach den öffentlichen Regeln bepreist. Du musst nichts beantragen: beitragen, bewertet werden, eingetragen werden.
 
@@ -30,7 +30,7 @@ Ein tibtre ≈ eine Stunde hochwertiger Arbeit an etwas, das VERA20k wirklich br
 | `BALANCES.md` | Generierte Tabelle der Kontostände – nach Änderungen am Hauptbuch `python tally.py` ausführen |
 | `tally.py` | Erzeugt `BALANCES.md` aus `LEDGER.csv` neu |
 | `voteweight.py` | Berechnet die gezählten Stimmgewichte bei Abstimmungen mit der Obergrenze von 25 % pro Person (`--demo` zeigt Beispiele) |
-| `identity.py` | Erzeugt und prüft die öffentlichen Identitäts-Commitments – beweise, dass eine ID dir gehört, ohne jemandem vertrauen zu müssen |
+| `identity.py` | Erzeugt und prüft Identitäts-Commitments |
 | `docs/granting-guide.md` | Schritt-für-Schritt-Anleitung für Freigebende, die eine Zuteilung eintragen |
 | `assets/` | Archiv angenommener Kunstwerke aus der Community und anderer Beiträge, die kein Code sind |
 

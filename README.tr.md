@@ -14,9 +14,9 @@ VERA20k ve bu depo, GitHub kuruluşumuz olan [YuriPlanet](https://github.com/Yur
 
 VERA20k projesini ona katkıda bulunanlar inşa ediyor ve kuruluş fikri, projenin onlara *ait* olmasıdır. TIBTRE, bu fikri daha önem kazanmadan somut hâle getirmenin yoludur:
 
-- **Önceden güvence altına alınan adalet.** VERA20k bir gün tüzel kişilik kurarsa ya da dağıtılacak bir geliri olursa, o zor sorunun — *bunu kim yaptı ve ne kadarını?* — yanıtı zaten hazırdır: ilk günden itibaren herkese açık ve doğrulanabilir biçimde. Bu defter, böyle bir dağıtımın açıkça belirtilmiş dayanağıdır.
+- **Önceden güvence altına alınan adalet.** VERA20k bir gün tüzel kişilik kurarsa ya da dağıtılacak bir geliri olursa, o zor sorunun — *bunu kim yaptı ve ne kadarını?* — yanıtı zaten hazırdır: ilk günden itibaren herkese açık ve doğrulanabilir biçimde. Bu defter, böyle bir dağıtımın açıkça belirtilmiş dayanağıdır. Bu yalnızca iyi niyetli bir amaçtır, hukuki bir yükümlülük değildir: tibtre, proje yürütücüleri ve onların terekesi ile mirasçıları dahil hiç kimseye karşı hukuki bir hak doğurmaz.
 - **Bugünden gerçek bir söz hakkı.** VERA20k projesinin yönüyle ilgili kararlar tibtre ile ağırlıklandırılır — tek bir sahibin asla baskın çıkamaması için bir üst sınırla ([`voteweight.py`](voteweight.py)).
-- **Kalıcı bir kayıt.** Katkılar herkese açık kurallarla değerlendirilir ([puanlama ölçütleri](docs/grading-rubric.md)), sonsuza dek kaydedilir ve herkes tarafından doğrulanabilir — kimseye güvenmek zorunda kalmadan, katkıda bulunan kişinin kendisi tarafından da ([`identity.py`](identity.py)).
+- **Kalıcı bir kayıt.** Katkılar herkese açık kurallarla değerlendirilir ([puanlama ölçütleri](docs/grading-rubric.md)), sonsuza dek kaydedilir ve herkes tarafından doğrulanabilir.
 
 Bir tibtre ≈ VERA20k projesinin gerçekten ihtiyaç duyduğu bir iş üzerinde bir saatlik yüksek kaliteli çalışma — hem kalite hem değer hesaba katılır ve ikisi de herkese açık kurallarla fiyatlandırılır. Başvurmanız gereken bir şey yok: katkıda bulunun, değerlendirilin, kayda geçin.
 
@@ -30,7 +30,7 @@ Bir tibtre ≈ VERA20k projesinin gerçekten ihtiyaç duyduğu bir iş üzerinde
 | `BALANCES.md` | Otomatik oluşturulan bakiye tablosu — defteri düzenledikten sonra `python tally.py` komutunu çalıştırın |
 | `tally.py` | `BALANCES.md` dosyasını `LEDGER.csv` dosyasından yeniden oluşturur |
 | `voteweight.py` | Oylamalarda sayılan ağırlıkları kişi başına %25 üst sınırla hesaplar (örnekler için `--demo`) |
-| `identity.py` | Herkese açık kimlik taahhütlerini (commitment) oluşturur ve doğrular — bir ID'nin size ait olduğunu kimseye güvenmeden kanıtlayın |
+| `identity.py` | Kimlik taahhütlerini (commitment) oluşturur ve doğrular |
 | `docs/granting-guide.md` | Tahsis kaydeden onaylayıcılar için adım adım kılavuz |
 | `assets/` | Kabul edilen topluluk sanat eserlerinin ve kod olmayan diğer çalışmaların arşivi |
 

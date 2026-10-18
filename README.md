@@ -14,9 +14,9 @@ VERA20k and this repository are hosted under [YuriPlanet](https://github.com/Yur
 
 VERA20k is built by its contributors, and the founding idea is that it should *belong* to them. TIBTRE is how that idea is made concrete before it matters:
 
-- **Preemptive fairness.** If VERA20k ever forms a legal entity or ever has income to distribute, the hard question — *who built this, and how much?* — is already answered: publicly, verifiably, from day one. This ledger is the stated basis for any such allocation.
+- **Preemptive fairness.** If VERA20k ever forms a legal entity or ever has income to distribute, the hard question — *who built this, and how much?* — is already answered: publicly, verifiably, from day one. This ledger is the stated basis for any such allocation. This is a good-faith intention only, not a legal obligation: tibtre gives no legal claim against anyone, including the maintainers or their estates and heirs.
 - **A real say, today.** Decisions about VERA20k's direction are weighted by tibtre — capped so no single holder can ever dominate ([`voteweight.py`](voteweight.py)).
-- **A permanent record.** Contributions are valued by public rules ([the rubric](docs/grading-rubric.md)), recorded forever, and verifiable by anyone — including by the contributor themselves, without trusting anyone ([`identity.py`](identity.py)).
+- **A permanent record.** Contributions are valued by public rules ([the rubric](docs/grading-rubric.md)), recorded forever, and verifiable by anyone.
 
 One tibtre ≈ one hour of high-quality work on something VERA20k genuinely needs — quality and value both count, and both are priced by the public rules. Nothing to apply for: contribute, get valued, get recorded.
 
@@ -30,7 +30,7 @@ One tibtre ≈ one hour of high-quality work on something VERA20k genuinely need
 | `BALANCES.md` | Generated balances table — run `python tally.py` after editing the ledger |
 | `tally.py` | Regenerates `BALANCES.md` from `LEDGER.csv` |
 | `voteweight.py` | Computes counted poll weights under the 25% per-person cap (`--demo` for examples) |
-| `identity.py` | Generates/verifies the public identity commitments — prove an ID is yours without trusting anyone |
+| `identity.py` | Generates and checks identity commitments |
 | `docs/granting-guide.md` | Step-by-step guide for approvers recording a grant |
 | `assets/` | Archive of accepted community artwork and other non-code artifacts |
 

@@ -14,9 +14,9 @@ VERA20k och det här repot ligger under [YuriPlanet](https://github.com/YuriPlan
 
 VERA20k byggs av sina bidragsgivare, och grundtanken är att projektet ska *tillhöra* dem. TIBTRE gör den tanken konkret innan den hinner spela roll:
 
-- **Rättvisa i förväg.** Om VERA20k någon gång bildar en juridisk person eller får intäkter att fördela är den svåra frågan – *vem byggde det här, och hur mycket?* – redan besvarad: öppet och kontrollerbart, från första dagen. Den här huvudboken är den uttalade grunden för en sådan fördelning.
+- **Rättvisa i förväg.** Om VERA20k någon gång bildar en juridisk person eller får intäkter att fördela är den svåra frågan – *vem byggde det här, och hur mycket?* – redan besvarad: öppet och kontrollerbart, från första dagen. Den här huvudboken är den uttalade grunden för en sådan fördelning. Detta är endast en avsikt i god tro, inte en juridisk förpliktelse: tibtre ger inget rättsligt anspråk mot någon, inte heller mot projektets ansvariga eller deras dödsbon och arvingar.
 - **Verkligt inflytande, redan nu.** Beslut om projektets inriktning viktas med tibtre – med ett tak, så att ingen enskild innehavare någonsin kan dominera ([`voteweight.py`](voteweight.py)).
-- **Ett bestående register.** Bidrag värderas enligt offentliga regler ([bedömningsmallen](docs/grading-rubric.md)), registreras för alltid och kan kontrolleras av vem som helst – även av bidragsgivaren själv, utan att behöva lita på någon ([`identity.py`](identity.py)).
+- **Ett bestående register.** Bidrag värderas enligt offentliga regler ([bedömningsmallen](docs/grading-rubric.md)), registreras för alltid och kan kontrolleras av vem som helst.
 
 En tibtre ≈ en timmes högkvalitativt arbete med något som VERA20k verkligen behöver – både kvalitet och värde räknas, och båda prissätts enligt de offentliga reglerna. Inget att ansöka om: bidra, bli värderad, bli registrerad.
 
@@ -30,7 +30,7 @@ En tibtre ≈ en timmes högkvalitativt arbete med något som VERA20k verkligen 
 | `BALANCES.md` | Genererad saldotabell – kör `python tally.py` efter att du har ändrat huvudboken |
 | `tally.py` | Genererar om `BALANCES.md` från `LEDGER.csv` |
 | `voteweight.py` | Räknar ut röstvikterna i omröstningar med taket på 25 % per person (`--demo` visar exempel) |
-| `identity.py` | Skapar och kontrollerar de offentliga identitetsåtagandena – bevisa att ett ID är ditt utan att lita på någon |
+| `identity.py` | Skapar och kontrollerar identitetsåtaganden |
 | `docs/granting-guide.md` | Steg-för-steg-guide för godkännare som registrerar en tilldelning |
 | `assets/` | Arkiv med godkända konstverk från communityn och annat material som inte är kod |
 
