@@ -4,6 +4,9 @@ How to record a tibtre grant, start to finish. Target time: under two minutes.
 
 ## 1. Value the grant — two numbers, averaged
 
+*Since rubric v1.4, merged PRs are converted at one rate for everyone — see the
+rubric's "One scale for everyone".*
+
 1. Get the **AI value**: ask Claude to compute it from the
    [grading rubric](grading-rubric.md) (`base × difficulty × quality`), with factors
    shown and the most similar past grant cited. The exact instruction the AI follows

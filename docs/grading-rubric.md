@@ -1,8 +1,19 @@
-# Tibtre grading rubric — v1.3
+# Tibtre grading rubric — v1.4
 
-*(v1.3: added `recruit` — paid when the recruit's first grant lands. v1.2: dual
+*(v1.4: one scale for everyone, below. v1.3: added `recruit` — paid when the recruit's first grant lands. v1.2: dual
 valuation — human value + AI value, averaged; bounties demoted to an occasional
 tool. v1.1: added "Worth to the project". Forward-only as always.)*
+
+## One scale for everyone (v1.4)
+
+Work is valued by what it does for the project, never by who made it. Each update
+values every merged PR with the same method and converts the result to tibtre at one
+rate for everyone, so equal work earns equal tibtre whether a maintainer or a newcomer
+made it. The maintainer's value for their own PRs sets that rate. A maintainer may
+adjust a person's amount after reviewing their work; the ledger note records the
+adjustment. At this rate most single PRs fall below the 0.5 minimum, so PR work is
+granted as one row per person per update, listing the PRs. Non-PR work (community,
+art, research and the like) is valued directly.
 
 ## Who values a grant — human + AI, averaged
 
