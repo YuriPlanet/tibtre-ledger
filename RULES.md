@@ -27,8 +27,6 @@ Tibtre are points that record who helped build VERA20k, and how much.
 - Ask a maintainer to change or remove your name or link at any time. Your balance doesn't change.
 - Only the maintainers know who is behind each ID.
 
-**Want to disappear later?** Ask a maintainer, and we remove your name everywhere we control, including this repository's history. Work already in the game stays, and we can't remove copies others made before you asked.
-
 ## Licensing
 
 By submitting work to VERA20k you license the project to use, modify, and distribute it under the project's license (or CC-BY 4.0 with attribution for standalone art). You keep ownership of your work; the project keeps the right to ship it.
