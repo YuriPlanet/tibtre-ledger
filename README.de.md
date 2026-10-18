@@ -14,7 +14,7 @@ VERA20k und dieses Repository werden unter [YuriPlanet](https://github.com/YuriP
 
 VERA20k wird von seinen Mitwirkenden gebaut, und die Grundidee ist, dass es ihnen auch *gehören* soll. Mit tibtre wird diese Idee greifbar, bevor es darauf ankommt:
 
-- **Fairness im Voraus.** Sollte VERA20k jemals eine juristische Person gründen oder Einnahmen zu verteilen haben, ist die schwierige Frage – *wer hat das gebaut, und wie viel davon?* – bereits beantwortet: öffentlich und überprüfbar, vom ersten Tag an. Dieses Hauptbuch ist die erklärte Grundlage für jede solche Verteilung. Das ist ausschließlich eine Absicht in gutem Glauben, keine rechtliche Verpflichtung: tibtre begründet keinen Rechtsanspruch gegen irgendjemanden, auch nicht gegen die Maintainer oder deren Nachlass und Erben.
+- **Fairness im Voraus.** Sollte VERA20k jemals eine juristische Person gründen oder Einnahmen zu verteilen haben, ist die schwierige Frage – *wer hat das gebaut, und wie viel davon?* – bereits beantwortet: öffentlich und überprüfbar, vom ersten Tag an. Dieses Hauptbuch ist die erklärte Grundlage für jede solche Verteilung. Das ist ausschließlich eine Absicht in gutem Glauben, keine rechtliche Verpflichtung.
 - **Echte Mitsprache, schon heute.** Entscheidungen über die Ausrichtung des Projekts werden nach tibtre gewichtet – mit einer Obergrenze, damit niemand mit großem Bestand jemals allein bestimmen kann ([`voteweight.py`](voteweight.py)).
 - **Eine dauerhafte Aufzeichnung.** Beiträge werden nach öffentlichen Regeln bewertet ([das Bewertungsschema](docs/grading-rubric.md)), dauerhaft festgehalten und sind für alle überprüfbar.
 

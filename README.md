@@ -14,7 +14,7 @@ VERA20k and this repository are hosted under [YuriPlanet](https://github.com/Yur
 
 VERA20k is built by its contributors, and the founding idea is that it should *belong* to them. TIBTRE is how that idea is made concrete before it matters:
 
-- **Preemptive fairness.** If VERA20k ever forms a legal entity or ever has income to distribute, the hard question — *who built this, and how much?* — is already answered: publicly, verifiably, from day one. This ledger is the stated basis for any such allocation. This is a good-faith intention only, not a legal obligation: tibtre gives no legal claim against anyone, including the maintainers or their estates and heirs.
+- **Preemptive fairness.** If VERA20k ever forms a legal entity or ever has income to distribute, the hard question — *who built this, and how much?* — is already answered: publicly, verifiably, from day one. This ledger is the stated basis for any such allocation. This is a good-faith intention only, not a legal obligation.
 - **A real say, today.** Decisions about VERA20k's direction are weighted by tibtre — capped so no single holder can ever dominate ([`voteweight.py`](voteweight.py)).
 - **A permanent record.** Contributions are valued by public rules ([the rubric](docs/grading-rubric.md)), recorded forever, and verifiable by anyone.
 

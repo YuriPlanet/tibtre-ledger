@@ -14,7 +14,7 @@ VERA20k och det här repot ligger under [YuriPlanet](https://github.com/YuriPlan
 
 VERA20k byggs av sina bidragsgivare, och grundtanken är att projektet ska *tillhöra* dem. TIBTRE gör den tanken konkret innan den hinner spela roll:
 
-- **Rättvisa i förväg.** Om VERA20k någon gång bildar en juridisk person eller får intäkter att fördela är den svåra frågan – *vem byggde det här, och hur mycket?* – redan besvarad: öppet och kontrollerbart, från första dagen. Den här huvudboken är den uttalade grunden för en sådan fördelning. Detta är endast en avsikt i god tro, inte en juridisk förpliktelse: tibtre ger inget rättsligt anspråk mot någon, inte heller mot projektets ansvariga eller deras dödsbon och arvingar.
+- **Rättvisa i förväg.** Om VERA20k någon gång bildar en juridisk person eller får intäkter att fördela är den svåra frågan – *vem byggde det här, och hur mycket?* – redan besvarad: öppet och kontrollerbart, från första dagen. Den här huvudboken är den uttalade grunden för en sådan fördelning. Detta är endast en avsikt i god tro, inte en juridisk förpliktelse.
 - **Verkligt inflytande, redan nu.** Beslut om projektets inriktning viktas med tibtre – med ett tak, så att ingen enskild innehavare någonsin kan dominera ([`voteweight.py`](voteweight.py)).
 - **Ett bestående register.** Bidrag värderas enligt offentliga regler ([bedömningsmallen](docs/grading-rubric.md)), registreras för alltid och kan kontrolleras av vem som helst.
 

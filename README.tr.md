@@ -14,7 +14,7 @@ VERA20k ve bu depo, GitHub kuruluşumuz olan [YuriPlanet](https://github.com/Yur
 
 VERA20k projesini ona katkıda bulunanlar inşa ediyor ve kuruluş fikri, projenin onlara *ait* olmasıdır. TIBTRE, bu fikri daha önem kazanmadan somut hâle getirmenin yoludur:
 
-- **Önceden güvence altına alınan adalet.** VERA20k bir gün tüzel kişilik kurarsa ya da dağıtılacak bir geliri olursa, o zor sorunun — *bunu kim yaptı ve ne kadarını?* — yanıtı zaten hazırdır: ilk günden itibaren herkese açık ve doğrulanabilir biçimde. Bu defter, böyle bir dağıtımın açıkça belirtilmiş dayanağıdır. Bu yalnızca iyi niyetli bir amaçtır, hukuki bir yükümlülük değildir: tibtre, proje yürütücüleri ve onların terekesi ile mirasçıları dahil hiç kimseye karşı hukuki bir hak doğurmaz.
+- **Önceden güvence altına alınan adalet.** VERA20k bir gün tüzel kişilik kurarsa ya da dağıtılacak bir geliri olursa, o zor sorunun — *bunu kim yaptı ve ne kadarını?* — yanıtı zaten hazırdır: ilk günden itibaren herkese açık ve doğrulanabilir biçimde. Bu defter, böyle bir dağıtımın açıkça belirtilmiş dayanağıdır. Bu yalnızca iyi niyetli bir amaçtır, hukuki bir yükümlülük değildir.
 - **Bugünden gerçek bir söz hakkı.** VERA20k projesinin yönüyle ilgili kararlar tibtre ile ağırlıklandırılır — tek bir sahibin asla baskın çıkamaması için bir üst sınırla ([`voteweight.py`](voteweight.py)).
 - **Kalıcı bir kayıt.** Katkılar herkese açık kurallarla değerlendirilir ([puanlama ölçütleri](docs/grading-rubric.md)), sonsuza dek kaydedilir ve herkes tarafından doğrulanabilir.
 
