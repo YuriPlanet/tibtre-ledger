@@ -5,7 +5,8 @@ How to record a tibtre update, step by step.
 ## 1. Value the work
 
 1. List everything accepted since the last update: merged PRs from everyone,
-   maintainers included, and other work (art, maps, playtests, community).
+   maintainers included, and work posted in the Discord or the QQ group (art, maps,
+   playtests, community).
 2. Have the AI value each piece of work with its
    [instructions](ai-evaluation-prompt.md) and the [grading rules](grading-rubric.md).
    Several PRs that make one piece of work are valued together.
@@ -47,7 +48,7 @@ A later name change is an edit to `CONTRIBUTORS.csv`. Never touch the ledger for
 - **Code, research, docs:** the merged PR or commit.
 - **Art, maps, media, playtest reports:** save the file in `assets/` as
   `YYYY-MM-DD_T-XXXX_short-title.ext` (always the ID, never a name) and point to that
-  path. Discord messages can be deleted, so never use one as the only link.
+  path. Discord and QQ messages can be deleted, so never use one as the only link.
 
 Before committing a file, remove personal information: names or usernames in
 screenshots, image metadata (EXIF), real names in reports and identifying paths in
@@ -84,8 +85,9 @@ Commit straight to `master` (see [AGENTS.md](../AGENTS.md)).
 
 ## 6. Announce
 
-Post the update in the Discord: IDs, amounts and a link to the valuations file. Use a
-name only for contributors who show one publicly, and congratulate the others by DM.
+Post the update in the Discord and the QQ group: IDs, amounts and a link to the
+valuations file. Use a name only for contributors who show one publicly, and
+congratulate the others by DM.
 
 ## Corrections
 

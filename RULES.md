@@ -4,8 +4,8 @@ Tibtre are points that record who helped build VERA20k, and how much.
 
 ## Earning tibtre
 
-- **Anyone can earn it.** Code, research, art, maps, playtesting, docs, translations and community work all count. Send code as a GitHub pull request, and post other work in the Discord's `#submissions` channel. You don't need a GitHub account.
-- **There is nothing to apply for.** Do work that helps, submit it, and it gets valued.
+- **Anyone can earn it.** Code, research, art, maps, playtesting, docs, translations and community work all count. Send code as a GitHub pull request, or post your work in the Discord or the QQ group. You don't need a GitHub account.
+- **There is nothing to apply for.** A maintainer will most likely pick up your work, and you get tibtre automatically.
 - **It is for accepted work, not for time.** One tibtre is about one hour of good work on something the project needs. You never report your hours.
 - **An AI and a maintainer value it together**, with the public [grading rules](docs/grading-rubric.md). What counts is what the work does for the project, not who made it, how many lines it has or how many PRs it took.
 - **The same rules apply to everyone**, maintainers and founders included.
@@ -22,14 +22,14 @@ Tibtre are points that record who helped build VERA20k, and how much.
 ## What tibtre is worth
 
 1. **Recognition.** Your balance is public.
-2. **A say in the project.** Roadmap polls and feature votes in the Discord are weighted by tibtre. No one person counts for more than 25% of a vote ([`voteweight.py`](voteweight.py) does the math).
+2. **A say in the project.** Roadmap polls and feature votes are weighted by tibtre. No one person counts for more than 25% of a vote ([`voteweight.py`](voteweight.py) does the math).
 
 **Tibtre has no monetary value and no promise of future monetary value.** It is the founders' good-faith intention that **if this project ever forms a legal entity or shares out money, such as donations, this ledger guides the allocation.**
 
 ## Your name
 
 - Your first grant gives you a random contributor ID, like `T-9C41`. The ledger only ever shows IDs.
-- You choose how you appear in [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv): your Discord handle, another name, or only your ID. You can also show a public link, like a website. A link is safer than an email address, because everything here is public and stays in the history.
+- You choose how you appear in [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv): your username, another name, or only your ID. You can also show a public link, like a website. A link is safer than an email address, because everything here is public and stays in the history.
 - Ask a maintainer to change or remove your name or link at any time. Your balance doesn't change.
 - Only the maintainers know who is behind each ID.
 
@@ -49,4 +49,4 @@ Think a grant is wrong, yours or anyone's? Tell a maintainer. It is valued again
 
 ## Changes
 
-Rule changes are announced in the Discord.
+Rule changes are announced in the Discord and the QQ group.

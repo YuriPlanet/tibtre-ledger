@@ -8,8 +8,8 @@
 
 ## So funktioniert es
 
-1. **Du trägst bei.** Code, Forschung, Grafik, Karten, Playtests, Übersetzungen und Community-Arbeit zählen alle. Du brauchst kein GitHub-Konto: Du kannst deine Arbeit im Discord posten.
-2. **Deine Arbeit wird bewertet.** Wenn deine Arbeit angenommen wird, bewerten eine KI und ein Maintainer sie gemeinsam nach den [öffentlichen Bewertungsregeln](docs/grading-rubric.md). Ein tibtre entspricht etwa einer Stunde guter Arbeit an etwas, das VERA20k braucht. Für alle gelten dieselben Regeln, auch für Maintainer.
+1. **Du trägst bei.** Code, Forschung, Grafik, Karten, Playtests, Übersetzungen und Community-Arbeit zählen alle. Du brauchst kein GitHub-Konto: Du kannst deine Arbeit im Discord oder in der QQ-Gruppe posten.
+2. **Deine Arbeit wird bewertet.** Du musst nicht danach fragen: Ein Maintainer greift deine Arbeit sehr wahrscheinlich selbst auf, und du bekommst deine tibtre automatisch. Angenommene Arbeit bewerten eine KI und ein Maintainer gemeinsam nach den [öffentlichen Bewertungsregeln](docs/grading-rubric.md). Ein tibtre entspricht etwa einer Stunde guter Arbeit an etwas, das VERA20k braucht. Für alle gelten dieselben Regeln, auch für Maintainer.
 3. **Es wird festgehalten.** Jede Vergabe ist eine Zeile im öffentlichen [Hauptbuch](LEDGER.csv), unter deiner Mitwirkenden-ID (etwa `T-83DE`), nicht unter deinem Namen. Zeilen werden nie geändert oder gelöscht. Ein Fehler wird mit einer neuen Zeile korrigiert.
 4. **Jeder kann es prüfen.** Die Kontostände aller stehen in [BALANCES.md](BALANCES.md).
 
