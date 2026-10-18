@@ -38,9 +38,6 @@ Ein tibtre ≈ eine Stunde hochwertiger Arbeit an etwas, das VERA20k wirklich br
 
 - Ins Hauptbuch kommen Einträge **nur hinzu**: Vergangene Zeilen werden nie bearbeitet oder gelöscht. Korrekturen bekommen eine neue Zeile (negative Beträge sind erlaubt, mit einer Notiz zur Begründung).
 - Das Hauptbuch enthält **nur Mitwirkenden-IDs** (zufällig, etwa `T-83DE`), niemals Namen. Anzeigenamen stehen in `CONTRIBUTORS.csv` und können jederzeit geändert oder geleert werden, ohne die Historie zu berühren.
-- Die Zuordnung ID → reale Person liegt im **separaten privaten Ordner** (`../vera20k-tibtre-private/`), der niemals veröffentlicht werden darf.
 - Jede Änderung wird in git committet – die Commit-Historie *ist* der Prüfpfad.
-- Alle künftige Dokumentation zu tibtre gehört nach `docs/`.
-- Angenommene Kunstwerke kommen nach `assets/`, benannt als `YYYY-MM-DD_T-XXXX_short-title.ext` (ID, niemals Name – Dateinamen sind öffentlich und dauerhaft).
 
 Übersetzung von [README.md](README.md); bei Abweichungen gilt die englische Version.

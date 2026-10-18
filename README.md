@@ -38,8 +38,5 @@ One tibtre ≈ one hour of high-quality work on something VERA20k genuinely need
 
 - The ledger is **append-only**: never edit or delete past rows. Corrections get a new row (negative amounts are allowed, with a note explaining why).
 - The ledger contains **contributor IDs only** (random, like `T-83DE`), never names. Display names live in `CONTRIBUTORS.csv` and may be edited or emptied at any time without touching history.
-- The ID → real person mapping lives in the **separate private folder** (`../vera20k-tibtre-private/`), which must never be published.
 - Every change is committed to git — the commit history *is* the audit trail.
-- All future tibtre-related documentation goes in `docs/`.
-- Accepted artwork goes in `assets/`, named `YYYY-MM-DD_T-XXXX_short-title.ext` (ID, never name — filenames are public and permanent).
 

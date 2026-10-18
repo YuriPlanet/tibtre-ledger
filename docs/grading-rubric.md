@@ -1,51 +1,43 @@
-# Tibtre grading rubric — v1.4
+# Tibtre grading rubric — v1.5
 
-*(v1.4: one scale for everyone, below. v1.3: added `recruit` — paid when the recruit's first grant lands. v1.2: dual
-valuation — human value + AI value, averaged; bounties demoted to an occasional
-tool. v1.1: added "Worth to the project". Forward-only as always.)*
+*(v1.5: the AI reviewer's value is the grant, the same way for everyone, at a fixed
+scale; no priority board or bounties. v1.4, used once on 2026-10-18: one scale set by
+the owner's own value. v1.3: added `recruit`. v1.2: human and AI values averaged.
+v1.1: added worth to the project. Forward-only: each ledger note names the version it
+used.)*
 
-## One scale for everyone (v1.4)
+## How work is valued
 
-Work is valued by what it does for the project, never by who made it. Each update
-values every merged PR with the same method and converts the result to tibtre at one
-rate for everyone, so equal work earns equal tibtre whether a maintainer or a newcomer
-made it. The maintainer's value for their own PRs sets that rate. A maintainer may
-adjust a person's amount after reviewing their work; the ledger note records the
-adjustment. At this rate most single PRs fall below the 0.5 minimum, so PR work is
-granted as one row per person per update, listing the PRs. Non-PR work (community,
-art, research and the like) is valued directly.
+The project's AI reviewer values every accepted contribution with this rubric, the
+same way for everyone, maintainers included:
 
-## Who values a grant — human + AI, averaged
+```
+tibtre = base × difficulty × quality
+```
 
-Accepted work gets two independent valuations:
+The value is what the work does for the project. It never depends on who made it,
+the hours claimed, AI assistance, line count or the number of PRs: splitting work
+into more PRs adds nothing. The AI follows the public
+[evaluation prompt](ai-evaluation-prompt.md) and shows every factor, so anyone can
+recompute it.
 
-1. **The AI reviewer** computes a value strictly from this rubric, showing every
-   factor.
-2. **A maintainer** gives their value — a rubric computation or an experienced gut
-   number, their choice.
+A maintainer checks the factors. A factor that is factually wrong, such as a missed
+rework or the wrong subsystem, is corrected openly with the reason recorded. Nobody
+adds a personal value on top.
 
-The grant is the **average of the two, rounded to the nearest 0.5**, and both inputs
-are recorded in the ledger notes (e.g. `H4 + A5 → 4.5`). If the valuations differ by
-more than **×1.5**, don't average — that gap usually means the two saw different
-scope; reconcile openly first, then record.
+Each update publishes the per-contribution values in `valuations/YYYY-MM-DD.csv`.
+Each person gets one ledger row per update and category: their total, rounded to the
+nearest 0.5 (ties round up; minimum 0.5).
 
 Contributors never apply, claim, or pre-register anything. Do the work, submit it,
 get valued.
 
-Every grant is **computed, not guessed**:
-
-```
-tibtre = base × difficulty × quality      (rounded to nearest 0.5, minimum 0.5)
-```
-
-Each factor comes from the tables below. Every grant proposal must show all three
-factors with a one-line justification each, so anyone can recompute the number.
-Same formula for everyone, no exceptions.
-
 ## Base — by category and size
 
-Size is judged on **scope of the accepted work, not effort claimed** — and never on
-raw line count (padding a diff doesn't move the size class).
+Size is the work's **worth to the project**: its scope, and how much players or
+contributors feel it. A player-visible feature or fix weighs more than an internal
+change of similar scope. Never raw line count: padding a diff doesn't move the size
+class.
 
 ### Code
 | Size | Definition | Base |
@@ -105,10 +97,6 @@ handled by the normal impact-bonus machinery.
 |---|---|
 | 1.0 | Routine work |
 | 1.5 | Hard domains: deterministic sim internals, renderer/GPU, netcode, RE of unlabeled binary code |
-| 2.0 | Items on the current **priority board** (published and updated by maintainers) |
-
-The priority board is how "hard-pressing" becomes math instead of mood: maintainers
-post what the project urgently needs; work on those items earns ×2.0 while listed.
 
 ## Quality multiplier
 
@@ -118,61 +106,34 @@ post what the project urgently needs; work on those items earns ×2.0 while list
 | 1.0 | Solid — accepted as-is |
 | 1.25 | Exceptional — beyond-scope tests/docs/polish |
 
-## Bounties — an occasional tool, never a gate
+## Impact bonuses
 
-Maintainers may occasionally pre-price an urgent task: *"implement X = 12 tibtre."*
-A completed, accepted bounty pays **exactly** its posted price — no valuations, no
-judgment after the fact. Bounties are rare and purely optional: nobody ever needs to
-wait for one, claim one, or ask permission to work. Unsolicited work is the normal
-path and is valued identically well.
-
-## Worth to the project
-
-Tibtre ultimately tracks **contribution to the project's worth** — what attracts
-players, attracts contributors, draws support, or unblocks the work that does. Since
-every grant dilutes every other holder, overpaying low-value work is unfair to the
-people who added real worth. But worth cannot be *guessed* at grant time without
-destroying reproducibility — so it enters at the two moments it is actually knowable:
-
-- **Before work starts:** the priority board (×2.0) and bounty prices are the
-  maintainers' declaration of what the project's worth needs most. Value is priced by
-  judgment in advance, then paid by formula.
-- **After worth proves itself — impact bonuses:** at milestones (a release, a player
-  or contributor influx, a donation spike), maintainers review what demonstrably drove
-  it and grant bonus tibtre as new ledger rows, category `impact`, each citing its
-  observable evidence (e.g., *"replay system — named in the posts that brought 200 new
-  members"*). No formula — but no bonus without named, public evidence, and
-  comparables discipline applies across impact grants too.
-
-The strongest predictor of worth in this project is **player-visible improvement** —
-the same bar the engine uses for parity. When judging priority-board entries and
-impact bonuses, ask "does a player feel this?" before "was this hard?".
+At milestones (a release, a player or contributor influx, a donation spike),
+maintainers may grant bonus tibtre for what demonstrably drove it, as category
+`impact`, each citing its observable evidence (e.g., *"replay system — named in the
+posts that brought 200 new members"*). No bonus without named, public evidence.
 
 ## Consistency mechanics
 
 - **Show your work.** A grant without its computation is invalid.
-- **Comparables.** Each proposal cites the most similar past grant(s) from the ledger;
-  deviating more than ~30% from comparables requires explanation or a second reviewer.
+- **Comparables.** Each valuation cites the most similar past values; deviating more
+  than ~30% needs an explanation.
 - **Versioned, forward-only.** Rubric changes get a new version number and apply only
   to future grants — the ledger is never repriced retroactively.
-- **Disputes.** Recompute together; if you still disagree, a second maintainer
-  decides; corrections are appended as new ledger rows.
+- **Disputes.** Raise them with a maintainer. The valuation is redone openly, and any
+  correction is appended as a new ledger row.
 
 ## Worked examples
 
 1. Contained pathfinding bug fix, in the hard sim domain, accepted as-is:
-   `1.5 (S code) × 1.5 (hard domain) × 1.0 = 2.5` *(2.25 → nearest 0.5)*
+   `1.5 (S code) × 1.5 (hard domain) × 1.0 = 2.25`
 2. Loading screen, routine, exceptional polish:
-   `3 (art) × 1.0 × 1.25 = 4`
-3. Full verified research doc on a priority-board system:
-   `8 × 2.0 × 1.0 = 16`
-4. Bounty "fix desync in replay seek" posted at 12: accepted → **12**, computed no further.
+   `3 (art) × 1.0 × 1.25 = 3.75`
 
-## What the math does and doesn't promise
+## What the rubric promises
 
-The formula guarantees **consistency, predictability, and auditability** — identical
-work earns identical tibtre, and you can price your contribution before you start.
-It does not claim the constants are objectively true; they are calibrated judgment,
-tuned openly via rubric versions. The human review gate stays because every fully
-automated scoring system eventually gets gamed; the formula disciplines the human,
-the human sanity-checks the formula.
+Identical work earns identical tibtre, whoever made it, and you can price your
+contribution before you start. The constants are calibrated judgment, tuned openly
+through rubric versions, not objective truth. The maintainer check stays because
+fully automated scoring gets gamed: the rubric disciplines the check, and the check
+catches the AI's mistakes.

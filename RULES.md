@@ -1,18 +1,18 @@
-# Tibtre — the Yrvera contribution currency
+# Tibtre — the VERA20k contribution currency
 
-Yrvera is built by its contributors, and tibtre is how the project remembers who built it.
+VERA20k is built by its contributors, and tibtre is how the project remembers who built it.
 
 ## What is one tibtre?
 
-**1 tibtre ≈ 1 focused hour of high-quality work on something the project genuinely needs.**
+**1 tibtre ≈ the value of one focused hour of high-quality work on something the project genuinely needs.**
 
-Tibtre is granted for *accepted results*, not for time spent. When a contribution is accepted, the reviewer estimates how many hours of quality work it represents and grants that many tibtre. You never report your own hours.
+Tibtre is granted for *accepted results*, not for time spent. The project's AI reviewer values each accepted contribution with the public [grading rubric](docs/grading-rubric.md), the same way for everyone, by what it does for the project. You never report your own hours.
 
 ## What is tibtre worth?
 
 Today, two things:
 
-1. **Recognition.** Your balance is public in [`BALANCES.md`](BALANCES.md), and your name goes in the project credits.
+1. **Recognition.** Your balance is public in [`BALANCES.md`](BALANCES.md).
 2. **Governance.** Roadmap polls and feature votes in the Discord are weighted by tibtre. Contributors steer the project — with one fairness cap: no single person's weight ever counts for more than 25% of a vote, so early large holders guide but never rule. (Exact mechanics are executable — [`voteweight.py`](voteweight.py); with 4 or fewer voters the cap makes a poll one-person-one-vote.)
 
 **Tibtre has no monetary value and no promise of future monetary value.** It is the founders' good-faith intention that **if this project ever forms a legal entity or shares out money, such as donations, this ledger guides the allocation.**
@@ -37,11 +37,9 @@ You do **not** need a GitHub account. Post your work in the Discord and a mainta
 ## How grants happen
 
 1. You submit work (PR, Discord post, however fits).
-2. Accepted work gets **two independent valuations**: a maintainer gives one, and the project's AI reviewer computes one from the public [grading rubric](docs/grading-rubric.md). Your grant is their **average**, rounded to the nearest 0.5 — and both numbers are recorded, so you always see how yours was reached. If the two valuations disagree badly, they're openly reconciled before anything is recorded.
-3. On your first grant you're assigned a **contributor ID** (random, like `T-9C41`). The grant is recorded as one row in [`LEDGER.csv`](LEDGER.csv): date, ID, amount, category, and a note carrying what the work was and the full computation.
+2. The project's AI reviewer values the accepted work from the public [grading rubric](docs/grading-rubric.md) by what it does for the project, not by line count, PR count or who made it. A maintainer checks the AI's factors and corrects one only openly, with the reason recorded. Each update's values are published in `valuations/`, so you always see how yours was reached.
+3. On your first grant you're assigned a **contributor ID** (random, like `T-9C41`). Each update gives you one row per category in [`LEDGER.csv`](LEDGER.csv): date, ID, amount, category, and a note saying what the work was and where its values are.
 4. Every grant is public. The ledger is append-only and its full history is auditable.
-
-Work in hard or urgent domains is naturally worth more hours of "quality work" — the reviewer's estimate reflects difficulty, not just clock time.
 
 **The same rules bind everyone — maintainers and founders included.** Their contributions are graded by the same rubric, recorded in the same public ledger, and open to the same disputes as anyone else's.
 
@@ -64,12 +62,12 @@ Who is behind each ID is known only to the maintainers, recorded privately.
 
 ## Licensing of submissions
 
-By submitting work to Yrvera you license the project to use, modify, and distribute it under the project's license (or CC-BY 4.0 with attribution for standalone art). You keep ownership of your work; the project keeps the right to ship it.
+By submitting work to VERA20k you license the project to use, modify, and distribute it under the project's license (or CC-BY 4.0 with attribution for standalone art). You keep ownership of your work; the project keeps the right to ship it.
 
 ## Disputes and corrections
 
-If you think a grant is wrong (yours or anyone's), raise it with a maintainer. A second reviewer decides. Corrections are appended to the ledger as new rows — history is never rewritten.
+If you think a grant is wrong (yours or anyone's), raise it with a maintainer. The valuation is redone openly, and corrections are appended to the ledger as new rows — history is never rewritten.
 
 ## Changes to this policy
 
-Policy changes are announced in the Discord before they take effect. The ledger and its rules exist to be boring, predictable, and fair.
+Policy changes are announced in the Discord, and every rubric version is listed at the top of the [rubric](docs/grading-rubric.md). The ledger and its rules exist to be boring, predictable, and fair.

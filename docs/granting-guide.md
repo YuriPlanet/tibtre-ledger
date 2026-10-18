@@ -1,25 +1,21 @@
 # Granting guide (for approvers)
 
-How to record a tibtre grant, start to finish. Target time: under two minutes.
+How to record a tibtre update, start to finish.
 
-## 1. Value the grant — two numbers, averaged
+## 1. Value the work
 
-*Since rubric v1.4, merged PRs are converted at one rate for everyone — see the
-rubric's "One scale for everyone".*
-
-1. Get the **AI value**: ask Claude to compute it from the
-   [grading rubric](grading-rubric.md) (`base × difficulty × quality`), with factors
-   shown and the most similar past grant cited. The exact instruction the AI follows
-   is public — [ai-evaluation-prompt.md](ai-evaluation-prompt.md) — so anyone can
-   reproduce a valuation with their own Claude.
-2. Give **your value** — your own rubric computation or an experienced gut number.
-3. Grant = **average, rounded to nearest 0.5**. Record both in the `notes` column,
-   e.g. `H4 + A5 → 4.5`.
-4. If the two values differ by more than ×1.5, don't average — compare what scope
-   each of you saw, agree, then record.
-
-A (rare) posted bounty price wins outright — no valuations. When torn between two
-size classes, pick the higher one for newcomers.
+1. List what was accepted since the last update: merged PRs from everyone,
+   maintainers included, and any non-PR work (art, maps, playtests, community).
+2. Have the AI reviewer value each contribution with
+   [ai-evaluation-prompt.md](ai-evaluation-prompt.md) and the
+   [grading rubric](grading-rubric.md).
+3. Check the factors. Correct a factor only when it is factually wrong, and record
+   why. When the AI is torn between two size classes, pick the one whose definition
+   fits better and say so.
+4. Save the values as `valuations/YYYY-MM-DD.csv`, one line per contribution:
+   `item,id,category,class,base,difficulty,quality,value,note`, where `item` is a PR
+   number like `#1234` (`#1234+#1240` when several PRs are one piece of work) or an
+   `assets/` path.
 
 ## 2. First-time contributor? Assign an ID
 
@@ -70,21 +66,22 @@ screenshots, embedded image metadata (EXIF), real names in report text, identify
 paths in logs. Redact first, commit second — an erasure request later is a
 history-rewrite; a scrub now is ten seconds.
 
-## 4. Append the ledger row
+## 4. Append the ledger rows
 
-One row at the END of `LEDGER.csv` — never edit existing rows:
+One row per person and category, at the END of `LEDGER.csv` — never edit existing rows:
 
 ```csv
 date,id,tibtre,category,notes
-2026-08-14,T-9C41,5,art,loading screen (assets/2026-08-14_T-9C41_loading-screen.png); art3 x1.5 x1.0; H5 + A4.5 -> 5 (rubric v1.3)
+2026-10-25,T-9C41,12.5,code,7 PRs (#1990 #1994 #1998 #2003 #2007 #2011 #2015); value 12.25 (valuations/2026-10-25.csv; rubric v1.5)
 ```
 
 - `date` — ISO `YYYY-MM-DD`
 - `id` — contributor ID from `CONTRIBUTORS.csv`
-- `tibtre` — the amount (negative only for corrections, with an explanatory note)
+- `tibtre` — the person's total for that category, rounded to the nearest 0.5
+  (ties round up; minimum 0.5); negative only for corrections, with an explanatory note
 - `category` — `code` / `research` / `art` / `maps` / `playtesting` / `docs` / `community` / `recruit` (paid on the recruit's first grant) / `impact` (retrospective value bonus — evidence required in notes) / `other`
-- `notes` — what the work was (PR number or assets filename keeps it traceable),
-  the computation, and the H/A values. Required for corrections. Keep names out
+- `notes` — what the work was (PR numbers or assets filenames), the value, the
+  valuations file and the rubric version. Required for corrections. Keep names out
   of notes for pseudonymous contributors.
 
 ## 5. Regenerate balances and commit
@@ -92,15 +89,17 @@ date,id,tibtre,category,notes
 ```
 python tally.py
 git add -A
-git commit -m "grant: 5 tibtre to T-9C41 (art)"
+git commit -m "grant: update 2026-10-25"
+git push
 ```
+
+Commit straight to `master` (see [AGENTS.md](../AGENTS.md)).
 
 ## 6. Announce
 
-Post the grant to the announcements channel via its webhook (URL lives in the
-private folder): ID, amount, category, artifact link, and the computation — name
-the contributor **only if they have a public display name**; pseudonymous
-contributors are congratulated by DM, and their announcement carries the ID only.
+Post the update in the Discord: IDs, amounts, and a link to the valuations file. Name
+a contributor only if they have a public display name; pseudonymous contributors are
+congratulated by DM, and the announcement carries the ID only.
 
 ## Corrections
 

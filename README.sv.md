@@ -38,9 +38,6 @@ En tibtre ≈ en timmes högkvalitativt arbete med något som VERA20k verkligen 
 
 - I huvudboken läggs rader **bara till**: tidigare rader ändras eller raderas aldrig. Rättelser blir en ny rad (negativa belopp är tillåtna, med en anteckning som förklarar varför).
 - Huvudboken innehåller **bara bidragsgivar-ID:n** (slumpmässiga, som `T-83DE`), aldrig namn. Visningsnamnen finns i `CONTRIBUTORS.csv` och kan när som helst ändras eller tömmas utan att historiken påverkas.
-- Kopplingen ID → verklig person finns i den **separata privata mappen** (`../vera20k-tibtre-private/`), som aldrig får publiceras.
 - Varje ändring checkas in i git – commit-historiken *är* granskningsspåret.
-- All framtida dokumentation om tibtre läggs i `docs/`.
-- Godkända konstverk läggs i `assets/` med namnet `YYYY-MM-DD_T-XXXX_short-title.ext` (ID, aldrig namn – filnamn är offentliga och permanenta).
 
 Översättning av [README.md](README.md); vid skillnader gäller den engelska versionen.

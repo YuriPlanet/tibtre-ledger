@@ -38,9 +38,6 @@ Bir tibtre ≈ VERA20k projesinin gerçekten ihtiyaç duyduğu bir iş üzerinde
 
 - Defter **yalnızca eklemeye açıktır**: geçmiş satırlar asla düzenlenmez veya silinmez. Düzeltmeler yeni bir satırla yapılır (negatif tutarlara, nedenini açıklayan bir notla izin verilir).
 - Defter **yalnızca katkıda bulunan ID'lerini** (rastgele, örneğin `T-83DE`) içerir, asla isim içermez. Görünen adlar `CONTRIBUTORS.csv` dosyasında tutulur ve geçmişe dokunmadan her an değiştirilebilir ya da boşaltılabilir.
-- ID → gerçek kişi eşlemesi, asla yayımlanmaması gereken **ayrı özel klasörde** (`../vera20k-tibtre-private/`) tutulur.
 - Her değişiklik git'e işlenir (commit) — commit geçmişi denetim izinin *ta kendisidir*.
-- tibtre ile ilgili gelecekteki tüm belgeler `docs/` klasörüne konur.
-- Kabul edilen sanat eserleri `assets/` klasörüne `YYYY-MM-DD_T-XXXX_short-title.ext` adıyla konur (ID kullanılır, asla isim değil — dosya adları herkese açık ve kalıcıdır).
 
 [README.md](README.md) dosyasının çevirisidir; farklılık olması durumunda İngilizce sürüm geçerlidir.
