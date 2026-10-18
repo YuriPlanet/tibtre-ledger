@@ -4,40 +4,32 @@
 
 # TIBTRE — das Beitragssystem für VERA20k
 
-**TIBTRE** ist das Beitragssystem von [VERA20k](https://github.com/YuriPlanet/vera20k). Es legt fest, wie angenommene Beiträge bewertet, gutgeschrieben und bei Projektentscheidungen berücksichtigt werden.
+**TIBTRE** ist das Beitragssystem von [VERA20k](https://github.com/YuriPlanet/vera20k). Wer beim Aufbau von VERA20k hilft, bekommt Punkte namens **tibtre**, und dieses Repository ist die öffentliche Aufzeichnung dieser Punkte. VERA20k und dieses Repository werden unter [YuriPlanet](https://github.com/YuriPlanet) gehostet, unserer GitHub-Organisation.
 
-Dieses Repository enthält die [Regeln](RULES.md), das [Hauptbuch der Beiträge](LEDGER.csv), in dem Einträge nur hinzugefügt werden, die automatisch erzeugten [Kontostände](BALANCES.md) und Werkzeuge zur unabhängigen Prüfung der Aufzeichnungen.
+## So funktioniert es
 
-VERA20k und dieses Repository werden unter [YuriPlanet](https://github.com/YuriPlanet) gehostet, unserer GitHub-Organisation.
+1. **Du trägst bei.** Code, Forschung, Grafik, Karten, Playtests, Übersetzungen und Community-Arbeit zählen alle. Du brauchst kein GitHub-Konto: Du kannst deine Arbeit im Discord posten.
+2. **Deine Arbeit wird bewertet.** Wenn deine Arbeit angenommen wird, bewerten eine KI und ein Maintainer sie gemeinsam nach den [öffentlichen Bewertungsregeln](docs/grading-rubric.md). Ein tibtre entspricht etwa einer Stunde guter Arbeit an etwas, das VERA20k braucht. Für alle gelten dieselben Regeln, auch für Maintainer.
+3. **Es wird festgehalten.** Jede Vergabe ist eine Zeile im öffentlichen [Hauptbuch](LEDGER.csv), unter deiner Mitwirkenden-ID (etwa `T-83DE`), nicht unter deinem Namen. Zeilen werden nie geändert oder gelöscht. Ein Fehler wird mit einer neuen Zeile korrigiert.
+4. **Jeder kann es prüfen.** Die Kontostände aller stehen in [BALANCES.md](BALANCES.md).
 
-## Warum es TIBTRE gibt
+## Wofür tibtre da ist
 
-VERA20k wird von seinen Mitwirkenden gebaut, und die Grundidee ist, dass es ihnen auch *gehören* soll. Mit tibtre wird diese Idee greifbar, bevor es darauf ankommt:
+- **Mitsprache im Projekt.** Bei Abstimmungen über die Richtung von VERA20k bedeutet mehr tibtre mehr Mitsprache, aber keine einzelne Person zählt mehr als 25 % einer Abstimmung.
+- **Faire Verteilung.** Sollte VERA20k jemals eine juristische Person gründen oder Einnahmen zu verteilen haben, ist dieses Hauptbuch die erklärte Grundlage für jede solche Verteilung. Das ist ausschließlich eine Absicht in gutem Glauben, keine rechtliche Verpflichtung.
 
-- **Fairness im Voraus.** Sollte VERA20k jemals eine juristische Person gründen oder Einnahmen zu verteilen haben, ist die schwierige Frage – *wer hat das gebaut, und wie viel davon?* – bereits beantwortet: öffentlich und überprüfbar, vom ersten Tag an. Dieses Hauptbuch ist die erklärte Grundlage für jede solche Verteilung. Das ist ausschließlich eine Absicht in gutem Glauben, keine rechtliche Verpflichtung.
-- **Echte Mitsprache, schon heute.** Entscheidungen über die Ausrichtung des Projekts werden nach tibtre gewichtet – mit einer Obergrenze, damit niemand mit großem Bestand jemals allein bestimmen kann ([`voteweight.py`](voteweight.py)).
-- **Eine dauerhafte Aufzeichnung.** Beiträge werden nach öffentlichen Regeln bewertet ([das Bewertungsschema](docs/grading-rubric.md)), dauerhaft festgehalten und sind für alle überprüfbar.
+Alle Regeln stehen in [RULES.md](RULES.md) (auf Englisch).
 
-Ein tibtre ≈ eine Stunde hochwertiger Arbeit an etwas, das VERA20k wirklich braucht – Qualität und Wert zählen beide, und beide werden nach den öffentlichen Regeln bepreist. Du musst nichts beantragen: beitragen, bewertet werden, eingetragen werden.
+## Dateien
 
-## Übersicht
-
-| Datei / Ordner | Was es ist |
+| Datei | Was es ist |
 |---|---|
-| `RULES.md` | Die Regeln: was tibtre ist, wie man es verdient und was es wert ist |
-| `LEDGER.csv` | Hauptbuch der Zuteilungen, in dem Einträge nur hinzukommen, geführt nach Mitwirkenden-ID – die einzige maßgebliche Quelle |
-| `CONTRIBUTORS.csv` | ID → öffentlicher Anzeigename (optional, änderbar; leer = pseudonym) |
-| `BALANCES.md` | Generierte Tabelle der Kontostände – nach Änderungen am Hauptbuch `python tally.py` ausführen |
-| `tally.py` | Erzeugt `BALANCES.md` aus `LEDGER.csv` neu |
-| `voteweight.py` | Berechnet die gezählten Stimmgewichte bei Abstimmungen mit der Obergrenze von 25 % pro Person (`--demo` zeigt Beispiele) |
-| `identity.py` | Erzeugt und prüft Identitäts-Commitments |
-| `docs/granting-guide.md` | Schritt-für-Schritt-Anleitung für Freigebende, die eine Zuteilung eintragen |
-| `assets/` | Archiv angenommener Kunstwerke aus der Community und anderer Beiträge, die kein Code sind |
-
-## Konventionen
-
-- Ins Hauptbuch kommen Einträge **nur hinzu**: Vergangene Zeilen werden nie bearbeitet oder gelöscht. Korrekturen bekommen eine neue Zeile (negative Beträge sind erlaubt, mit einer Notiz zur Begründung).
-- Das Hauptbuch enthält **nur Mitwirkenden-IDs** (zufällig, etwa `T-83DE`), niemals Namen. Anzeigenamen stehen in `CONTRIBUTORS.csv` und können jederzeit geändert oder geleert werden, ohne die Historie zu berühren.
-- Jede Änderung wird in git committet – die Commit-Historie *ist* der Prüfpfad.
+| [`RULES.md`](RULES.md) | Die Regeln |
+| [`LEDGER.csv`](LEDGER.csv) | Jede Vergabe, die es je gab |
+| [`BALANCES.md`](BALANCES.md) | Die Kontostände aller |
+| [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv) | Mitwirkenden-IDs und die Namen, die sie zeigen möchten |
+| [`docs/`](docs) | Die Bewertungsregeln, die Anweisungen für die KI und der Leitfaden für Maintainer |
+| `assets/` | Angenommene Grafiken und andere Arbeit, die kein Code ist |
+| `tally.py`, `voteweight.py`, `identity.py` | Skripte, die die Kontostände neu berechnen, Stimmgewichte ermitteln und Identitäten prüfen |
 
 Übersetzung von [README.md](README.md); bei Abweichungen gilt die englische Version.

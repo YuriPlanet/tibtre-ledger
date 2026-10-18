@@ -4,39 +4,30 @@
 
 # TIBTRE — the VERA20k contribution system
 
-**TIBTRE** is the contribution system used by [VERA20k](https://github.com/YuriPlanet/vera20k). It defines how accepted contributions are evaluated, credited, and reflected in project decisions.
+**TIBTRE** is the contribution system of [VERA20k](https://github.com/YuriPlanet/vera20k). People who help build VERA20k earn points called **tibtre**, and this repository is the public record of them. VERA20k and this repository are hosted under [YuriPlanet](https://github.com/YuriPlanet), our GitHub organization.
 
-This repository contains the [rules](RULES.md), the append-only [contribution ledger](LEDGER.csv), generated [balances](BALANCES.md), and tools for independently checking the records.
+## How it works
 
-VERA20k and this repository are hosted under [YuriPlanet](https://github.com/YuriPlanet), our GitHub organization.
+1. **You contribute.** Code, research, art, maps, playtesting, translations and community work all count. You don't need a GitHub account: you can post your work in the Discord.
+2. **Your work is valued.** When your work is accepted, an AI and a maintainer value it together with the [public grading rules](docs/grading-rubric.md). One tibtre is about one hour of good work on something VERA20k needs. The same rules apply to everyone, maintainers included.
+3. **It is recorded.** Each grant is a row in the public [ledger](LEDGER.csv), under your contributor ID (like `T-83DE`), not your name. Rows are never changed or deleted. A mistake is fixed with a new row.
+4. **Anyone can check it.** Everyone's total is in [BALANCES.md](BALANCES.md).
 
-## Why TIBTRE exists
+## What tibtre is for
 
-VERA20k is built by its contributors, and the founding idea is that it should *belong* to them. TIBTRE is how that idea is made concrete before it matters:
+- **A say in the project.** In votes about VERA20k's direction, more tibtre means more say, but no one person counts for more than 25% of a vote.
+- **Fair sharing.** If VERA20k ever forms a legal entity or has income to share out, this ledger is the stated basis for sharing it. This is a good-faith intention only, not a legal obligation.
 
-- **Preemptive fairness.** If VERA20k ever forms a legal entity or ever has income to distribute, the hard question — *who built this, and how much?* — is already answered: publicly, verifiably, from day one. This ledger is the stated basis for any such allocation. This is a good-faith intention only, not a legal obligation.
-- **A real say, today.** Decisions about VERA20k's direction are weighted by tibtre — capped so no single holder can ever dominate ([`voteweight.py`](voteweight.py)).
-- **A permanent record.** Contributions are valued by public rules ([the rubric](docs/grading-rubric.md)), recorded forever, and verifiable by anyone.
+The full rules are in [RULES.md](RULES.md).
 
-One tibtre ≈ one hour of high-quality work on something VERA20k genuinely needs — quality and value both count, and both are priced by the public rules. Nothing to apply for: contribute, get valued, get recorded.
+## Files
 
-## Map
-
-| File / folder | What it is |
+| File | What it is |
 |---|---|
-| `RULES.md` | The policy: what tibtre is, how it's earned, what it's worth |
-| `LEDGER.csv` | Append-only grant ledger, keyed by contributor ID — the single source of truth |
-| `CONTRIBUTORS.csv` | ID → public display name (optional, changeable; empty = pseudonymous) |
-| `BALANCES.md` | Generated balances table — run `python tally.py` after editing the ledger |
-| `tally.py` | Regenerates `BALANCES.md` from `LEDGER.csv` |
-| `voteweight.py` | Computes counted poll weights under the 25% per-person cap (`--demo` for examples) |
-| `identity.py` | Generates and checks identity commitments |
-| `docs/granting-guide.md` | Step-by-step guide for approvers recording a grant |
-| `assets/` | Archive of accepted community artwork and other non-code artifacts |
-
-## Conventions
-
-- The ledger is **append-only**: never edit or delete past rows. Corrections get a new row (negative amounts are allowed, with a note explaining why).
-- The ledger contains **contributor IDs only** (random, like `T-83DE`), never names. Display names live in `CONTRIBUTORS.csv` and may be edited or emptied at any time without touching history.
-- Every change is committed to git — the commit history *is* the audit trail.
-
+| [`RULES.md`](RULES.md) | The rules |
+| [`LEDGER.csv`](LEDGER.csv) | Every grant ever made |
+| [`BALANCES.md`](BALANCES.md) | Everyone's total |
+| [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv) | Contributor IDs and the names they chose to show |
+| [`docs/`](docs) | The grading rules, the AI's instructions and the maintainers' guide |
+| `assets/` | Accepted art and other work that isn't code |
+| `tally.py`, `voteweight.py`, `identity.py` | Scripts that rebuild the totals, work out vote weights and check identities |

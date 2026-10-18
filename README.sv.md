@@ -4,40 +4,32 @@
 
 # TIBTRE — bidragssystemet för VERA20k
 
-**TIBTRE** är bidragssystemet som används av [VERA20k](https://github.com/YuriPlanet/vera20k). Det anger hur godkända bidrag värderas, tilldelas poäng och vägs in i projektets beslut.
+**TIBTRE** är bidragssystemet för [VERA20k](https://github.com/YuriPlanet/vera20k). Den som hjälper till att bygga VERA20k får poäng som kallas **tibtre**, och det här repot är den offentliga förteckningen över dem. VERA20k och det här repot ligger under [YuriPlanet](https://github.com/YuriPlanet), vår GitHub-organisation.
 
-Det här repot innehåller [reglerna](RULES.md), [huvudboken över bidrag](LEDGER.csv) där rader bara läggs till, automatiskt genererade [saldon](BALANCES.md) och verktyg för att kontrollera uppgifterna oberoende.
+## Så fungerar det
 
-VERA20k och det här repot ligger under [YuriPlanet](https://github.com/YuriPlanet), vår GitHub-organisation.
+1. **Du bidrar.** Kod, forskning, grafik, kartor, speltester, översättningar och arbete i communityn räknas. Du behöver inget GitHub-konto: du kan lägga upp ditt arbete på Discord.
+2. **Ditt arbete värderas.** När ditt arbete godkänns värderar en AI och en projektansvarig det tillsammans enligt de [offentliga bedömningsreglerna](docs/grading-rubric.md). En tibtre motsvarar ungefär en timmes bra arbete med något som VERA20k behöver. Samma regler gäller för alla, även för de projektansvariga.
+3. **Det registreras.** Varje tilldelning blir en rad i den offentliga [huvudboken](LEDGER.csv), under ditt bidragsgivar-ID (till exempel `T-83DE`), inte under ditt namn. Rader ändras eller raderas aldrig. Ett misstag rättas med en ny rad.
+4. **Vem som helst kan kontrollera det.** Allas saldon finns i [BALANCES.md](BALANCES.md).
 
-## Varför TIBTRE finns
+## Vad tibtre är till för
 
-VERA20k byggs av sina bidragsgivare, och grundtanken är att projektet ska *tillhöra* dem. TIBTRE gör den tanken konkret innan den hinner spela roll:
+- **Inflytande i projektet.** I omröstningar om VERA20k:s inriktning ger mer tibtre mer inflytande, men ingen enskild person kan väga mer än 25 % av en omröstning.
+- **Rättvis fördelning.** Om VERA20k någon gång bildar en juridisk person eller får intäkter att fördela, är den här huvudboken den uttalade grunden för en sådan fördelning. Detta är endast en avsikt i god tro, inte en juridisk förpliktelse.
 
-- **Rättvisa i förväg.** Om VERA20k någon gång bildar en juridisk person eller får intäkter att fördela är den svåra frågan – *vem byggde det här, och hur mycket?* – redan besvarad: öppet och kontrollerbart, från första dagen. Den här huvudboken är den uttalade grunden för en sådan fördelning. Detta är endast en avsikt i god tro, inte en juridisk förpliktelse.
-- **Verkligt inflytande, redan nu.** Beslut om projektets inriktning viktas med tibtre – med ett tak, så att ingen enskild innehavare någonsin kan dominera ([`voteweight.py`](voteweight.py)).
-- **Ett bestående register.** Bidrag värderas enligt offentliga regler ([bedömningsmallen](docs/grading-rubric.md)), registreras för alltid och kan kontrolleras av vem som helst.
+Alla regler finns i [RULES.md](RULES.md) (på engelska).
 
-En tibtre ≈ en timmes högkvalitativt arbete med något som VERA20k verkligen behöver – både kvalitet och värde räknas, och båda prissätts enligt de offentliga reglerna. Inget att ansöka om: bidra, bli värderad, bli registrerad.
+## Filer
 
-## Karta
-
-| Fil / mapp | Vad det är |
+| Fil | Vad det är |
 |---|---|
-| `RULES.md` | Policyn: vad tibtre är, hur man tjänar det och vad det är värt |
-| `LEDGER.csv` | Huvudboken över tilldelningar, där rader bara läggs till, med bidragsgivar-ID som nyckel – den enda sanningskällan |
-| `CONTRIBUTORS.csv` | ID → offentligt visningsnamn (valfritt, kan ändras; tomt = pseudonym) |
-| `BALANCES.md` | Genererad saldotabell – kör `python tally.py` efter att du har ändrat huvudboken |
-| `tally.py` | Genererar om `BALANCES.md` från `LEDGER.csv` |
-| `voteweight.py` | Räknar ut röstvikterna i omröstningar med taket på 25 % per person (`--demo` visar exempel) |
-| `identity.py` | Skapar och kontrollerar identitetsåtaganden |
-| `docs/granting-guide.md` | Steg-för-steg-guide för godkännare som registrerar en tilldelning |
-| `assets/` | Arkiv med godkända konstverk från communityn och annat material som inte är kod |
-
-## Konventioner
-
-- I huvudboken läggs rader **bara till**: tidigare rader ändras eller raderas aldrig. Rättelser blir en ny rad (negativa belopp är tillåtna, med en anteckning som förklarar varför).
-- Huvudboken innehåller **bara bidragsgivar-ID:n** (slumpmässiga, som `T-83DE`), aldrig namn. Visningsnamnen finns i `CONTRIBUTORS.csv` och kan när som helst ändras eller tömmas utan att historiken påverkas.
-- Varje ändring checkas in i git – commit-historiken *är* granskningsspåret.
+| [`RULES.md`](RULES.md) | Reglerna |
+| [`LEDGER.csv`](LEDGER.csv) | Varje tilldelning som någonsin gjorts |
+| [`BALANCES.md`](BALANCES.md) | Allas saldon |
+| [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv) | Bidragsgivar-ID:n och de namn de har valt att visa |
+| [`docs/`](docs) | Bedömningsreglerna, AI:ns instruktioner och guiden för projektansvariga |
+| `assets/` | Godkänd grafik och annat arbete som inte är kod |
+| `tally.py`, `voteweight.py`, `identity.py` | Skript som räknar om saldona, räknar ut röstvikter och kontrollerar identiteter |
 
 Översättning av [README.md](README.md); vid skillnader gäller den engelska versionen.

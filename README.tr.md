@@ -4,40 +4,32 @@
 
 # TIBTRE — VERA20k katkı sistemi
 
-**TIBTRE**, [VERA20k](https://github.com/YuriPlanet/vera20k) projesinde kullanılan katkı sistemidir. Kabul edilen katkıların nasıl değerlendirileceğini, puanlandırılacağını ve proje kararlarına nasıl yansıyacağını belirler.
+**TIBTRE**, [VERA20k](https://github.com/YuriPlanet/vera20k) projesinin katkı sistemidir. VERA20k projesini geliştirmeye yardım edenler **tibtre** adlı puanlar kazanır ve bu depo, bu puanların herkese açık kaydıdır. VERA20k ve bu depo, GitHub kuruluşumuz olan [YuriPlanet](https://github.com/YuriPlanet) altında barındırılır.
 
-Bu depo; [kuralları](RULES.md), yalnızca yeni kayıt eklenebilen [katkı defterini](LEDGER.csv), otomatik oluşturulan [bakiyeleri](BALANCES.md) ve kayıtları bağımsız olarak doğrulamaya yarayan araçları içerir.
+## Nasıl çalışır
 
-VERA20k ve bu depo, GitHub kuruluşumuz olan [YuriPlanet](https://github.com/YuriPlanet) altında barındırılır.
+1. **Katkıda bulunursunuz.** Kod, araştırma, sanat çalışmaları, haritalar, oyun testleri, çeviriler ve topluluk çalışmaları sayılır. GitHub hesabına ihtiyacınız yok: çalışmanızı Discord'da paylaşabilirsiniz.
+2. **Çalışmanız değerlendirilir.** Çalışmanız kabul edildiğinde, bir yapay zekâ ve bir proje yöneticisi onu [herkese açık puanlama kurallarına](docs/grading-rubric.md) göre birlikte değerlendirir. Bir tibtre, VERA20k projesinin ihtiyaç duyduğu bir iş üzerinde yaklaşık bir saatlik iyi bir çalışmaya karşılık gelir. Kurallar, proje yöneticileri dahil herkes için aynıdır.
+3. **Kayda geçer.** Her puan verme işlemi, herkese açık [defterde](LEDGER.csv) adınızla değil, katkıda bulunan ID'nizle (örneğin `T-83DE`) bir satır olarak kaydedilir. Satırlar asla değiştirilmez veya silinmez. Bir hata yeni bir satırla düzeltilir.
+4. **Herkes kontrol edebilir.** Herkesin toplamı [BALANCES.md](BALANCES.md) dosyasındadır.
 
-## TIBTRE neden var
+## tibtre ne işe yarar
 
-VERA20k projesini ona katkıda bulunanlar inşa ediyor ve kuruluş fikri, projenin onlara *ait* olmasıdır. TIBTRE, bu fikri daha önem kazanmadan somut hâle getirmenin yoludur:
+- **Projede söz hakkı.** VERA20k projesinin yönüyle ilgili oylamalarda daha fazla tibtre daha fazla söz hakkı demektir, ancak tek bir kişinin ağırlığı bir oylamanın %25'ini asla geçemez.
+- **Adil paylaşım.** VERA20k bir gün tüzel kişilik kurarsa ya da dağıtılacak bir geliri olursa, bu defter böyle bir dağıtımın açıkça belirtilmiş dayanağıdır. Bu yalnızca iyi niyetli bir amaçtır, hukuki bir yükümlülük değildir.
 
-- **Önceden güvence altına alınan adalet.** VERA20k bir gün tüzel kişilik kurarsa ya da dağıtılacak bir geliri olursa, o zor sorunun — *bunu kim yaptı ve ne kadarını?* — yanıtı zaten hazırdır: ilk günden itibaren herkese açık ve doğrulanabilir biçimde. Bu defter, böyle bir dağıtımın açıkça belirtilmiş dayanağıdır. Bu yalnızca iyi niyetli bir amaçtır, hukuki bir yükümlülük değildir.
-- **Bugünden gerçek bir söz hakkı.** VERA20k projesinin yönüyle ilgili kararlar tibtre ile ağırlıklandırılır — tek bir sahibin asla baskın çıkamaması için bir üst sınırla ([`voteweight.py`](voteweight.py)).
-- **Kalıcı bir kayıt.** Katkılar herkese açık kurallarla değerlendirilir ([puanlama ölçütleri](docs/grading-rubric.md)), sonsuza dek kaydedilir ve herkes tarafından doğrulanabilir.
+Kuralların tamamı [RULES.md](RULES.md) dosyasındadır (İngilizce).
 
-Bir tibtre ≈ VERA20k projesinin gerçekten ihtiyaç duyduğu bir iş üzerinde bir saatlik yüksek kaliteli çalışma — hem kalite hem değer hesaba katılır ve ikisi de herkese açık kurallarla fiyatlandırılır. Başvurmanız gereken bir şey yok: katkıda bulunun, değerlendirilin, kayda geçin.
+## Dosyalar
 
-## Harita
-
-| Dosya / klasör | Nedir |
+| Dosya | Nedir |
 |---|---|
-| `RULES.md` | Politika: tibtre nedir, nasıl kazanılır, değeri nedir |
-| `LEDGER.csv` | Yalnızca ekleme yapılabilen, katkıda bulunan ID'sine göre tutulan tahsis defteri — tek doğruluk kaynağı |
-| `CONTRIBUTORS.csv` | ID → herkese açık görünen ad (isteğe bağlı, değiştirilebilir; boş = takma adlı, yalnızca ID) |
-| `BALANCES.md` | Otomatik oluşturulan bakiye tablosu — defteri düzenledikten sonra `python tally.py` komutunu çalıştırın |
-| `tally.py` | `BALANCES.md` dosyasını `LEDGER.csv` dosyasından yeniden oluşturur |
-| `voteweight.py` | Oylamalarda sayılan ağırlıkları kişi başına %25 üst sınırla hesaplar (örnekler için `--demo`) |
-| `identity.py` | Kimlik taahhütlerini (commitment) oluşturur ve doğrular |
-| `docs/granting-guide.md` | Tahsis kaydeden onaylayıcılar için adım adım kılavuz |
-| `assets/` | Kabul edilen topluluk sanat eserlerinin ve kod olmayan diğer çalışmaların arşivi |
-
-## Teamüller
-
-- Defter **yalnızca eklemeye açıktır**: geçmiş satırlar asla düzenlenmez veya silinmez. Düzeltmeler yeni bir satırla yapılır (negatif tutarlara, nedenini açıklayan bir notla izin verilir).
-- Defter **yalnızca katkıda bulunan ID'lerini** (rastgele, örneğin `T-83DE`) içerir, asla isim içermez. Görünen adlar `CONTRIBUTORS.csv` dosyasında tutulur ve geçmişe dokunmadan her an değiştirilebilir ya da boşaltılabilir.
-- Her değişiklik git'e işlenir (commit) — commit geçmişi denetim izinin *ta kendisidir*.
+| [`RULES.md`](RULES.md) | Kurallar |
+| [`LEDGER.csv`](LEDGER.csv) | Bugüne kadar verilen tüm puanlar |
+| [`BALANCES.md`](BALANCES.md) | Herkesin toplamı |
+| [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv) | Katkıda bulunanların ID'leri ve göstermeyi seçtikleri adlar |
+| [`docs/`](docs) | Puanlama kuralları, yapay zekâ talimatları ve proje yöneticileri için rehber |
+| `assets/` | Kabul edilen sanat çalışmaları ve kod olmayan diğer işler |
+| `tally.py`, `voteweight.py`, `identity.py` | Toplamları yeniden hesaplayan, oy ağırlıklarını bulan ve kimlikleri doğrulayan betikler |
 
 [README.md](README.md) dosyasının çevirisidir; farklılık olması durumunda İngilizce sürüm geçerlidir.

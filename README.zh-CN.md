@@ -4,40 +4,32 @@
 
 # TIBTRE — VERA20k 的贡献体系
 
-**TIBTRE** 是 [VERA20k](https://github.com/YuriPlanet/vera20k) 使用的贡献体系。它规定如何评估和认可已采纳的贡献、授予贡献积分，以及如何将这些积分用于项目决策。
+**TIBTRE** 是 [VERA20k](https://github.com/YuriPlanet/vera20k) 的贡献体系。帮助打造 VERA20k 的人会获得一种叫 **tibtre** 的积分，本仓库就是这些积分的公开记录。VERA20k 和本仓库均托管在我们的 GitHub 组织 [YuriPlanet](https://github.com/YuriPlanet) 下。
 
-本仓库包含[规则](RULES.md)、只追加不修改的[贡献账本](LEDGER.csv)、自动生成的[余额](BALANCES.md)，以及用于独立核验记录的工具。
+## 如何运作
 
-VERA20k 和本仓库均托管在我们的 GitHub 组织 [YuriPlanet](https://github.com/YuriPlanet) 下。
+1. **你做贡献。** 代码、研究、美术、地图、试玩测试、翻译和社区工作都算。不需要 GitHub 账号：你可以把作品发到 Discord。
+2. **你的工作会被估值。** 你的工作被采纳后，由 AI 和一位维护者按照[公开的评分规则](docs/grading-rubric.md)一起估值。1 tibtre 大约相当于在 VERA20k 需要的事情上做一小时高质量的工作。规则对所有人都一样，维护者也不例外。
+3. **记录在案。** 每次发放都是公开[账本](LEDGER.csv)中的一行，记在你的贡献者 ID（如 `T-83DE`）下，而不是你的名字下。已有的行永远不会被修改或删除。出错时新增一行来更正。
+4. **人人都能核对。** 每个人的总数都在 [BALANCES.md](BALANCES.md) 中。
 
-## 为什么要有 TIBTRE
+## tibtre 有什么用
 
-VERA20k 由贡献者共同打造，我们最初的理念是：它应当*属于*这些贡献者。在这件事真正变得重要之前，tibtre 就让这一理念落到了实处：
+- **项目中的话语权。** 在关于 VERA20k 发展方向的投票中，tibtre 越多，话语权越大，但任何一个人在一次投票中的权重都不会超过 25%。
+- **公平分配。** 如果 VERA20k 将来成立法律实体，或有收入需要分配，本账本就是任何此类分配的既定依据。这仅是一项善意的意向，不具有法律约束力。
 
-- **公平先行。** 如果 VERA20k 将来成立法律实体，或有收入需要分配，那个难题——*这是谁做的，各做了多少？*——早已有了答案：从第一天起就公开、可核验。本账本就是任何此类分配的既定依据。这仅是一项善意的意向，不具有法律约束力。
-- **现在就有真正的话语权。** 关于 VERA20k 发展方向的决策按 tibtre 加权，但设有上限，任何单个持有者都无法一家独大（[`voteweight.py`](voteweight.py)）。
-- **永久的记录。** 贡献按公开规则估值（[评分标准](docs/grading-rubric.md)），被永久记录，任何人都能核验。
-
-1 tibtre ≈ 为 VERA20k 真正需要的事情做一小时高质量的工作。质量和价值都算数，两者都按公开规则定价。无需申请：做出贡献，获得估值，记录在案。
+完整规则见 [RULES.md](RULES.md)（英文）。
 
 ## 文件一览
 
-| 文件 / 文件夹 | 说明 |
+| 文件 | 说明 |
 |---|---|
-| `RULES.md` | 政策：tibtre 是什么、如何获得、价值几何 |
-| `LEDGER.csv` | 只追加不修改的发放账本，以贡献者 ID 为键——唯一的事实来源 |
-| `CONTRIBUTORS.csv` | ID → 公开显示名（可选，可修改；留空 = 匿名，只显示 ID） |
-| `BALANCES.md` | 自动生成的余额表——编辑账本后运行 `python tally.py` |
-| `tally.py` | 根据 `LEDGER.csv` 重新生成 `BALANCES.md` |
-| `voteweight.py` | 按每人 25% 的上限计算投票中实际计入的权重（`--demo` 查看示例） |
-| `identity.py` | 生成和核验身份承诺 |
-| `docs/granting-guide.md` | 供审批人记录发放的分步指南 |
-| `assets/` | 已采纳的社区美术作品及其他非代码成果的存档 |
-
-## 约定
-
-- 账本**只追加不修改**：绝不编辑或删除过去的行。更正时新增一行（允许负数金额，并附上说明原因的备注）。
-- 账本**只包含贡献者 ID**（随机生成，如 `T-83DE`），从不包含姓名。显示名保存在 `CONTRIBUTORS.csv` 中，可随时修改或清空，不会影响历史记录。
-- 每次修改都会提交到 git——提交历史*就是*审计记录。
+| [`RULES.md`](RULES.md) | 规则 |
+| [`LEDGER.csv`](LEDGER.csv) | 历来的每一次发放 |
+| [`BALANCES.md`](BALANCES.md) | 每个人的总数 |
+| [`CONTRIBUTORS.csv`](CONTRIBUTORS.csv) | 贡献者 ID 和他们选择显示的名字 |
+| [`docs/`](docs) | 评分规则、给 AI 的说明和维护者指南 |
+| `assets/` | 已采纳的美术作品和其他非代码作品 |
+| `tally.py`、`voteweight.py`、`identity.py` | 用于重新计算总数、计算投票权重和核验身份的脚本 |
 
 本文件译自 [README.md](README.md)；如有出入，以英文版为准。

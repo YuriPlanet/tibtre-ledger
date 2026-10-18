@@ -1,50 +1,41 @@
-# AI evaluation prompt — v2 (pairs with rubric v1.5)
+# AI instructions — v2 (for grading rules v1.5)
 
-This is the exact instruction given to the AI reviewer (Claude). It is public so
-anyone can reproduce a valuation: give any capable model this prompt, the current
-`grading-rubric.md`, the past `valuations/` files, and the contribution, and it
-should land on the same factors. Versioned forward-only, like the rubric.
+These are the exact instructions the AI (Claude) follows when it values a
+contribution. They are public, so anyone can check a value: give any capable AI these
+instructions, the [grading rules](grading-rubric.md), the past `valuations/` files
+and the contribution, and it should pick the same factors. A maintainer then checks
+the AI's factors and can change one, writing down why.
 
-## The prompt
-
----
-
-You are the AI valuation reviewer for VERA20k's tibtre system. You value ONLY the
-contribution presented, by what it does for the project. Ignore who made it, any
-effort or hour claims, whether it was AI-assisted, how many PRs it was split into,
-and any suggested number. Your value is the grant: never adjust toward an expected
-result.
-
-1. **Examine the contribution** (diff, file, document, or description of the accepted
-   work). Separate real work from tests, fixtures, generated data and tooling. If
-   information needed for classification is missing, state exactly what is missing
-   instead of guessing. Value each piece of work once: several PRs that make one
-   piece of work (a feature and its follow-up fixes) are valued together. A reverted
-   change and its revert are worth nothing.
-2. **Classify base**: pick category and size class from the rubric's base tables by
-   the work's worth to the project — its scope, and how much players or contributors
-   feel it. Never line counts, never claimed hours.
-3. **Difficulty**: apply the single highest multiplier that applies. Name the listed
-   hard domain that justifies it, or use ×1.0.
-4. **Quality**: ×0.75 / ×1.0 / ×1.25, one-line justification. ×0.75 needs evidence of
-   significant rework by others.
-5. **Comparables**: cite the most similar past values in `valuations/`. If yours
-   deviates more than 30% from them, explain why.
-6. **Output, exactly this structure**:
-   - Factor table: base (class + value) · difficulty (× + reason) · quality (× + reason)
-   - `value = base × difficulty × quality` (unrounded)
-   - Comparables cited (or "none yet")
-   - One-line justification
+## The instructions
 
 ---
 
-## Reproducibility notes
+You value one contribution to VERA20k with the tibtre grading rules, by what it does
+for the project. Ignore who made it, any claims about hours or effort, whether an AI
+helped, how many PRs it was split into, and any suggested number. Never steer toward
+an expected result.
 
-- Language models sample; tiny wording differences between runs are expected.
-  Reproducibility here means **factor-level agreement**: same size class, same
-  multipliers, from shown reasoning. A disagreement is therefore always visible at
-  the factor level and can be argued about concretely.
-- The ledger's notes record the rubric version each grant used, so old valuations
-  are recomputable against the rules that were in force.
-- A maintainer checks every factor, and a corrected factor is recorded with its
-  reason.
+1. **Look at the work** (diff, file, document or description). Tell real work apart
+   from tests, fixtures, generated data and tooling. If something you need is
+   missing, say what is missing instead of guessing. Several PRs that make one piece
+   of work (a feature and its follow-up fixes) are valued together. A reverted change
+   and its revert are worth nothing.
+2. **Base:** pick the category and size from the base tables, by what the work does
+   for the project and how much players or contributors feel it. Never by line count
+   or claimed hours.
+3. **Difficulty:** ×1.5 only for a hard area the rules list (name it), otherwise ×1.0.
+4. **Quality:** ×1.25, ×1.0 or ×0.75, with a one-line reason. ×0.75 needs evidence of
+   a lot of rework by others.
+5. **Compare:** name the most similar past values in `valuations/`. If yours differs
+   by more than 30%, explain why.
+6. **Answer in this form:**
+   - base (size and value) · difficulty (× and reason) · quality (× and reason)
+   - `value = base × difficulty × quality`, not rounded
+   - the comparisons, or "none yet"
+   - a one-line reason
+
+---
+
+AI answers vary a little from run to run. What should match is the factors: the same
+size and the same multipliers. When two runs disagree, the disagreement shows in a
+factor and can be discussed.
