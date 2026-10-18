@@ -15,7 +15,7 @@ Today, two things:
 1. **Recognition.** Your balance is public in [`BALANCES.md`](BALANCES.md), and your name goes in the project credits.
 2. **Governance.** Roadmap polls and feature votes in the Discord are weighted by tibtre. Contributors steer the project — with one fairness cap: no single person's weight ever counts for more than 25% of a vote, so early large holders guide but never rule. (Exact mechanics are executable — [`voteweight.py`](voteweight.py); with 4 or fewer voters the cap makes a poll one-person-one-vote.)
 
-**Tibtre has no monetary value and no promise of future monetary value.** It is the founders' good-faith intention that **if this project ever forms a legal entity or shares out money, such as donations, this ledger guides the allocation.** That is an intention only, not a legal obligation: tibtre is not a debt, share, security or contract, and holding it gives no legal claim against the project, its maintainers, or their estates or heirs. Any payout is voluntary.
+**Tibtre has no monetary value and no promise of future monetary value.** It is the founders' good-faith intention that **if this project ever forms a legal entity or shares out money, such as donations, this ledger guides the allocation.** That is an intention only, not a legal obligation: tibtre is not a debt, share, security or contract, and holding it gives no legal claim.
 
 ## How do you earn it?
 
