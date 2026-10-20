@@ -1,0 +1,290 @@
+item,id,category,type,size,base,difficulty,quality,value,note
+#1901,T-83DE,code,interface,S,0.75,1.5,1,1.125,Enemy vehicle hover tooltips show the retail UIName; admission reads retained ownership; x1.5 RE of gamemd code
+#1913,T-F667,code,gameplay,M,2,1.5,1,3,Virus death gas clouds: shared Gas system motion poison damage and death emission; x1.5 sim internals
+#1925,T-F667,code,triggers,M,2,1.5,1,3,TAction30 auto base building with base-plan setup plus TAction76 AI team ratio; x1.5 sim internals
+#1926,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Destroyed Air Force Command kills its docked aircraft through the C4 contact arm; x1.5 sim internals
+#1927,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Deletes FogState's copy of the House ally graph; every reader uses house_alliances; x1.5 sim internals
+#1928,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Jumpjet landing aborts after its touchdown callback kills limbos or drops it; x1.5 sim internals
+#1929,T-F667,code,triggers,M,2,1.5,1,3,TAction8 drop-zone flare and TAction98 random-waypoint sound with their Rules reads; x1.5 sim internals
+#1930,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,One MissionClass::AI gate and one mission stub constant for every dispatcher; x1.5 sim internals
+#1931,T-83DE,code,cleanup,M,2,1.5,1,3,Sight and shroud costs scale with change; 20k-unit bench main-thread CPU 141 to 49 ms; x1.5 sim internals
+#1932,T-83DE,code,gameplay,M,2,1.5,1,3,AI House sends its ground force to its new Construction Yard after an MCV deploy; x1.5 sim internals
+#1933+#1943,T-83DE,code,tools,S,0.75,1,1,0.75,Repairs or retires 28 capture fixtures for native owner names; deploys observer bases
+#1934,T-F667,code,triggers,M,2,1.5,1,3,TAction33/34 one-time and repeating Super grants with a siloless one-time nuke launch; x1.5 sim internals
+#1935,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Vehicles without SpeedType default to Wheel unless Crusher (33 retail types); x1.5 RE of gamemd code
+#1937,T-83DE,code,interface,S,0.75,1,1,0.75,Power bar refits its settled bands when the strip changes size mid-match
+#1938,T-F667,code,triggers,S,0.75,1.5,1,1.125,TAction13 autocreate latch and TAction77-79 per-category AI team ratios; x1.5 sim internals
+#1939,T-83DE,code,tools,S,0.75,1,1,0.75,Cargo retention skips automatic passes that can only repeat a futile result
+#1940,T-F667,code,gameplay,S,0.75,1.5,1,1.125,AI Engineer target scan admits only red-health nonzero-cost allied buildings; x1.5 sim internals
+#1941,T-83DE,code,tools,XS,0.25,1,1,0.25,Default free-space reserve lowered from 16 to 12 GiB with a pinning test
+#1942,T-F667,code,triggers,S,0.75,1.5,1,1.125,TAction44/45 start and stop the Lightning Storm through its existing owner; x1.5 sim internals
+#1944,T-83DE,code,graphics,L,4,1.5,1,6,Magnetron beam starts at GetFLH and tracks the lifted tank; native geometry and draw; x1.5 renderer
+#1945,T-83DE,code,maps,L,4,1.5,1,6,Random maps of type 3 and 4 get CliffSet faces; one block stamper and cliff classifier; x1.5 RE of gamemd code
+#1947,T-83DE,code,tools,S,0.75,1,1,0.75,Retention reclaims superseded cache executables and the objects only they name
+#1948,T-83DE,code,gameplay,M,2,1.5,1,3,Every order runs through one MEGAMISSION arm port; gates and setter order now native; x1.5 sim internals
+#1950,T-BDA4,code,interface,S,0.75,1.5,1,1.125,Empty sidebar tabs start disabled and enable when their strip receives cameos; x1.5 RE of gamemd code
+#1951,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,One war factory contact test replaces six copies; WeaponsFactory read only for buildings; x1.5 sim internals
+#1952,T-F667,code,triggers,M,2,1.5,1,3,TAction35/37/123/124 superweapon target preference alliance and base control; x1.5 sim internals
+#1953,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Is_Crushable_By port asks its own ally question; CrushAllyGate removed; x1.5 sim internals
+#1954,T-F667,code,gameplay,S,0.75,1.5,1,1.125,C4/Engineer/Agent infantry get native Infiltrate while C4 click priority is kept; x1.5 RE of gamemd code
+#1955,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,One plane lookup per sight walk and one admission read per source; tick about 11% faster; x1.5 sim internals
+#1956,T-83DE,code,tools,S,0.75,1,1,0.75,Each checkout builds into one cache under the primary checkout target
+#1957,T-F667,code,triggers,S,0.75,1.5,1,1.125,TEvent3 captured-building and TEvent5 discovered-House trigger events; x1.5 sim internals
+#1958,T-83DE,code,gameplay,M,2,1.5,1,3,Aircraft strikes fire inside their own dispatch; the Phase-5 combat batch is deleted; x1.5 sim internals
+#1959+#1960,T-83DE,code,cleanup,XS,0.25,1,1,0.25,Particle type name lookup compiled outside tests so the game builds again
+#1961,T-83DE,code,cleanup,S,0.75,1,1,0.75,One owner and one rule for drawn sidebar cameo state; the view builder only lays out
+#1962,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Batched code-2 re-path searches at the urgency its ladder asked on the asking frame; x1.5 sim internals
+#1963,T-83DE,code,cleanup,S,0.75,1,1,0.75,Deletes 96 unreachable items across assets map rules sim and util; no build warnings
+#1964,T-F667,code,triggers,M,2,1.5,1,3,Native Home selection for TAction145 and the H key plus one shared House base query; x1.5 sim internals
+#1969,T-83DE,code,tools,XS,0.25,1,1,0.25,AGENTS.md rule to fast-forward the main checkout after each fetch
+#1970,T-F667,code,gameplay,M,2,1.5,1,3,Vehicles recycle in the Grinder with cargo refunds and AI fate choice 2 seeks one; x1.5 sim internals
+#1971,T-F667,code,triggers,M,2,1.5,1,3,TAction61/62 building power toggles on a new Building online state shared with Temporal; x1.5 sim internals
+#1972,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Fully loaded Yuri slaves walk home with the Carry action; x1.5 sim internals
+#1973,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Interior cell neighbours read once for both shroud edge frames; about 2.5% faster tick; x1.5 sim internals
+#1974,T-83DE,code,cleanup,M,2,1.5,1,3,One FNPC owner for all callers; crate and AI naval placement and bunker eject now native; x1.5 sim internals
+#1975,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Each rules field has one reader in the ordered Process owner; 24 overwritten reads deleted; x1.5 RE of gamemd code
+#1976,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,A* search state laid out for fewer memory stalls; heavy path batches about 13-17% faster; x1.5 sim internals
+#1977,T-F667,code,triggers,M,2,1.5,1,3,TAction96 chemical missile and TAction109 Iron Curtain strike at a waypoint; x1.5 sim internals
+#1978,T-F667,code,gameplay,M,2,1.5,1,3,Deployed Slave Refinery and Construction Yard repack toward a clicked ground cell; x1.5 sim internals
+#1980,T-F667,code,graphics,M,2,1.5,1,3,Mind-control link curves with retained node timers and the AlternateFLH GetFLH fix; x1.5 RE of gamemd code
+#1981,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Plain A* steps answered from per-cell bits; heavy path batches about 17% faster; x1.5 sim internals
+#1982,T-83DE,code,cleanup,S,0.75,1,1,0.75,Deletes or test-gates about 160 items that only tests reach
+#1983,T-83DE,code,tools,XS,0.25,1,1,0.25,Removes the unused sync and architecture-scan and rust-scan skills; AGENTS.md rule inlined
+#1984,T-F667,code,graphics,M,2,1.5,1,3,Boris airstrike designator beam drawn from his FLH to the targeted building; x1.5 renderer
+#1985,T-83DE,docs,docs,reverted,0,1,1,0,README donation good-faith wording in eight languages; fully reverted by #1988; reverted by #1988
+#1986,T-F667,code,graphics,S,0.75,1,1,0.75,Reinforcement aircraft drawn after display admission plus ALL01 tick capture checkpoints
+#1987,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Every infantry placement goes through one PickInfantrySublocation port that reads the Gate; x1.5 sim internals
+#1988,T-83DE,docs,docs,reverted,0,1,1,0,Reverts #1985; README text identical to before #1985; reverts #1985
+#1989,T-83DE,code,tools,XS,0.25,1,1,0.25,Snapshot version history test expects 417
+#1990,T-83DE,code,cleanup,M,2,1.5,1,3,Object-pass sight writes wait per viewer map and settle in parallel; same state hash; x1.5 sim internals
+#1991+#1996+#2000+#2008,T-83DE,code,cleanup,M,2,1.5,1,3,One Rust port per duplicated native helper; copies and wrappers and forwarders deleted; x1.5 sim internals
+#1992,T-83DE,code,cleanup,M,2,1.5,1,3,CheckCellPassability as one owner reading cell land; crushable walls refuse non-crushers; x1.5 sim internals
+#1993,T-F667,code,triggers,M,2,1.5,1,3,TAction58 meteor shower: bounce flight landing children and ore placement; x1.5 sim internals
+#1995,T-F667,code,interface,M,2,1.5,1,3,Native tactical cursors and modifier clicks for weapons attack-move guard and self actions; x1.5 RE of gamemd code
+#1997,T-83DE,docs,docs,XS,0.25,1,1,0.25,README display name written as VERA20K in all eight languages
+#1999,T-F3DD,code,interface,L,4,1.5,1,6,Campaign victory score page 0x103 with native layout slide timers sound and theme; x1.5 RE of gamemd code
+#2002,T-83DE,code,gameplay,M,2,1.5,1,3,Teleport Unit destination via ResolveDestination: nearby passable cell and Marked reserve; x1.5 sim internals
+#2003,T-F667,code,gameplay,S,0.75,1.5,1,1.125,A cancelled tank-bunker approach releases the bunker reservation; x1.5 sim internals
+#2004,T-F667,code,triggers,M,2,1.5,1,3,TAction31 shroud regrowth and TEvent54 spy-disguise event with the forced disguise getter; x1.5 sim internals
+#2005,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Per-pass cache of each owner's reveal and allied viewers in the object and fog passes; x1.5 sim internals
+#2006,T-83DE,code,graphics,M,2,1.5,1,3,Order targets and healed objects flash through one TechnoClass::Flash port; x1.5 sim internals
+#2007,T-83DE,code,cleanup,M,2,1.5,1,3,Per-pass search budget for urgency-2 re-paths with a thread-independent cut; x1.5 sim internals
+#2010+#2015,T-83DE,code,gameplay,M,2,1.5,1,3,PermaDisguise spies start disguised as their side's infantry; stale spy tests fixed; x1.5 sim internals
+#2011,T-F667,code,interface,S,0.75,1.5,1,1.125,Building and Defense tabs flash while a finished building waits for placement; x1.5 RE of gamemd code
+#2012,T-83DE,code,sound,S,0.75,1.5,1,1.125,Transports play EnterTransportSound when a passenger boards; x1.5 RE of gamemd code
+#2013,T-83DE,code,tools,XS,0.25,1,1,0.25,Game build restored by moving grow_shroud out of a test-only impl block
+#2014,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Computer-owned units scatter right after they finish cloaking; x1.5 sim internals
+#2016,T-83DE,code,gameplay,M,2,1.5,1,3,Every Find_Path runs one layered search; ships get the native zone precheck; x1.5 sim internals
+#2017,T-83DE,code,cleanup,S,0.75,1,1,0.75,Off-screen cull before draw admission and one cell resolve per pick
+#2019,T-83DE,code,cleanup,M,2,1.5,1,3,Removed the unread VERA-only vehicle-occupation index and its feeding state; x1.5 sim internals
+#2020,T-F667,code,triggers,S,0.75,1.5,1,1.125,TAction91 GoBerzerk latch read by the target scanner plus AttackFriendlies admission; x1.5 sim internals
+#2021,T-83DE,code,gameplay,M,2,1.5,1,3,CanDeploySlashUnload ported for the deploy key and Unit self action and MCV deploy; x1.5 sim internals
+#2023,T-83DE,code,gameplay,M,2,1.5,1,3,Chaos Drone deploy-fire Unload arm releases its gas from D and self-click; x1.5 renderer
+#2025,T-F667,code,interface,M,2,1.5,1,3,Planning Mode keeps C4 capture entry and harvest orders through save and dispatch; x1.5 sim internals
+#2026,T-F667,code,triggers,M,2,1.5,1,3,TAction105 team speech with reveal plus the TalkBubbleTime reader and bubble drawing; x1.5 sim internals
+#2027,T-83DE,code,interface,M,2,1.5,1,3,Radar dot of a damaged Techno blinks for its owner; x1.5 renderer
+#2028,T-83DE,code,graphics,M,2,1.5,1,3,Floating Disc drain ray shown while draining and removed on every link break; x1.5 sim internals
+#2029,T-F667,code,triggers,S,0.75,1.5,1,1.125,TAction97 train cargo flag with death crates and the retained TAction87 ice-growth switch; x1.5 sim internals
+#2030,T-83DE,code,sound,S,0.75,1.5,1,1.125,Self-click deploy or unload or deploy-fire speaks VoiceDeploy; x1.5 RE of gamemd code
+#2031,T-83DE,code,cleanup,M,2,1.5,1,3,Ordered native processor is the only reader for overwritten scalar Rules keys; x1.5 RE of gamemd code
+#2032,T-83DE,code,graphics,S,0.75,1.5,1,1.125,Tesla Tank bolt follows its owner's FLH while the tank moves or turns; x1.5 RE of gamemd code
+#2033,T-83DE,code,gameplay,M,2,1.5,1,3,Failed corridor searches retry up to five times as AStar_pathfind_search does; x1.5 sim internals
+#2034,T-83DE,code,cleanup,M,2,1,1,2,Six dependencies replaced with own code incl. a byte-identical bincode save codec
+#2035,T-83DE,code,interface,S,0.75,1.5,1,1.125,Escaped crewmen and escapees and reselected parasites are selected with their voice; x1.5 RE of gamemd code
+#2036,T-F667,code,triggers,M,2,1.5,1,3,TAction126 rebuilds a House's initial objects through the native Foot placement chain; x1.5 sim internals
+#2037,T-83DE,code,interface,M,2,1.5,1,3,Planning mode refuses invalid-node and aircraft or building presses; hover gated; x1.5 RE of gamemd code
+#2038,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Target scans call Greatest_Threat directly; VERA-only ammo and armed gates deleted; x1.5 sim internals
+#2039,T-83DE,code,tools,S,0.75,1,1,0.75,egui removed with the dev-ui panels and the mix-browser and bik-player tools
+#2040,T-83DE,code,interface,S,0.75,1.5,1,1.125,Planning-mode select adds the units sharing the pick's path tail node; x1.5 RE of gamemd code
+#2042,T-83DE,code,tools,XS,0.25,1,1,0.25,Meteor oracle sidecar commands rewritten with ~ paths
+#2043,T-83DE,code,cleanup,M,2,1.5,1,3,Ordered processor is the only reader for Rules reference keys and weapon Range; x1.5 RE of gamemd code
+#2044,T-83DE,code,interface,M,2,1.5,1,3,Unforced click attacks an enemy wall or destroyable cliff with the Attack cursor; x1.5 RE of gamemd code
+#2045,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Assign_Target redirects bunkered targets to the bunker and self-targets to the cell; x1.5 sim internals
+#2046,T-F667,code,triggers,M,2,1.5,1,3,TAction94 ion blast at a waypoint with damage animations and Foot rocking forces; x1.5 sim internals
+#2047,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Healers drop non-allied targets and healing Units drop airborne or padded aircraft; x1.5 sim internals
+#2048,T-83DE,code,cleanup,S,0.75,1,1,0.75,One owner each for LAT config and map tubes and lepton projection and RMG x87 math
+#2050,T-83DE,code,graphics,M,2,1.5,1,3,Show the blinking BEHIND marker on units hidden behind buildings with Show Hidden on; x1.5 sim internals
+#2051,T-F3DD,code,interface,S,0.75,1.5,1,1.125,Yuri's Revenge startup splash and main-menu movie chosen as gamemd does; x1.5 RE of gamemd code
+#2052,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Discover enemies entering open ground and skip the per-cell tail for dead objects; x1.5 sim internals
+#2053,T-83DE,code,cleanup,S,0.75,1,1,0.75,One owner each for sub-cell offsets and cell deltas and sine lookups and FNV hashing
+#2054,T-F667,code,triggers,L,4,1.5,0.75,4.5,TAction110 scenario pause owner with Radar and replay service inputs; vein switch kept; x1.5 sim internals; x0.75 maintainer rework (39% of lines)
+#2055+#2063,T-83DE,code,interface,S,0.75,1,1,0.75,Options box switching the startup splash and menu movie to the Red Alert 2 versions
+#2056,T-F667,code,tools,S,0.75,1,1,0.75,Harvest regression covers owned and foreign refineries and none for both order kinds
+#2057+#2060,T-83DE,docs,docs,XS,0.25,1,1,0.25,README payout methods shown as one line of badges in all eight languages
+#2058,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Port the FootClass::AI 64-frame idle scatter off cliff-projected cells; x1.5 sim internals
+#2059,T-83DE,code,cleanup,S,0.75,1,1,0.75,Route facing quantizers and world XY and angle conversions to their one owner
+#2065,T-83DE,code,gameplay,M,2,1.5,1,3,Infantry corpses get the ordinary InfantryClass::AI visit instead of a copied update; x1.5 sim internals
+#2068,T-F3DD,code,graphics,S,0.75,1.5,1,1.125,House-color remap on paradrop parachute canopies; x1.5 renderer
+#2069,T-83DE,code,cleanup,S,0.75,1,1,0.75,Tube movement and RMG rivers use the one SinFromTable and CosFromTable port
+#2070,T-83DE,code,graphics,M,2,1.5,1,3,Draw psychic detection lines for enemy units a Psychic Sensor senses; x1.5 RE of gamemd code
+#2071,T-83DE,code,interface,S,0.75,1,1,0.75,Scale the startup splash onto the fitted menu page on large windows
+#2072,T-83DE,code,tools,XS,0.25,1,1,0.25,Agent contract asks for focused tests instead of a full lib suite per PR
+#2073,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Grounded HoverAttack units re-anchor to a nearby cell on Attack and Guard; x1.5 sim internals
+#2074+#2088,T-83DE,code,cleanup,M,2,1,1,2,CellClass+0xEC land type kept as one field without its twin or derived caches
+#2075,T-F667,code,gameplay,M,2,1.5,1,3,Engineer hospital and grinder entry orders plus the Hospital=yes treatment lifecycle; x1.5 sim internals
+#2076,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Computer C4 infantry guarding with a building target queue Sabotage; x1.5 sim internals
+#2077,T-F667,code,triggers,L,4,1.5,1,6,Trigger spotlights as BuildingLight objects with native motion detection and drawing; x1.5 renderer
+#2080,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Construction Yard repacking no longer requires empty radio contacts; x1.5 sim internals
+#2081,T-83DE,code,cleanup,M,2,1.5,1,3,Rules processor publishes every RulesClass Type reference and typed re-reads go; x1.5 RE of gamemd code
+#2082,T-452E,code,cleanup,S,0.75,1,0.75,0.5625,A missing selected-mode INI loads as an empty rules layer; x0.75 maintainer rework (53% of lines)
+#2083+#2111,T-C117,code,tools,L,4,1,0.75,3,Optional browser telemetry dashboard with debug-tools trainer and unit event history; x0.75 maintainer rework; #2111 restores the #2083 debug tools
+#2085,T-F3DD,code,graphics,M,2,1.5,1,3,Native superweapon Range and LineMultiplier rings drawn while targeting; x1.5 renderer
+#2086,T-F667,code,interface,M,2,1.5,1,3,Superweapon cameo clicks follow live CanFire admission and native mode and cancel rules; x1.5 RE of gamemd code
+#2087,T-83DE,code,cleanup,M,2,1,1,2,One owner each for trigger sections and palettes and camera bounds and forwarders
+#2089,T-83DE,code,gameplay,L,4,1.5,1,6,Passengers board only through the native radio exchange and PerCell arms; x1.5 sim internals
+#2090,T-452E,code,tools,S,0.75,1,0.75,0.5625,Regression tests for retained superweapon cameos across power holds; x0.75 maintainer rework
+#2091,T-F667,code,tools,S,0.75,1,1,0.75,Native oracle and retail tests for Temporal-held queue promotion across mobile factories
+#2092,T-F3DD,code,graphics,M,2,1.5,1,3,Embedded SHP ground shadows for standing buildings; x1.5 renderer
+#2094,T-83DE,code,cleanup,S,0.75,1,1,0.75,One native palette decoder with no colour key and index 0 left to the draws
+#2096,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,A NavCom object pointer has one representation and one snapshot restore rule; x1.5 renderer
+#2097,T-83DE,code,cleanup,S,0.75,1,1,0.75,Map trigger records live only in the trigger runtime and their copies are deleted
+#2098,T-5ABF,code,gameplay,M,2,1.5,1,3,Ares GenericWarhead and shared superweapon target admission; x1.5 sim internals
+#2100,T-83DE,code,gameplay,M,2,1.5,1,3,Sight opens and closes only at native events and load-time reveals read heights; x1.5 sim internals
+#2101,T-83DE,code,cleanup,M,2,1.5,1,3,One OverlayClass::Mark port for map load and crates and bridges and ore and walls; x1.5 sim internals
+#2102,T-5ABF,code,gameplay,S,0.75,1.5,1,1.125,Ares SW.AuxBuildings and SW.NegBuildings superweapon availability gates; x1.5 sim internals
+#2103,T-5ABF,code,gameplay,M,2,1.5,0.75,2.25,Ares UnitDelivery superweapon through shared placement and mission owners; x1.5 sim internals; x0.75 maintainer rework (41% of lines)
+#2104,T-F667,code,interface,S,0.75,1,1,0.75,Portable punctuation and named-key shortcuts; Escape resolves bindings before Options
+#2105,T-452E,code,tools,S,0.75,1,0.75,0.5625,Colliding diagnostic replay segments get unique side-by-side files; x0.75 maintainer rework (46% of lines)
+#2106,T-5ABF,code,gameplay,M,2,1.5,0.75,2.25,Ares Money.Amount fees and rewards for single-stage superweapons; x1.5 sim internals; x0.75 maintainer rework (43% of lines)
+#2108,T-5ABF,code,triggers,S,0.75,1.5,1,1.125,AI script action 56 chronoshifts teams to a selected building; x1.5 sim internals
+#2110,T-5ABF,code,triggers,M,2,1.5,1,3,AI script action 10 follow friendlies with its Calc_Center branch; x1.5 sim internals
+#2112,T-83DE,code,tools,XS,0.25,1,1,0.25,Review skill requires verified contributor attribution before merging
+#2113,T-F3DD,code,gameplay,M,2,1.5,1,3,Fractional TechnoType Size and SizeLimit through passenger owners and pips; x1.5 sim internals; lands closed PR #2109
+#2114,T-F667,code,tools,S,0.75,1,1,0.75,Isolates the retail Kirov Hunt bombing witness and adds a fast stock ZEP regression
+#2115,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,War Miners resume harvesting after an Area Guard order; x1.5 sim internals
+#2117,T-83DE,code,multiplayer,L,4,1.5,1,6,Retail Network Options page with adapter and port editing and validation and saves; x1.5 RE of gamemd code
+#2118,T-452E,code,tools,S,0.75,1,1,0.75,Retail test fixtures name extra Houses so snapshot witnesses restore
+#2119,T-83DE,docs,docs,XS,0.25,1,1,0.25,Dashboard README points to the maintainer archive of PR #2083
+#2120,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Transport unloading waits on the turret rotation latch instead of the hull turn; x1.5 sim internals
+#2121,T-452E,code,gameplay,M,2,1.5,1,3,Underground and HarvesterImmune Evaluate_Candidate gates with scenario bit wiring; x1.5 sim internals
+#2123,T-F667,code,gameplay,M,2,1.5,1,3,Under-strength AI teams retreat beside the safest unarmed friendly building; x1.5 sim internals
+#2124,T-5ABF,code,gameplay,S,0.75,1.5,1,1.125,Tank bunker installation no longer stalls after the entry track completes; x1.5 sim internals
+#2125,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,AI C4 infantry on Area Guard with a building target switch to Sabotage; x1.5 sim internals
+#2126,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Units leaving the playfield are removed on arrival as in retail; x1.5 sim internals
+#2127,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Drive Stop keeps applied speed until the native Process rest tail clears it; x1.5 sim internals
+#2128,T-F667,code,interface,L,4,1,1,4,Offline CnCNet client launches for skirmish and campaign via spawn.ini and a profile
+#2129,T-83DE,code,interface,S,0.75,1.5,1,1.125,Ctrl-click by an unarmed unit keeps the native select or move action; x1.5 RE of gamemd code
+#2130,T-F667,code,gameplay,M,2,1.5,1,3,Drive CrusherAll crush flag restored for rocking tilt and speed cap; saved and hashed; x1.5 sim internals
+#2131,T-83DE,code,tools,S,0.75,1,1,0.75,Robot Control Center power setup for six retail ROBO bridge movement tests
+#2132,T-C117,code,tools,M,2,1,1,2,Scale-stress spawn entry plus dashboard path-batch timeline and report samples
+#2133,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Team script action 41 UnPanic clears Infantry fear so the script continues; x1.5 sim internals
+#2134,T-F667,code,graphics,S,0.75,1.5,1,1.125,Neutral and Special houses use LightGrey so neutral skirmish buildings stop showing red; x1.5 RE of gamemd code
+#2135,T-997B,code,interface,S,0.75,1,1,0.75,Shift-click on a unit cameo queues a configurable batch (VERA convenience)
+#2136,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,BalloonHover Foots join the playfield in FootClass::AI; cell-change stand-in removed; x1.5 sim internals
+#2137,T-F667,code,graphics,M,2,1.5,1,3,Harrier and other Fly aircraft ground shadows plus SecondaryFacing body heading; x1.5 renderer
+#2139,T-83DE,code,interface,S,0.75,1,1,0.75,Shift-click batch queue becomes an Options toggle that is off by default as in retail
+#2140,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Skirmish AI hunters with no target run the native idle action instead of freezing; x1.5 sim internals
+#2141,T-F667,code,maps,S,0.75,1.5,1,1.125,Terrain draws pick variants from the current TMP after LAT so Storm loses its black holes; x1.5 RE of gamemd code
+#2142,T-83DE,code,multiplayer,L,4,1.5,1,6,Retail LAN lobby and host/guest setup through loading with the network session handoff; x1.5 sim internals
+#2143,T-F667,code,sound,M,2,1,1,2,Bink movie audio keeps stereo and fixes zero-run quantizer DCT gain and stream start
+#2144,T-F667,code,graphics,M,2,1.5,1,3,Retained BuildingType light fields stop sound-only lamp overrides flooding maps; x1.5 RE of gamemd code; lands closed PR #2138
+#2145,T-83DE,code,tools,S,0.75,1,1,0.75,Cargo cache retention stops thrashing the build lock and reclaims abandoned caches
+#2146,T-83DE,code,cleanup,M,2,1.5,1,3,One Houses owner for House states and registration order with snapshot checks; x1.5 sim internals
+#2147,T-83DE,code,tools,XS,0.25,1,1,0.25,Client crate test builds drop debug info to cut retained objects
+#2148,T-83DE,docs,docs,XS,0.25,1,1,0.25,Short README describing the integrations folder
+#2149+#2152+#2155+#2158+#2159+#2160+#2162+#2163,T-83DE,code,tools,M,2,1,1,2,20% trim of low-value tests across rules map sim app and client done in eight area PRs
+#2150,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Campaign player miners reject ore cells under unexplored shroud; x1.5 sim internals
+#2151+#2164+#2165,T-83DE,code,tools,S,0.75,1,1,0.75,Critic rules moved into review.md: gameplay-only critics with packet job and stop rule
+#2153,T-83DE,code,tools,XS,0.25,1,1,0.25,AGENTS.md reorganized so each rule is stated once
+#2154,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,ScenarioSession and lighting fields private behind native-step operations; x1.5 sim internals
+#2156,T-83DE,docs,docs,XS,0.25,1,1,0.25,Removed validation receipts and change reports from tools docs
+#2157,T-83DE,code,sound,S,0.75,1,1,0.75,Fullscreen Bink movies scale to fit large windows with linear filtering
+#2161,T-F667,code,maps,S,0.75,1.5,1,1.125,Random-map river branches start at the retained post-section position; x1.5 RE of gamemd code
+#2166,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,HouseState and its plan reservation and emergency blocks made private to their owners; x1.5 sim internals
+#2167,T-83DE,code,gameplay,M,2,1.5,1,3,AreaFire weapons such as the Chaos Drone gas fire at the firer's own cell; x1.5 sim internals
+#2168+#2169+#2171,T-83DE,docs,docs,XS,0.25,1,1,0.25,README payout badge logos and colours plus PayPal donate badge and badge size
+#2170,T-83DE,code,cleanup,M,2,1.5,1,3,TerrainObjectStore and ore growth owners split off ProductionState; x1.5 sim internals
+#2172,T-83DE,code,multiplayer,L,4,1.5,1,6,WOL Custom Match shell from Internet welcome and login through lobby setup and return; x1.5 RE of gamemd code
+#2174,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Factory SuperWeaponInstance and PowerState fields made private to their owners; x1.5 sim internals
+#2175,T-F667,code,graphics,M,2,1.5,1,3,SHP vehicle firing body frames from the native Unit firing countdown incl. drone release; x1.5 sim internals
+#2176,T-83DE,code,interface,M,2,1.5,1,3,Selected building clicks over objects and blocked cells follow native What_Action; x1.5 RE of gamemd code
+#2177,T-83DE,code,tools,S,0.75,1,1,0.75,Slowest retail playthrough tests sped up without dropping assertions
+#2178,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Options toggle for an offline stand-in WOL service for developer testing
+#2179,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,FogState and ShroudKnowledge fields private with cell transitions named for native steps; x1.5 sim internals
+#2180,T-83DE,code,interface,S,0.75,1.5,1,1.125,deployed infantry shows NoMove beyond its deployed weapon range and Ctrl walks toward it; x1.5 RE of gamemd code
+#2181,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,anim particle wave voxel-anim bounce and rad-site fields private behind owner operations; x1.5 sim internals
+#2182,T-F3DD,code,interface,XS,0.25,1,1,0.25,Multi-unit cell clicks clamp to the playfield before action resolution
+#2183+#2191,T-83DE,code,gameplay,M,2,1.5,1,3,Mirage blinks after firing and computer units roll to see it; ratchets rebaselined; x1.5 renderer
+#2185,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Projectile and Spotlight fields private with named membership and load operations; x1.5 sim internals
+#2186,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,crate overlay lighting zone and navigation state kept behind owner operations; x1.5 sim internals
+#2187,T-83DE,code,multiplayer,L,4,1.5,1,6,in-battle Diplomacy dialog 0x73 with entry rules and admission latch and player rows; x1.5 RE of gamemd code
+#2188,T-F667,code,interface,S,0.75,1.5,1,1.125,Campaign continuations uppercase the scenario name so loading art and briefing return; x1.5 RE of gamemd code
+#2189,T-83DE,code,interface,L,4,1.5,1,6,campaign mission restart from B6 and the defeat replay prompt with the carry-over record; x1.5 sim internals
+#2190,T-83DE,code,interface,M,2,1.5,1,3,players click their own vehicles and infantry into their Yuri Grinder; x1.5 sim internals
+#2192,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,resolved terrain cells and saved tile replacement records kept behind their owners; x1.5 sim internals
+#2193,T-83DE,code,cleanup,M,2,1.5,1,3,movement and session setters replaced by rule-named owner operations; x1.5 sim internals
+#2195,T-F667,code,graphics,M,2,1.5,1,3,Dolphin sonic waves render their interior from the live framebuffer as in the original; x1.5 renderer
+#2196,T-F3DD,code,interface,S,0.75,1,1,0.75,Original YR Style option with RA2 default for splash and menu movie; valued for what stayed after #2271
+#2197,T-83DE,code,graphics,S,0.75,1.5,1,1.125,a hovered disguised enemy Mirage hides its health bar through one disguise-house owner; x1.5 RE of gamemd code
+#2198,T-83DE,code,graphics,M,2,1.5,1,3,war factory open-door body and under-door art drawn while it unloads a vehicle; x1.5 RE of gamemd code
+#2199,T-83DE,code,graphics,S,0.75,1.5,1,1.125,a sold building hides its slot anims and drops ZShapePointMove during build-down; x1.5 RE of gamemd code
+#2200,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,a vehicle crushed by a Battle Fortress plays its death explosion and the crusher tilts; x1.5 renderer
+#2201,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,frightened computer civilians scatter on their idle turn; x1.5 sim internals
+#2202,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Queue_AI route read from the scenario GameMode instead of a copied field; x1.5 netcode
+#2203,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,client crate reads the simulation root through getters and named operations only; x1.5 sim internals
+#2204,T-83DE,code,graphics,S,0.75,1.5,1,1.125,INFSHDW ground shadow drawn under airborne infantry; x1.5 RE of gamemd code
+#2205,T-452E,code,gameplay,S,0.75,1.5,1,1.125,Unarmed scanners keep their candidates through Evaluate_Candidate; x1.5 sim internals
+#2206,T-5ABF,code,gameplay,M,2,1.5,1,3,One-use settlement for paid two-stage superweapons with ticketed commands; x1.5 sim internals
+#2207,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,one DirtyCells owner for radar and tactical dirty-cell marks; six mark helpers removed; x1.5 sim internals
+#2208,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,MultiEngineer Engineers damage hostile buildings above red line; skirmish forces it off; x1.5 sim internals
+#2209,T-83DE,code,multiplayer,M,2,1.5,1,3,LAN/WOL in-game menu templates with FF controls and B6 Observe plus the DESTRUCT event; x1.5 RE of gamemd code
+#2212,T-F667,code,graphics,S,0.75,1,1,0.75,Binds the [General] Behind animation so the See Hidden Objects marker appears
+#2213,T-83DE,code,interface,M,2,1.5,1,3,aircraft move to objects they may not attack plus the Immune and own-object rungs; x1.5 sim internals
+#2214,T-83DE,code,multiplayer,M,2,1.5,1,3,per-House UI names and the multiplayer defeat announcement with EVA and a message fix; x1.5 sim internals
+#2215,T-83DE,code,gameplay,M,2,1.5,1,3,computer damaged vehicles on guard head for the nearest repair station; x1.5 sim internals
+#2216,T-F667,code,graphics,M,2,1.5,1,3,Kirov ground shadows through takeoff flight and crash with grounded and low masks; x1.5 renderer
+#2217,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,a computer miner stuck on its refinery dock cell drives off after 300 frames; x1.5 sim internals
+#2219,T-83DE,code,multiplayer,M,2,1.5,1,3,WOL Options 0x2BC and shell Sound Options 0xD6 pages with the [WOnline] preferences; x1.5 RE of gamemd code
+#2220,T-83DE,code,cleanup,M,2,1.5,1,3,cell overlay identity and state kept only in OverlayGrid; stale terrain copy removed; x1.5 sim internals
+#2221,T-997B,code,sound,S,0.75,1,1,0.75,Sound effects no longer stall on high-rate output devices
+#2222,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,root raw slots private with HouseAlliances and StableIdCursor owners; dead queues removed; x1.5 sim internals
+#2223,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,a Chrono Miner drives out of the War Factory bay instead of warping; x1.5 sim internals
+#2224,T-83DE,code,tools,XS,0.25,1,1,0.25,test-only tiberium fixture queue gated and a dead reduction loop removed
+#2225,T-F667,code,tools,S,0.75,1,1,0.75,Retail test of building animations across power loss damaged art restore and repair
+#2226,T-83DE,code,gameplay,M,2,1.5,1,3,an Explodes= or selling building lives at Health 0 until its Update; second crew round; x1.5 sim internals
+#2227,T-F667,code,graphics,S,0.75,1.5,1,1.125,Vehicle body lighting on bridges and bridge-side cells follows native DrawIt; x1.5 RE of gamemd code
+#2228,T-83DE,code,multiplayer,L,4,1.5,1,6,peer EXIT execution and DestroyConnection port plus the in-match connection wait 0xEA; x1.5 RE of gamemd code
+#2229,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,multiplayer score dialog titled by mode and the observer row skipped; x1.5 renderer
+#2230,T-83DE,code,gameplay,M,2,1.5,1,3,tank bunker install steps on the bunker's Repair visits; bunker radio arms shared; x1.5 sim internals
+#2236,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Single-owner whole-root sim functions: 94 methods move onto owners and 31 take owners; x1.5 sim internals
+#2237,T-83DE,code,multiplayer,L,4,1.5,1,6,In-battle LAN/WOL chat: message-list edit line and key hook and chat mask and send/receive; x1.5 RE of gamemd code
+#2239,T-83DE,code,graphics,M,2,1.5,1,3,A Move click spawns the MoveFlash RING anim on the clicked cell in skirmish and campaign; x1.5 sim internals
+#2240,T-83DE,code,multiplayer,L,4,1.5,1,6,LAN alliances: ALLY event with Diplomacy box and hotkey producers and text/EVA notices; x1.5 sim internals
+#2241,T-20ED,code,multiplayer,S,0.75,1.5,1,1.125,Native lockstep events 0x0D game speed and 0x01/0x02 building on/off line; x1.5 netcode
+#2243,T-83DE,code,interface,M,2,1.5,1,3,Vehicle over friendly refinery/depot/bunker/grinder: native cursor and click via CAN_LOAD; x1.5 RE of gamemd code
+#2244,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Root frame channels and slot maps become owner types with private fields plus a slot guard; x1.5 sim internals
+#2245,T-83DE,code,cleanup,S,0.75,1,1,0.75,GameMode has one holder at a time: the shell session or the installed world
+#2247,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Warhead Verses reset to the native 100% default on each layer without Verses; x1.5 RE of gamemd code
+#2248,T-83DE,code,multiplayer,M,2,1.5,1,3,LAN/WOL taunts: Taunt keys and gates and packet 0x1D and taunt stream and TauntsOn box; x1.5 RE of gamemd code
+#2249,T-83DE,code,tools,S,0.75,1,1,0.75,Source guard: owners hand out mutable access only to owners and plain setters are pinned
+#2250,T-452E,code,tools,S,0.75,1,1,0.75,Dustbowl defence test fixtures spawn through native overlay admission
+#2251,T-F667,code,interface,M,2,1.5,1,3,Tactical clicks and hover read live terrain levels; retained app height maps removed; x1.5 RE of gamemd code
+#2254,T-83DE,code,tools,XS,0.25,1,1,0.25,Removes an unused import from the SFX resample test
+#2255,T-83DE,code,interface,M,2,1.5,1,3,Infantry and vehicle cursor and click over friendly passenger carriers per the native rows; x1.5 RE of gamemd code
+#2256,T-452E,code,gameplay,S,0.75,1.5,1,1.125,Unarmed Foot movers run Approach and drop out-of-zone targets as natively; x1.5 sim internals
+#2258,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Boomers with LandTargeting=2 no longer pick land targets on their own; x1.5 sim internals
+#2259,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,LAN host random map now loads and RandMap.Sed publishes the native option digest; x1.5 RE of gamemd code
+#2261+#2264+#2267+#2269,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,About 105 sim functions reaching at most three owners take them instead of the root; x1.5 sim internals
+#2262,T-83DE,code,graphics,M,2,1.5,1,3,Apocalypse target laser: dashed turret-to-target line with end boxes for 14 frames; x1.5 RE of gamemd code
+#2263,T-5ABF,code,graphics,L,4,1.5,1,6,Switchable scene render interpolation and Windows startup stack reserve; x1.5 renderer
+#2265,T-83DE,code,multiplayer,M,2,1.5,1,3,LAN guest random map: 0x1B request and 'W' start staging and two-file GO; x1.5 RE of gamemd code
+#2268,T-F667,code,interface,S,0.75,1.5,1,1.125,Force Shield clicks need an allied building target; invalid targets show NoForceShield; x1.5 RE of gamemd code
+#2270,T-83DE,code,interface,M,2,1.5,1,3,NoDeploy where an MCV or loaded transport cannot deploy and for Planning Mode self clicks; x1.5 sim internals
+#2271+#2273,T-83DE,code,interface,XS,0.25,1,1,0.25,YR splash and movie option: new help text and label and scope notes after the restore
+#2272,T-F667,code,interface,S,0.75,1.5,1,1.125,Deployed GIs and other deployers can undeploy by clicking themselves again; x1.5 RE of gamemd code
+#2274,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,Network setup dialogs' trackbar sizes added so their slider frames draw
+#2275,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Gap generator shroud disc centred for terrain height as CreateGap does; x1.5 sim internals
+#2276,T-83DE,code,multiplayer,M,2,1.5,1,3,LAN random-map preview: host 0x19 offer and Preview.bin and guest decode with markers; x1.5 RE of gamemd code
+#2277,T-83DE,code,interface,M,2,1.5,1,3,Infantry and building cursor owners answer their own What_Action over allied objects; x1.5 RE of gamemd code
+#2278,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,A deployed Siege Chopper holds its turret on its last aim; x1.5 sim internals
+#2279,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,WOL Custom Match setup dialogs use the RA2 Skirmish background
+#2280,T-F667,code,graphics,M,2,1.5,1,3,SHP vehicles such as Terror Drones draw their embedded ground shadow after the body; x1.5 renderer
+#2281+#2284,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Root functions only client tests kept on Simulation now take or move onto their owners; x1.5 sim internals
+#2282,T-452E,code,tools,S,0.75,1,1,0.75,Retail tests that hovering air units do not block Tank Bunker entry
+#2285,T-83DE,code,tools,S,0.75,1,1,0.75,Native oracles identify gamemd by its code sections instead of the whole-file hash
+#2286,T-997B,code,tools,S,0.75,1,1,0.75,Manual release workflow with build-time and commit archive names and notes
+#2287,T-83DE,code,interface,M,2,1.5,1,3,Non-player objects deselect as they cloak and while unsensed via one Detach_All owner; x1.5 sim internals
+#2288,T-83DE,code,interface,M,2,1.5,1,3,Campaign Briefing tab opens the mission restate briefing dialog 0x10C; x1.5 RE of gamemd code
+#2289,T-452E,code,tools,XS,0.25,1,1,0.25,Hills test fixture House made passive so the Engineer repair test completes
+#2293,T-83DE,code,multiplayer,M,2,1.5,1,3,WOL lobby and C2/C9 show received chat and find results and user rank tooltips; x1.5 RE of gamemd code
+#2294,T-83DE,code,gameplay,M,2,1.5,1,3,A bunkered unit deploys out of its Tank Bunker by self-click or the deploy key; x1.5 sim internals

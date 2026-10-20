@@ -14,13 +14,17 @@ How to record a tibtre update, step by step.
 4. Save the values as `valuations/YYYY-MM-DD.csv`, one line per piece of work:
 
    ```csv
-   item,id,category,size,base,difficulty,quality,value,note
-   #1990+#1994,T-9C41,code,M,4,1.5,1.0,6,pathfinding fix and its follow-up
+   item,id,category,type,size,base,difficulty,quality,value,note
+   #1990+#1994,T-9C41,code,gameplay,M,2,1.5,1.0,3,pathfinding fix and its follow-up
    ```
 
-   `item` is a PR number (several joined with `+`) or an `assets/` path. `size` is XS
-   to XL for code, or the matching table row for other work. When a maintainer
-   changed a factor, `note` says why.
+   `item` is a PR number (several joined with `+`) or an `assets/` path. `type` is the
+   kind of work, which `BALANCES.md` lists for each person: `gameplay`, `triggers`
+   (map triggers and AI scripts), `graphics`, `interface` (menus and controls),
+   `sound` (sound and video), `multiplayer`, `maps` (maps and terrain), `cleanup`
+   (code cleanup and speed), `tools` (tests and tools) or `docs`. Other work uses its
+   category. `size` is XS to XL for code, or the matching table row for other work.
+   When a maintainer changed a factor, `note` says why.
 
 ## 2. New contributor? Give them an ID
 
@@ -62,7 +66,7 @@ Add one row per person and category at the end of `LEDGER.csv`. Never edit old r
 
 ```csv
 date,id,tibtre,category,notes
-2026-10-25,T-9C41,12.5,code,7 PRs (#1990 #1994 #1998 #2003 #2007 #2011 #2015); value 12.25 (valuations/2026-10-25.csv; rubric v1.5)
+2026-10-25,T-9C41,12.5,code,7 PRs (#1990 #1994 #1998 #2003 #2007 #2011 #2015); value 12.25 (valuations/2026-10-25.csv; rubric v1.6)
 ```
 
 - `tibtre`: the person's total for that category, rounded to the nearest 0.5 (halves

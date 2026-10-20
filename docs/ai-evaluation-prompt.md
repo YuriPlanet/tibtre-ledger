@@ -1,4 +1,4 @@
-# AI instructions — v2 (for grading rules v1.5)
+# AI instructions — v2 (for grading rules v1.6)
 
 These are the exact instructions the AI (Claude) follows when it values a
 contribution. They are public, so anyone can check a value: give any capable AI these

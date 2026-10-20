@@ -1,4 +1,4 @@
-# Grading rules — v1.5
+# Grading rules — v1.6
 
 How accepted work is turned into tibtre. An AI and a maintainer use these rules
 together, the same way for everyone, maintainers included.
@@ -29,11 +29,11 @@ least 0.5). How each piece of work was valued is published in `valuations/`.
 ### Code
 | Size | Definition | Base |
 |---|---|---|
-| XS | Typo, one-liner, config tweak | 0.5 |
-| S | Contained fix, one file/subsystem | 1.5 |
-| M | Feature or fix within one subsystem, incl. tests | 4 |
-| L | Multi-subsystem feature or new module | 8 |
-| XL | New system end-to-end | 16 |
+| XS | Typo, one-liner, config tweak | 0.25 |
+| S | Contained fix, one file/subsystem | 0.75 |
+| M | Feature or fix within one subsystem, incl. tests | 2 |
+| L | Multi-subsystem feature or new module | 4 |
+| XL | New system end-to-end | 8 |
 
 ### Reverse-engineering research
 | Work | Base |
@@ -75,7 +75,7 @@ least 0.5). How each piece of work was valued is published in `valuations/`.
 ## Examples
 
 1. A small pathfinding fix in the simulation, accepted as it is:
-   `1.5 (S code) × 1.5 (hard area) × 1.0 = 2.25`
+   `0.75 (S code) × 1.5 (hard area) × 1.0 = 1.125`
 2. A loading screen with exceptional polish:
    `3 (art) × 1.0 × 1.25 = 3.75`
 
@@ -92,8 +92,9 @@ least 0.5). How each piece of work was valued is published in `valuations/`.
 Each ledger row's note says which version it used. Old versions are in this file's
 git history, and old grants are never repriced.
 
-- **v1.5** (current, from 2026-10-18): an AI and a maintainer value each piece of
-  work together, the same way for everyone.
+- **v1.6** (current, from 2026-10-20): code base values halved.
+- **v1.5** (2026-10-18 to 2026-10-20, used for no grant): an AI and a maintainer
+  value each piece of work together, the same way for everyone.
 - **v1.4** (used once, 2026-10-18): every PR on one scale, set from the owner's own
   value.
 - **v1.3 and earlier:** a maintainer's value and the AI's value were averaged.
