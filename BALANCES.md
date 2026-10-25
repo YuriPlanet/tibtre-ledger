@@ -1,6 +1,6 @@
 # Tibtre balances
 
-Generated from [`LEDGER.csv`](LEDGER.csv) - 74 grant(s), 2431 tibtre in circulation. Do not edit by hand; run `python tally.py`.
+Generated from [`LEDGER.csv`](LEDGER.csv) - 75 grant(s), 2435 tibtre in circulation. Do not edit by hand; run `python tally.py`.
 
 | # | Contributor | Tibtre | Work |
 |---|---|---|---|
@@ -16,9 +16,9 @@ Generated from [`LEDGER.csv`](LEDGER.csv) - 74 grant(s), 2431 tibtre in circulat
 | 10 | ckbk456 | 15 | gameplay, graphics, menus and controls, map triggers and AI scripts, sound and video, maps and terrain, tests and tools, code cleanup and speed |
 | 11 | CCDawn | 14 | gameplay, tests and tools, code cleanup and speed, menus and controls |
 | 12 | flitting | 6 | map triggers and AI scripts, gameplay, tests and tools, menus and controls |
-| 13 | ckbk123 | 5 | sound and video, gameplay, menus and controls, tests and tools |
-| 14 | 1152207863 | 4 | community |
-| 15 | iamapig120 | 4 | community |
-| 16 | luckyvermeil | 2 | menus and controls |
-| 17 | himhp | 1.5 | multiplayer, gameplay |
-| 18 | AdrianLuo-X | 1 | graphics |
+| 13 | AdrianLuo-X | 5 | community, graphics |
+| 14 | ckbk123 | 5 | sound and video, gameplay, menus and controls, tests and tools |
+| 15 | 1152207863 | 4 | community |
+| 16 | iamapig120 | 4 | community |
+| 17 | luckyvermeil | 2 | menus and controls |
+| 18 | himhp | 1.5 | multiplayer, gameplay |
