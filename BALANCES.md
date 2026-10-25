@@ -1,18 +1,24 @@
 # Tibtre balances
 
-Generated from [`LEDGER.csv`](LEDGER.csv) - 51 grant(s), 1766 tibtre in circulation. Do not edit by hand; run `python tally.py`.
+Generated from [`LEDGER.csv`](LEDGER.csv) - 74 grant(s), 2431 tibtre in circulation. Do not edit by hand; run `python tally.py`.
 
 | # | Contributor | Tibtre | Work |
 |---|---|---|---|
-| 1 | hrusten | 1351.5 | code cleanup and speed, gameplay, multiplayer, menus and controls, graphics, tests and tools, maps and terrain, sound and video, docs, earlier code |
-| 2 | zzzzzzh123 | 198.5 | map triggers and AI scripts, gameplay, graphics, menus and controls, tests and tools, maps and terrain, sound and video, earlier code |
-| 3 | Krisztiaan | 82 | earlier code |
-| 4 | DavidTanner | 31.5 | earlier code |
-| 5 | 1372704087 | 23 | tests and tools, earlier code |
-| 6 | baixiong443 | 23 | gameplay, graphics, map triggers and AI scripts |
-| 7 | EncoreAlpha | 22 | menus and controls, graphics, gameplay, earlier code |
-| 8 | 996666925 | 17.5 | menus and controls, earlier code, community |
-| 9 | CCDawn | 9.5 | gameplay, tests and tools, code cleanup and speed |
-| 10 | 1152207863 | 4 | community |
-| 11 | HaoJun0823 | 2.5 | menus and controls, sound and video, tests and tools |
-| 12 | himhp | 1 | multiplayer |
+| 1 | hrusten | 1701.5 | multiplayer, gameplay, code cleanup and speed, menus and controls, graphics, tests and tools, sound and video, maps and terrain, map triggers and AI scripts, docs, research, earlier code |
+| 2 | zzzzzzh123 | 324.5 | gameplay, map triggers and AI scripts, graphics, menus and controls, community, sound and video, tests and tools, maps and terrain, code cleanup and speed, earlier code |
+| 3 | 1372704087 | 85.5 | gameplay, graphics, tests and tools, menus and controls, sound and video, code cleanup and speed, earlier code |
+| 4 | Krisztiaan | 84 | gameplay, graphics, tests and tools, earlier code |
+| 5 | EncoreAlpha | 66.5 | graphics, gameplay, community, menus and controls, multiplayer, tests and tools, maps and terrain, sound and video, earlier code |
+| 6 | 996666925 | 39 | community, menus and controls, graphics, gameplay, earlier code |
+| 7 | DavidTanner | 32.5 | menus and controls, earlier code |
+| 8 | baixiong443 | 27 | gameplay, graphics, map triggers and AI scripts |
+| 9 | HaoJun0823 | 18 | community, menus and controls, tests and tools, sound and video |
+| 10 | ckbk456 | 15 | gameplay, graphics, menus and controls, map triggers and AI scripts, sound and video, maps and terrain, tests and tools, code cleanup and speed |
+| 11 | CCDawn | 14 | gameplay, tests and tools, code cleanup and speed, menus and controls |
+| 12 | flitting | 6 | map triggers and AI scripts, gameplay, tests and tools, menus and controls |
+| 13 | ckbk123 | 5 | sound and video, gameplay, menus and controls, tests and tools |
+| 14 | 1152207863 | 4 | community |
+| 15 | iamapig120 | 4 | community |
+| 16 | luckyvermeil | 2 | menus and controls |
+| 17 | himhp | 1.5 | multiplayer, gameplay |
+| 18 | AdrianLuo-X | 1 | graphics |
