@@ -8,7 +8,8 @@ name renders as a link.
 The Work column names the kinds of work each balance was granted for, largest
 first: the `type` of each valued item in valuations/*.csv, then the category of
 each ledger row whose note cites no valuations file (grants from before itemized
-valuations).
+valuations). Correction rows count against their kind, and a kind is shown only
+while its total is positive, so a correction can move work to another kind.
 
 Usage: python tally.py
 """
@@ -40,6 +41,7 @@ WORK_NAMES = {
     "art": "art",
     "playtesting": "playtesting",
     "community": "community",
+    "legal": "legal",
     "recruit": "recruiting",
     "impact": "impact",
     "other": "other",
@@ -66,24 +68,24 @@ def load_contributors() -> dict[str, dict[str, str]]:
 
 
 def load_valued_work() -> dict[str, dict[str, float]]:
-    """Each contributor's valued items, summed by work type."""
+    """Each contributor's valued items and their corrections, summed by work type."""
     work: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
     for path in sorted(VALUATIONS.glob("*.csv")):
         with path.open(newline="", encoding="utf-8-sig") as f:
             for row in csv.DictReader(f):
-                value = float(row["value"])
-                if value > 0:
-                    kind = (row.get("type") or row["category"]).strip()
-                    work[row["id"].strip()][kind] += value
+                kind = (row.get("type") or row["category"]).strip()
+                work[row["id"].strip()][kind] += float(row["value"])
     return work
 
 
 def work_cell(valued: dict[str, float], earlier: dict[str, float]) -> str:
     names: list[str] = []
-    for kind, _ in sorted(valued.items(), key=lambda kv: -kv[1]):
-        names.append(WORK_NAMES.get(kind, kind))
-    for kind, _ in sorted(earlier.items(), key=lambda kv: -kv[1]):
-        names.append(EARLIER_NAMES.get(kind) or WORK_NAMES.get(kind, kind))
+    for kind, total in sorted(valued.items(), key=lambda kv: -kv[1]):
+        if total > 0:
+            names.append(WORK_NAMES.get(kind, kind))
+    for kind, total in sorted(earlier.items(), key=lambda kv: -kv[1]):
+        if total > 0:
+            names.append(EARLIER_NAMES.get(kind) or WORK_NAMES.get(kind, kind))
     return ", ".join(dict.fromkeys(names))
 
 

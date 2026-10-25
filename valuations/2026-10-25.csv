@@ -575,3 +575,15 @@ community work,T-997B,community,community,owner-set,,,,10,community work for VER
 community work,T-F3DD,community,community,owner-set,,,,10,community work for VERA20k including protecting its GPLv3 license; maintainer-set (no rubric row)
 community work,T-BDA4,community,community,owner-set,,,,10,community work for VERA20k including protecting its GPLv3 license; maintainer-set (no rubric row)
 community work,T-4BF7,community,community,owner-set,,,,4,protecting VERA20k's copyright; maintainer-set (no rubric row)
+community work,T-F667,community,community,owner-set,,,,-10,category correction: half of this community grant moves to legal
+legal work,T-F667,legal,legal,owner-set,,,,10,protecting VERA20k's GPLv3 license; maintainer-set (no rubric row); half of the community work row
+community work,T-997B,community,community,owner-set,,,,-5,category correction: half of this community grant moves to legal
+legal work,T-997B,legal,legal,owner-set,,,,5,protecting VERA20k's GPLv3 license; maintainer-set (no rubric row); half of the community work row
+community work,T-F3DD,community,community,owner-set,,,,-5,category correction: half of this community grant moves to legal
+legal work,T-F3DD,legal,legal,owner-set,,,,5,protecting VERA20k's GPLv3 license; maintainer-set (no rubric row); half of the community work row
+community work,T-BDA4,community,community,owner-set,,,,-5,category correction: half of this community grant moves to legal
+legal work,T-BDA4,legal,legal,owner-set,,,,5,protecting VERA20k's GPLv3 license; maintainer-set (no rubric row); half of the community work row
+#3066,T-E773,community,community,report,,,,-3.75,category correction: moves to legal
+#3066,T-E773,legal,legal,report,3,1,1.25,3.75,Issue #3066: reproducible evidence of an unattributed redistribution of VERA20K code without GPL source; x1.25 exceptional; moved from community
+community work,T-4BF7,community,community,owner-set,,,,-4,category correction: moves to legal
+legal work,T-4BF7,legal,legal,owner-set,,,,4,protecting VERA20k's copyright; maintainer-set (no rubric row); moved from community

@@ -72,7 +72,9 @@ date,id,tibtre,category,notes
 - `tibtre`: the person's total for that category, rounded to the nearest 0.5 (halves
   round up; at least 0.5). Negative only for corrections.
 - `category`: `code`, `research`, `art`, `maps`, `playtesting`, `docs`, `community`,
-  `recruit`, `impact` (its note names the public evidence) or `other`.
+  `legal` (protecting VERA20k's license and copyright; the rubric has no table for it,
+  so the maintainer sets the amount), `recruit`, `impact` (its note names the public
+  evidence) or `other`.
 - `notes`: what the work was, the unrounded value, the valuations file and the rubric
   version. No commas, and no names for contributors who show only their ID.
 
@@ -97,3 +99,7 @@ congratulate the others by DM.
 
 Wrong amount or wrong ID? Add a new row that fixes it (a negative amount or a new
 grant), with a note naming the date and ID of the wrong row. The old row stays.
+
+Wrong category? Add a negative row in the old category and a new row in the right one,
+in both `LEDGER.csv` and the valuations file, and cite the valuations file in both
+ledger notes, so `BALANCES.md` lists the work under its new kind.
