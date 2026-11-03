@@ -1,0 +1,468 @@
+item,id,category,type,size,base,difficulty,quality,value,note
+#3088,T-C117,code,gameplay,M,2,1.5,1,3,Phobos ForbidParallelAIQueues by category or type stops a computer house's second factory from cloning that production; x1.5 sim internals
+#3089,T-C117,code,gameplay,S,0.75,1.5,1,1.125,Phobos skirmish AI switches gate the last-legs fire sale and hunt with an optional sale delay and the regroup after an MCV deploys; x1.5 sim internals
+#3094,T-C117,code,gameplay,M,2,1,1,2,Ares #include and Phobos $Include load in native order with native repeat and missing-file rules and Phobos builds now expand $Include
+#3096,T-C117,docs,docs,translation,1.24,1,1,1.24,Ares Phobos NPatch and VeraX docs credit the original authors with a Simplified Chinese translation of about 660 words
+#3100,T-C117,code,interface,M,2,1,1,2,Phobos SkirmishUnlimitedColors lets spawner colour indices reach [Colors] entries beyond YR's eight in launch loading chat and messages
+#3102,T-EC45,code,graphics,S,0.75,1.5,1,1.125,Magnetron and Sonic waves with folded polygon edges no longer crash the renderer; adds a wave scene profile; x1.5 renderer; merged before the 2026-10-25 update but left out of it
+#3112,T-452E,code,tools,S,0.75,1,1,0.75,Retail probes pin that no crush path kills a paratrooper while it is still descending
+#3113,T-C117,code,interface,L,4,1.5,1,6,Phobos left superweapon sidebar with column layout toggle hotkeys hover tooltip and saved state; x1.5 renderer
+#3114,T-C117,code,interface,S,0.75,1,1,0.75,VeraX Skirmish rescans maps each time Choose Map opens so maps copied after launch appear; merged before the 2026-10-25 update but left out of it
+#3115,T-F667,code,interface,L,4,1.5,1,6,Fresh map loads run as event-loop continuations with worker atlas rasterizing and nonblocking GPU band uploads so the window stays responsive; x1.5 renderer
+#3116,T-F667,code,triggers,S,0.75,1.5,1,1.125,Team script action 31 self-destruct applies C4 damage to each live member through the shared damage receiver; x1.5 sim internals; merged before the 2026-10-25 update but left out of it
+#3117,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Techno LegalTarget is read and honored by the threat scan and unforced attack clicks for map and mod overrides; x1.5 sim internals; merged before the 2026-10-25 update but left out of it
+#3118,T-83DE,docs,docs,XS,0.25,1,1,0.25,Attack-click docs link the ported LegalTarget gate and record its disguised TerrainFire residual; merged before the 2026-10-25 update but left out of it
+#3120,T-83DE,code,tools,S,0.75,1,1,0.75,Review skill and PR guard flag outside branding and identity changes and stop on a private watch list
+#3121,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Ares animation damage uses the art Warhead and credits the animation's house; x1.5 sim internals
+#3122,T-EC45,code,triggers,S,0.75,1.5,1,1.125,AI trigger Team references use the native 23-byte buffer and trim so long Team IDs resolve; x1.5 RE of gamemd code
+#3123,T-F667,code,gameplay,XS,0.25,1.5,1,0.375,Ares self-effect animations join the asset closure so their damage and death weapons run; x1.5 RE of gamemd code
+#3124,T-83DE,docs,docs,translation,1.75,1,1,1.75,Japanese README of about 1000 words; the eight older translations brought up to date with the English README
+#3125,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Ares warhead house filters apply to ordinary weapon damage; x1.5 sim internals
+#3126,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Smoke particle systems stay registered while child gas damage callbacks run; x1.5 sim internals
+#3127,T-83DE,code,tools,S,0.75,1,1,0.75,Four production tests pass again with campaign discovery and Phobos and Ares builds; two merge warnings fixed
+#3128,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Gas in Smoke or Fire or Spark systems keeps its source house so Psychedelic gas no longer turns allies; x1.5 sim internals
+#3129,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Ares infantry reload and per-weapon Ammo costs; x1.5 sim internals
+#3130,T-83DE,code,interface,S,0.75,1,1,0.75,Startup splash shows VERA20K's copyright and GPLv3 notice; READMEs and app metadata carry the copyright line
+#3131,T-F667,code,gameplay,XS,0.25,1.5,1,0.375,Ares PrismSupportModifier default keeps its units across map and mode passes so prism support no longer one-shots heroes; x1.5 RE of gamemd code
+#3132,T-F3DD,code,gameplay,M,2,1.5,1,3,Optional native Rules reads: campaign basename INI and the post-map TMCJ pass and the LANGRULE Digest check; x1.5 RE of gamemd code
+#3133,T-F667,code,graphics,M,2,1.5,1,3,Ares custom superweapon launches play SW.Animation and SW.Sound with height and per-house visibility; x1.5 sim internals
+#3134,T-452E,docs,docs,XS,0.25,1,1,0.25,Comments on the Sonic slit behind the dolphin freeze and on per-wave surface batches; its clamp duplicated #3102 and was dropped
+#3135,T-C625,code,tools,removed,0,1,1,0,Install test expected movmd03.mix where the movies03.mix fallback is reported; removed again by #3169
+#3136,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Ares SW.InitialReady and SW.VirtualCharge for custom superweapons; x1.5 sim internals
+#3139,T-379F,code,interface,L,4,1,1,4,Opt-in browser build plays single-player VERA in a web page with folder import and browser storage
+#3140,T-F667,code,gameplay,XS,0.25,1.5,1,0.375,Ares zero-fee superweapons need nonnegative funds to fire; x1.5 sim internals
+#3141,T-F667,code,gameplay,M,2,1.5,1,3,Ares superweapon AI targeting with AutoFire and ManualFire flags and constraints plus refusal messages; x1.5 sim internals
+#3142,T-452E,code,graphics,XS,0.25,1.5,1,0.375,Phobos builds draw the build description at the frame tail above messages and tooltips; x1.5 renderer
+#3143,T-F667,code,gameplay,M,2,1.5,1,3,Ares HunterSeeker superweapon launches helper units from launch buildings with EVA feedback; x1.5 sim internals
+#3144+#3145,T-83DE,code,tools,S,0.75,1,1,0.75,Splash and installers carry the Bink decoder's LGPL notice and text and release builds name their source commit; the license switch itself was reverted by #3145
+#3146,T-F667,code,gameplay,XS,0.25,1.5,1,0.375,Zero-speed infantry get their locomotor at spawn so it survives save and load; x1.5 sim internals
+#3147,T-F667,code,triggers,M,2,1.5,1,3,Ares team script 68 converts members to another type in place through a new conversion owner; x1.5 sim internals
+#3148,T-452E,code,gameplay,M,2,1.5,1,3,Explosion Napalm ICBM Gas and Tiberium crate powerups for maps and mods with native damage and RNG order; x1.5 sim internals
+#3150,T-BDA4,code,graphics,M,2,1.5,1,3,Mouse wheel zoom composes the battlefield before one scale so health bars and building text stay sharp; x1.5 renderer
+#3151,T-C117,code,gameplay,L,4,1.5,1,6,Ares SideExt gives a fourth or later side its own crew disguise survivor paradrop AI defence colour and EVA defaults; x1.5 sim internals
+#3152,T-C117,code,interface,L,4,1.5,1,6,Ares countries carry their own flags status text taunts list order and random weights through lobby diplomacy and loading; x1.5 RE of gamemd code
+#3153,T-C117,code,graphics,S,0.75,1.5,1,1.125,Ares sides draw their own GraphicalText victory and defeat banner; x1.5 RE of gamemd code
+#3154,T-C117,code,interface,M,2,1.5,1,3,Ares sides draw their own campaign and multiplayer score screens and play their own score themes; x1.5 RE of gamemd code
+#3155,T-C117,code,gameplay,S,0.75,1.5,1,1.125,Ares countries can replace the side's paradrop units plane and parachute; x1.5 sim internals
+#3156,T-C117,code,gameplay,S,0.75,1.5,1,1.125,Ares AI.PowerPlants lets a country pick the power plant its computer house adds when short of power; x1.5 sim internals
+#3157,T-C117,code,interface,S,0.75,1,1,0.75,Cursor confinement holds only while the game window is in front so a game launched behind another window does not trap the pointer
+#3158,T-C117,code,interface,S,0.75,1.5,1,1.125,Ares sides draw their own shell dialog background art; x1.5 RE of gamemd code
+#3159,T-F667,code,sound,XS,0.25,1.5,1,0.375,Veteran and elite promotion cues bind through the fixed SOUNDMD catalog across layers and saves; x1.5 RE of gamemd code
+#3160,T-F667,code,sound,S,0.75,1.5,1,1.125,Ares per-type Promote.VeteranSound and Promote.EliteSound; x1.5 RE of gamemd code
+#3161,T-83DE,code,gameplay,M,2,1.5,1,3,Ares superweapon target and house masks and the 21 AI targeting modes read through Ares's own layered readers; x1.5 RE of gamemd code
+#3162,T-F667,code,gameplay,S,0.75,1.5,1,1.125,A hijacked vehicle's death releases its hijacker and passes transferable tags; x1.5 sim internals
+#3163,T-F667,code,gameplay,M,2,1.5,1,3,VehicleThief infantry capture vehicles and captured units count toward build limits; x1.5 sim internals
+#3164,T-F667,code,gameplay,XS,0.25,1.5,1,0.375,An IFV keeps its first gunner when a second passenger boards (one-line gate); x1.5 sim internals
+#3165,T-F667,code,gameplay,XS,0.25,1.5,1,0.375,Open-topped transports clear rider flags before death callbacks; x1.5 sim internals
+#3166,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Ares Convert.Water and Convert.Land change unit type at shorelines; x1.5 sim internals
+#3167,T-F667,code,gameplay,L,4,1.5,1,6,Ares vehicle drivers: KillDriver warheads and survivors and operators and driver trigger events; x1.5 sim internals
+#3168,T-379F,code,multiplayer,L,4,1.5,1,6,Browser build plays online through a WebSocket to UDP gateway with browser lobby requests and a map cache; x1.5 netcode
+#3169,T-83DE,code,tools,S,0.75,1,1,0.75,Five release checks pass again after recent merges through fixture and ratchet and setter-exception updates
+#3170,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Online hosts become ready again: map status and readiness go to the lobby separately; a macOS UDP test race fixed
+#3171,T-83DE,code,tools,S,0.75,1,1,0.75,Stable releases copy their verified installers to Cloudflare R2 so the website can offer direct downloads
+#3172,T-83DE,code,tools,XS,0.25,1,1,0.25,Main moves to 0.2.3 development after the 0.2.2 release
+#3173,T-379F,code,interface,S,0.75,1,1,0.75,Browser launcher page with folder drop and a required-file checklist and load progress
+#3174,T-379F,code,multiplayer,M,2,1.5,1,3,Browser LAN play over WebRTC data channels with a signaling service and virtual addresses; x1.5 netcode
+#3176,T-83DE,code,tools,S,0.75,1,1,0.75,Multiplayer captures sample the stopped position only after the relay-delivered Stop has run
+#3177,T-BDA4,code,interface,S,0.75,1,1,0.75,Keyboard Options description caption and frame scale with the shell instead of clipping
+#3178+#3183+#3192,T-C117,code,interface,M,2,1.5,1,3,Phobos structure cameos show queued-copy counts; a lone held product draws no stray 1 and only the Hold label shifts beside a badge; x1.5 RE of gamemd code
+#3179,T-C117,code,interface,S,0.75,1,1,0.75,Phobos CenterPauseMenuBackground centres the pause menu and other in-game dialog backgrounds above 1024x768
+#3180,T-C117,code,graphics,S,0.75,1.5,1,1.125,Phobos FlyNoWobbles turns the Fly-locomotor hover wobble off or back on per aircraft type or globally; x1.5 renderer
+#3181,T-C117,code,gameplay,S,0.75,1.5,1,1.125,Phobos builds let a right-click cancel one queued structure copy before the building under construction; x1.5 sim internals
+#3182,T-C117,code,gameplay,S,0.75,1.5,0.75,0.84375,Phobos InfantryAutoDeploy makes computer GI-like infantry deploy when they reach a target; x1.5 sim internals; x0.75 rework by others (54% of lines)
+#3184,T-379F,code,sound,S,0.75,1,1,0.75,Browser build plays music and effects through its own Web Audio output without stutter
+#3185,T-C117,code,gameplay,S,0.75,1.5,1,1.125,Phobos ProneSpeed sets how fast prone infantry crawl per type or globally; x1.5 sim internals
+#3187,T-C117,code,interface,S,0.75,1,1,0.75,Phobos BuildingTypeSelectable lets the type-select key and sidebar button pick every building of a type in Ares and Phobos builds
+#3188,T-C117,code,graphics,S,0.75,1,1,0.75,Phobos SelectionFlashDuration flashes the player's units when they are selected
+#3189,T-C117,code,interface,XS,0.25,1.5,1,0.375,The radar minimap follows the GDI or NOD sidebar table so Soviet Yuri and Phobos NOD-layout sides get the native aperture; x1.5 RE of gamemd code
+#3190+#3203,T-83DE,code,multiplayer,L,4,1.5,1,6,Online commands reach players through relay-pushed frames with lost-push repeats and adaptive pacing plus latency diagnostics; x1.5 netcode
+#3193,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Online Custom Match lobby: Observe box on the Players line and a live joined-lobby count and centred pings
+#3194,T-C117,code,interface,S,0.75,1,1,0.75,Phobos MissingCameo draws a configured SHP or PCX placeholder for types and superweapons with no cameo art
+#3195,T-C117,code,gameplay,M,2,1.5,1,3,Phobos power plant enhancers raise plant output by range count and factor; placement shows their range rings; x1.5 sim internals
+#3196,T-C117,code,interface,S,0.75,1,1,0.75,Phobos TimerBlinkColorScheme prints the blinking superweapon timer in a named [Colors] entry
+#3197,T-C117,code,gameplay,S,0.75,1,1,0.75,Phobos Locomotor= aliases such as Jumpjet and Drive select their locomotors
+#3198,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Operators can post a timed notice into the online lobby chat that each session sees once; lobby code since moved to a private repository
+#3199+#3442,T-83DE,code,multiplayer,L,4,1.5,1,6,Online matches pause and resume for all players at the same frame from the game menu or Pause key; x1.5 netcode; #3442 fixes its sequenced pause test
+#3200,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Weapon firing offsets survive later rules layers that change Image or WeaponCount; x1.5 RE of gamemd code
+#3201,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Ares Gunner vehicles get weapon modes beyond 18 with turret maps and mode names; x1.5 RE of gamemd code
+#3202,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Online password games show the retail lock and ask for the password so players can join them; x1.5 RE of gamemd code
+#3205,T-F667,code,gameplay,M,2,1.5,1,3,Ares kill bounties pay killers with floating credit labels; x1.5 sim internals
+#3206,T-83DE,code,multiplayer,M,2,1.5,1,3,Online command latency cut at the relay and on uplink loss and in pacing: median click-to-dispatch 30 to 40 ms lower; x1.5 netcode
+#3207,T-43C6,code,interface,S,0.75,1,1,0.75,Browser launcher redesign that remembers the game folder and adds full screen and help and diagnostics
+#3208,T-83DE,code,multiplayer,M,2,1,1,2,Lobby gives each online match the relay nearest its farthest player from a regional fleet with per-relay keys; lobby code since moved to a private repository
+#3209,T-83DE,code,tools,S,0.75,1,1,0.75,Browser build runs on pull requests that touch browser-only or shared switch files with a path guard test
+#3210,T-83DE,code,sound,M,2,1.5,1,3,Full-screen movies show subtitlemd.txt subtitles as gamemd does; one port of the native wide-string helpers; x1.5 RE of gamemd code
+#3211,T-EC45,code,triggers,M,2,1.5,1,3,Event and AI Team references share the native ID-or-Name lookup in registration order; fixed AI binds after map definitions; x1.5 RE of gamemd code
+#3212,T-83DE,code,maps,XS,0.25,1.5,1,0.375,House Edge=Air reads as edge 4 as gamemd's reader does; no stock map uses it; x1.5 RE of gamemd code
+#3213,T-83DE,docs,docs,XS,0.25,1,1,0.25,Corrects stale vision ground-bit and rules-startup comments; closes two issues
+#3214,T-83DE,code,multiplayer,L,4,1.5,1,6,Distant players each command through a nearby relay; federated relays merge one stream per match; x1.5 netcode
+#3215,T-83DE,code,cleanup,XS,0.25,1,1,0.25,Drops the dead skirmish Zoom field and keeps test-only fixture difficulty out of saved trigger state
+#3216,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,WOL game channels keep users in native join order so C9 and C2 player order matches the original; x1.5 RE of gamemd code
+#3217,T-EC45,code,triggers,S,0.75,1.5,1,1.125,Trigger events 60 and 61 count the exact registered TechnoType instead of matching names; x1.5 sim internals
+#3218,T-83DE,code,cleanup,S,0.75,1,1,0.75,Removes the never-set sidebar Repair/Sell disabled bits and the hidden dev control buttons with their handlers
+#3219,T-F667,code,interface,S,0.75,1.5,1,1.125,Ares GroupAs type selection groups and TypeSelectUseDeploy; x1.5 RE of gamemd code
+#3220,T-83DE,code,cleanup,S,0.75,1,1,0.75,In-game Sound and Keyboard pages open and close through the one menu transition owner so menu state resets
+#3221,T-379F,code,multiplayer,L,4,1.5,1,6,External launchers start direct and relay multiplayer matches through spawn.ini with result files and a probe; x1.5 netcode
+#3222,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Radar dirty updates find cells through a sorted index instead of scanning whole lists per cell; x1.5 renderer
+#3223,T-83DE,code,tools,S,0.75,1,1,0.75,Map-observation compare reports process Main RNG drift apart from MATCH so audio timing no longer fails pairs
+#3224,T-83DE,code,graphics,M,2,1.5,1,3,Magnetron-lifted vehicles keep their native Jumpjet ground shadows on level ground and slopes; x1.5 renderer
+#3225,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Sparse DockingOffset keys keep each pad at its slot index as gamemd's art reader does (mods only); x1.5 RE of gamemd code
+#3226,T-EC45,code,triggers,XS,0.25,1.5,1,0.375,Unknown vanilla trigger event kinds count as occurred so AND triggers reach their actions; x1.5 sim internals
+#3227,T-83DE,code,cleanup,S,0.75,1,1,0.75,Loading-screen and main-menu and skirmish shell chrome share one atlas packer instead of three copies
+#3228,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Team AI runs right after Kamikaze each frame so team actions and storm RNG draws come in native order; x1.5 sim internals
+#3229,T-83DE,code,tools,XS,0.25,1,1,0.25,WOL Back captures expect the user-list ladder and high-score lookups and pass again
+#3230,T-83DE,code,tools,XS,0.25,1,1,0.25,Skirmish defeat captures check Short Game so they finish with any saved profile
+#3231,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Fresh map loads draw overlays from the finalized grid so walls keep authored connectivity and damage; the recompute copy is deleted; x1.5 sim internals
+#3232+#3259,T-EC45,code,triggers,XS,0.25,1.5,1,0.375,A repeating line trigger no longer clears a different CellTag under the unit crossing it; x1.5 sim internals
+#3233,T-83DE,code,tools,S,0.75,1,1,0.75,FV pursuit native comparisons replay the packet's recorded outside RNG draws and now match on every frame
+#3234+#3286,T-83DE,code,gameplay,M,2,1.5,1,3,A built Psychic Sensor no longer detects cloaked or submerged units or disguised spies as in gamemd; sensor circles centre on the foundation; x1.5 sim internals; #3286 rebaselines the replay hashes it changed
+#3236,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Six sprite and map atlases share one shelf packer; a sprite wider than the estimated page no longer lands past its edge; x1.5 renderer
+#3237,T-83DE,code,tools,XS,0.25,1,1,0.25,Documented map-observation example parks its cursor over the sidebar so its run is valid
+#3238,T-EC45,code,triggers,S,0.75,1.5,1,1.125,Sound-name trigger parameters keep their registered index so timer actions no longer expire at once; x1.5 RE of gamemd code
+#3239,T-83DE,code,tools,XS,0.25,1,1,0.25,Client lib tests compile again after #3221 and capability tests register the wasm and verax features
+#3240,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Building Reveal drops its VERA-only playfield gate so PlaceAnywhere buildings revealed off the playfield place as in gamemd; x1.5 sim internals
+#3241,T-83DE,code,cleanup,M,2,1.5,1,3,Master frame runs as named steps in native PerTickUpdate order from one dispatch in its own file; no behaviour change; x1.5 sim internals
+#3242,T-83DE,code,interface,M,2,1.5,1,3,Presentation and the pickers share one visibility rule; units hidden by translucent fog and cells of fog-frozen buildings cannot be picked; x1.5 RE of gamemd code
+#3243,T-83DE,code,interface,M,2,1,1,2,Render and every input path follow one screen precedence so keys and the cursor reach only the page drawn on top
+#3244+#3255,T-EC45,code,triggers,S,0.75,1.5,1,1.125,Theme-name trigger parameters keep their catalog index for timer actions; the Theme catalog reader moves into core; x1.5 RE of gamemd code
+#3245,T-83DE,code,tools,XS,0.25,1,1,0.25,WebAssembly workflow also builds when the five app files with #3221 browser switches change
+#3246,T-83DE,code,tools,S,0.75,1,1,0.75,New retail_tests run for the ignored retail-backed lib tests that fails on missing inputs; three dead probes removed
+#3247,T-83DE,code,tools,XS,0.25,1,1,0.25,Deletes the unrecheckable Move and Attack production archives (234 files) and the tests that replayed them
+#3248,T-83DE,code,tools,XS,0.25,1,1,0.25,Stale V3 flak interception retail test rebuilt so Flak Tracks again shoot the rocket down
+#3249,T-83DE,code,tools,S,0.75,1,1,0.75,Shell capture tools share the tactical strict JSON policy and keep frame paths inside the bundle
+#3250,T-83DE,code,interface,S,0.75,1.5,1,1.125,Campaign units over a shrouded object move there or get NoMove instead of attacking; cursor and click agree; x1.5 RE of gamemd code
+#3251+#3265,T-83DE,code,tools,S,0.75,1,1,0.75,Oracle producers keep native calls and checks under python -O through one require helper and a scan guard
+#3252,T-83DE,code,cleanup,S,0.75,1,1,0.75,Map load and mid-match atlas growth collect sprite atlas coverage through one owner
+#3253,T-83DE,code,tools,S,0.75,1,1,0.75,Depth-fixture scenes name the Houses a skirmish creates so their objects load again
+#3254,T-83DE,code,tools,S,0.75,1,1,0.75,README indexes for the spatial and rules and storage oracle families; seven unconsumed producers deleted
+#3256,T-83DE,code,cleanup,S,0.75,1,1,0.75,The local player comes only from the saved current House; owner guesses and Americans fallbacks removed
+#3257,T-83DE,code,tools,S,0.75,1,1,0.75,Ghidra frame comparison keeps phi-edge copies out of native instruction operands
+#3258,T-83DE,code,tools,S,0.75,1,1,0.75,Three stale retail team-script test fixtures fixed for the Yuri attack and transport and spy teams
+#3260,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Theater bridge pieces and tile shadow flags are read once at theater load; modded theaters follow native; x1.5 RE of gamemd code
+#3261+#3280,T-83DE,code,cleanup,XS,0.25,1,1,0.25,Lockstep byte adapter and unused tactical write types compile only for tests; #3280 finishes it through the production send step
+#3262,T-83DE,code,interface,S,0.75,1.5,1,1.125,Sound Options sliders are disabled without an audio device and disabled trackbars darken their thumb as in gamemd; x1.5 RE of gamemd code
+#3263,T-83DE,code,cleanup,S,0.75,1,1,0.75,One owner decides owner-draw combo presses across the shell dialogs; arrow zone 19 px as in gamemd
+#3264,T-83DE,code,cleanup,S,0.75,1,1,0.75,Saved-seed and saved-game browsers share one prompt builder and focus reset
+#3266,T-83DE,code,cleanup,XS,0.25,1,1,0.25,Drops the always-1.0 sidebar ui_scale and its builder parameters
+#3267,T-83DE,code,tools,S,0.75,1,1,0.75,Seven asset tool verbs share one file-name sanitiser instead of private copies
+#3269,T-83DE,code,tools,XS,0.25,1,1,0.25,asset art-for resolves theaters from the production theater table instead of a copy
+#3270,T-83DE,code,tools,S,0.75,1,1,0.75,sim-bench prints the completed frames timings and hashes when a later frame fails
+#3271,T-83DE,code,cleanup,S,0.75,1,1,0.75,Main menu paints press and hover from the shell controller 0xE2 instance; its mirror copy is removed
+#3272,T-379F,code,multiplayer,XS,0.25,1,1,0.25,Relay launches may hold one human against AI opponents
+#3273,T-83DE,code,interface,M,2,1.5,1,3,Cursor and click share Foot shroud and key rungs for Shift and Alt and Ctrl+Alt plus C4 and infiltration and garrison and passenger orders; x1.5 RE of gamemd code
+#3274,T-83DE,code,tools,XS,0.25,1,1,0.25,Paid Moon Chronosphere retail test feeds strip visits so its AMCV leaves the factory again
+#3275,T-83DE,code,tools,XS,0.25,1,1,0.25,sim-bench march houses are built with the launch house constructor
+#3276,T-83DE,code,tools,XS,0.25,1,1,0.25,Architecture guard forbids ui depending on render and render docs state the boundary; stale guard pin dropped
+#3277,T-83DE,code,graphics,XS,0.25,1.5,1,0.375,Ares bounty labels draw at their native slot under the band box and order lines; stale guard pin dropped; x1.5 renderer
+#3278,T-83DE,code,tools,S,0.75,1,1,0.75,Asset sniffer classifies palettes and SHPs whose header also reads as a MIX; duplicate classifier deleted
+#3279,T-83DE,code,cleanup,S,0.75,1,1,0.75,Fixed and capture launches take one versioned stock game-mode row pinned to the retail roster
+#3281,T-83DE,code,tools,XS,0.25,1,1,0.25,Map observation captures of scenes without voxel models report an empty unit atlas instead of failing
+#3282,T-83DE,code,tools,XS,0.25,1,1,0.25,Ignored RMG lifecycle test asserts the native crate Mark rule instead of one cell's outcome so it passes again
+#3283,T-83DE,code,tools,S,0.75,1,1,0.75,Unlayered retail rules fixture binds infantry sequences so killed test infantry die instead of reviving; callers drop their own binding
+#3285,T-83DE,code,tools,S,0.75,1,1,0.75,sim-bench --frame-profile prints the sim frame profile and phase means; the Allied bench base gains a Gap Generator and a power plant
+#3287,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Primary factories group by raw Factory value and Naval so any nonzero Factory type takes and toggles a primary; x1.5 sim internals
+#3289,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Online Options page shows only Play Music; online chat ignores saved language buddy and clan filters that could hide all of it
+#3290+#3302,T-E773,code,interface,S,0.75,1,1,0.75,Browser Quit stops audio and waits for saved user data before closing the tab or showing a saved notice
+#3291,T-E773,code,multiplayer,S,0.75,1,1,0.75,WOL message and wait boxes and their buttons scale with the shell in larger windows
+#3292,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Games refused as outdated by the lobby show its reason and the releases link at sign-in and once in chat after a lobby upgrade
+#3293,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Online lobby page drops the one-room lobby list and its join lines; the welcome text no longer names the lobby
+#3294,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Network matches refuse orders sales and plans for another House's objects so a modified client cannot command them; x1.5 netcode
+#3295,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,A failed network frame stops the match with the out-of-sync box instead of crashing the game; x1.5 netcode
+#3303,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Relay handshake and input budgets resist replayed tickets and forged traffic that could lock every player out; x1.5 netcode
+#3304,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Lobby limits key on IPv6 /64 networks and cap one network at 64 sign-ups an hour and 64 sessions; cleanup runs once a second
+#3305,T-EC45,code,triggers,S,0.75,1.5,1,1.125,Trigger action 115 flashes the cameo of the exact type class the map names; x1.5 sim internals
+#3306,T-E773,code,interface,XS,0.25,1.5,1,0.375,Tooltip text and frame use the retail draw insets so CJK glyphs clear the border; x1.5 RE of gamemd code
+#3307,T-EC45,code,triggers,S,0.75,1.5,1,1.125,Full=yes reinforcement teams with a harvester now spawn with a full ore load; x1.5 sim internals
+#3308,T-83DE,code,multiplayer,M,2,1,1,2,Lobby closes six ways one player or network could drain shared budgets; crashed players' sessions no longer stay 24 hours
+#3309,T-EC45,code,triggers,S,0.75,1.5,1,1.125,Trigger action 84 wakes sleeping map groups across Houses; x1.5 sim internals
+#3310,T-EC45,code,gameplay,M,2,1.5,1,3,Map Units linked by FOLLOWS change owner together and the follower trails its leader; x1.5 sim internals
+#3311,T-EC45,code,gameplay,M,2,1.5,1,3,The TWLT070T chain-reaction anim removes its ore or gems and throws crystal debris with damage; x1.5 sim internals
+#3312+#3397,T-E773,code,sound,S,0.75,1.5,1,1.125,Radar movie subtitle cues post as tactical HUD messages as gamemd does; x1.5 RE of gamemd code
+#3315,T-379F,code,interface,M,2,1,1,2,Browser hosts get match-ended and engine-exit events with results and scores
+#3318,T-379F,code,graphics,M,2,1.5,1,3,Browsers without WebGPU render through a WebGL2 fallback for terrain and screen effects; x1.5 renderer
+#3319,T-83DE,code,multiplayer,M,2,1.5,1,3,Relay journals admit matches by reserved bytes instead of eight rooms and stale or superseded rooms free their space; x1.5 netcode
+#3320,T-F667,code,maps,L,4,1.5,1,6,Large maps load by default with per-map cell addressing and wider zone IDs; x1.5 sim internals
+#3322,T-83DE,code,multiplayer,L,4,1.5,1,6,Relay removes online players silent for 10 minutes or stuck loading as a lost connection so the others start and play on; x1.5 netcode
+#3323,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Browser gateway drops over-budget datagrams instead of disconnecting players and shares its total budget fairly; x1.5 netcode
+#3324,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Gateway passes each browser player's address under a shared key so the lobby gives browser players their own network limits
+#3325+#3402,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Relay tickets renew at half-life from grant receipt on a clock that counts sleep so slow clocks and lobby outages no longer freeze matches
+#3326,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,A malformed or unreadable relay batch makes its sender leave at that frame instead of stalling or ending the match; x1.5 netcode
+#3327,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Network games no longer raise the Selected by player trigger event on the selecting client alone so it cannot desync them; x1.5 netcode
+#3328,T-83DE,code,multiplayer,M,2,1.5,1,3,Multiplayer frame checksum also covers money health and trigger state so such desyncs show at once; spy event 53 kept in sync; x1.5 netcode
+#3329,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,LAN UDP sends retire a destination that keeps failing and cap the queue so one unreachable address cannot jam them; x1.5 netcode
+#3331,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Kick votes count only for the authenticated sender and repeats queue once so one peer cannot kick a player alone; x1.5 netcode
+#3332,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Browser LAN handshakes queue per peer connection so a peer leaving mid-handshake cannot block later connections; x1.5 netcode
+#3334,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,A direct LAN message retires only on its destination's ACK so another host cannot cancel lobby GO or map sends; x1.5 netcode
+#3335,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Unanswered relay Leave gives up after about a minute so a down relay no longer blocks every later online game; x1.5 netcode
+#3336,T-83DE,code,multiplayer,M,2,1.5,1,3,Relay budgets shared fairly between matches; expired-ticket Leave and pauses bounded and started matches outlive their certificate; x1.5 netcode
+#3337,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Online clients keep probing relay push after three lost replies instead of polling for the rest of the match; x1.5 netcode
+#3338,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Gateway holds a departed browser's virtual LAN address for two minutes so a newcomer cannot take it mid-game; x1.5 netcode
+#3339,T-83DE,code,multiplayer,XS,0.25,1.5,1,0.375,Relay refuses one-source ordering certificates so a lone client cannot hold a room and journal; x1.5 netcode
+#3341,T-C117,code,gameplay,XL,8,1.5,1,12,Phobos AttachEffect end to end: timed effects with stat folds discard rules anims tints and expire/revenge/reflect weapons plus critical hits; x1.5 sim internals
+#3343,T-43C6,code,tools,S,0.75,1,1,0.75,Dev builds run an offline skirmish at 1x to 10x speed for testing
+#3344,T-4BF7,code,tools,XS,0.25,1,1,0.25,WebAssembly CI also runs for three shell files that hold browser-specific branches
+#3345,T-83DE,code,tools,XS,0.25,1,1,0.25,WGSL shaders stay LF in Windows checkouts so the WebGL shader test and dev builds pass on Windows
+#3347,T-4BF7,code,multiplayer,XS,0.25,1,1,0.25,Browser gateway answers malformed upgrade URLs with HTTP 400 instead of exiting
+#3348,T-83DE,code,tools,XS,0.25,1,1,0.25,Version raised to 0.2.4 after the v0.2.3 release
+#3349,T-4BF7,code,multiplayer,S,0.75,1,1,0.75,Browser LAN signaling caps queued output per recipient and in total so slow peers cannot grow memory
+#3350,T-83DE,code,tools,M,2,1,1,2,CI plays released clients' relay protocol code against the checkout's relay so relay changes cannot strand released games
+#3351,T-C117,code,cleanup,S,0.75,1,1,0.75,Reserves the opt-in NPBUG bug-fix build capability with all its combinations and a docs section per chain
+#3391,T-4BF7,code,multiplayer,S,0.75,1,1,0.75,Browser game gateway charges Ping and Pong writes to their own fair rate and output limits
+#3392,T-C117,code,cleanup,S,0.75,1,1,0.75,$Inherits expansion is charged against an expanded-text budget so a small INI cannot balloon into tens of megabytes
+#3393,T-C117,code,interface,XS,0.25,1,1,0.25,SoloSkirmish test matches can also start with every AI on the player's own team
+#3394,T-83DE,code,tools,S,0.75,1,1,0.75,Pull requests run the relay protocol and gateway tests; the gateway port-release test no longer fails on macOS
+#3403,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Lobby accepts solo game advertisements and holds rooms to the advertised join limit instead of refusing hosts with only AI
+#3404,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,Lobby network identifiers are keyed HMACs so stored rows no longer reveal players' IP addresses
+#3405,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Online rooms report a lobby outage and its recovery once; periodic pings and renewals no longer pile up ahead of Ready and Start
+#3406,T-C117,code,graphics,S,0.75,1.5,0.75,0.84375,Phobos AirstrikeLineColor and LaserTargetColor set the airstrike beam dot and target tint per unit type; x1.5 renderer; x0.75 rework by others (54% of lines)
+#3407,T-83DE,code,tools,S,0.75,1,1,0.75,Lobby Worker moves to a private repository; its protocol becomes a public doc and a mock grant signer keeps the spawn e2e test working
+#3408,T-C625,code,interface,S,0.75,1,1,0.75,Original YR Style paints the Skirmish and LAN and WOL setup pages with the YR setup art
+#3409,T-C117,code,gameplay,S,0.75,1.5,1,1.125,Phobos per-projectile Gravity= drives that projectile's flight and launch speed and arcing range; x1.5 sim internals
+#3410,T-C117,code,gameplay,S,0.75,1.5,1,1.125,Phobos AllowDamageOnSelf lets a warhead's area damage hit its own firer on the ground and in the air; x1.5 sim internals
+#3412,T-C117,code,gameplay,S,0.75,1.5,1,1.125,Phobos DecloakDamagedTargets decides whether a hit uncloaks its target; shield-absorbed hits count; x1.5 sim internals
+#3413,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,A relay room frozen by a journal failure is released and long-ended leftover journals stop counting against the quota; x1.5 netcode
+#3414,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Online starts survive passing UDP errors during relay admission and resend relay and latency reports a busy lobby refused
+#3415,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Abort leaves a relay match whose relay is unreachable instead of showing Reconnecting forever; x1.5 netcode
+#3416,T-C117,code,sound,S,0.75,1.5,0.75,0.84375,The EA/Westwood logo plays before the splash at every launch and the YR intro at the first; x1.5 RE of gamemd code; x0.75 rework by others (50% of lines)
+#3417,T-83DE,docs,docs,XS,0.25,1,1,0.25,Tracks the Phobos AllowDamageOnSelf docs page so the link from the Phobos page works
+#3418,T-83DE,code,multiplayer,M,2,1.5,1,3,Relay rooms reserve frame ends an hour at a time so a relay admits about 110 two-player matches instead of 43; ended matches refuse a late Ready; x1.5 netcode
+#3419,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Relay housekeeping is paced instead of running before every datagram and a federated start slews by elapsed time; x1.5 netcode
+#3420,T-83DE,code,multiplayer,M,2,1.5,1,3,Clients read newer relay replies by their known prefix and end a match a newer relay would stall with an update prompt; x1.5 netcode
+#3421,T-83DE,code,multiplayer,M,2,1.5,1,3,A lost federated relay's players depart so the match plays on; link entries resend only when overdue; x1.5 netcode
+#3422+#3447,T-83DE,code,interface,L,4,1,1,4,Signed self-updater for stable releases on Windows macOS and Linux with a main-menu offer and Check for Updates; update-test folder leak fixed
+#3423,T-83DE,code,interface,S,0.75,1,1,0.75,Vera Options Skip Startup Logo box skips the EA/Westwood logo movie; the splash holds 6 s
+#3424,T-83DE,code,tools,S,0.75,1,1,0.75,Repairs six core lib tests left failing by reviewed production changes; tests only
+#3425,T-C117,code,gameplay,L,4,1.5,1,6,Phobos Airburst and Splits projectiles burst into retargeted child weapons with target filters and firer attribution; x1.5 sim internals; landed in #3473
+#3426,T-C117,code,graphics,M,2,1.5,1,3,Phobos warhead AnimList and SplashList pick one or all anims with scatter and intervals plus surface and Z rules; x1.5 sim internals; landed in #3473
+#3427,T-379F,code,interface,S,0.75,1,1,0.75,Launch probe lists the game data's campaigns and mission chains for launchers
+#3432,T-C117,docs,docs,guide,2,1,1,2,Docs pages for Phobos AttachEffect crits selection flash and locomotor aliases and Ares promotion sounds; porting authors credited; landed in #3473
+#3433,T-C117,code,cleanup,S,0.75,1,1,0.75,Malformed CSF TMP PCX and SHP headers can no longer reserve huge allocations before their payload is checked; landed in #3473
+#3434,T-C117,code,gameplay,S,0.75,1.5,1,1.125,Phobos warhead Jumpjet* keys override a victim's jumpjet flight when a locomotor warhead imbues it; x1.5 sim internals; landed in #3473
+#3436,T-F667,code,interface,S,0.75,1.5,1,1.125,Clicks and hover skip invisible non-local objects such as invisible map lamps; x1.5 RE of gamemd code
+#3437,T-F667,code,interface,M,2,1,1,2,Compact expandable superweapon timer list with toggle and wheel paging for games with many superweapons
+#3438,T-C117,code,gameplay,M,2,1.5,1,3,Phobos mind control: victim sizes count against capacity plus ReleaseVictim range limit link visibility and ring anim; x1.5 sim internals; landed in #3473
+#3439,T-83DE,code,cleanup,XS,0.25,1,1,0.25,Replaces two AttachEffect setters the owner guard rejects so the release test job passes again
+#3440,T-83DE,code,tools,S,0.75,1,1,0.75,Update test installs where players do: a Windows path with a space and /Applications and a FUSE-mounted AppImage
+#3441,T-83DE,code,tools,S,0.75,1,1,0.75,Oracle corpora written one row per line with compact JSON below; tracked tools shrink from 743 to 456 MB
+#3443,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,The public online lobby shows as VERA20K Online instead of German Bunker through one base-name owner
+#3444+#3457,T-83DE,code,multiplayer,L,4,1.5,1,6,Same state and commands give the same hashes on every platform and in wasm and on every network peer; Determinism workflow with its zip contents corrected; x1.5 sim internals
+#3445,T-BDA4,code,graphics,S,0.75,1.5,1,1.125,The Yuri War Factory shows its exit platform and pillars on temperate maps through the native theater then generic bib lookup; x1.5 RE of gamemd code
+#3446,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Network games keep control-group keys in a per-player slot so map teams and trigger action 84 stay in sync; x1.5 sim internals
+#3448,T-83DE,code,multiplayer,M,2,1,1,2,Lobby events arrive over a WebSocket as they happen with one-second polling kept as the fallback
+#3449,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Network games read no local owner in Behind and force-fire and cloaking decisions so peers agree; x1.5 sim internals
+#3451,T-83DE,code,multiplayer,M,2,1.5,1,3,Human-owned map structures and co-op carry-over and off-map cell probes and the rules hash no longer differ between peers; x1.5 sim internals
+#3452,T-83DE,code,maps,S,0.75,1.5,1,1.125,Every map load fills cells over a zero base instead of the previous load's theater so peers and replays agree; x1.5 sim internals
+#3453,T-997B,code,graphics,M,2,1,1,2,Team Color Strength slider makes house colours bolder for colour-blind players; level 1 stays retail
+#3454,T-83DE,code,tools,S,0.75,1,1,0.75,Download publishing and its update signing key run in an approval-gated environment; R2 release objects are locked
+#3455,T-83DE,code,tools,S,0.75,1,1,0.75,sim-bench seats only as many computer houses as the map admits so Hills and Dustbowl runs are real games
+#3456,T-83DE,code,maps,S,0.75,1.5,1,1.125,Map packs and CD archives register in NTFS name order on every platform so shared entries resolve alike; x1.5 RE of gamemd code
+#3458,T-3F83,code,triggers,S,0.75,1.5,1,1.125,Team script action 51 plays an animation on each team member and advances; x1.5 sim internals
+#3459,T-83DE,code,tools,S,0.75,1,1,0.75,A bad stable release can be stopped by rolling latest.json back to the previous signed release
+#3460,T-F667,code,cleanup,S,0.75,1.5,1,1.125,Visibility inputs and sight geometry reused; 20k-unit battle ticks about 12% faster; x1.5 sim internals
+#3461,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Internet opens the online sign-in directly; the welcome page with its counts and update notice is skipped
+#3462,T-379F,code,multiplayer,S,0.75,1,1,0.75,Spawned matches record replays that load their map and the browser hands replays to its host
+#3463,T-4BF7,code,interface,S,0.75,1,1,0.75,A trackpad release no longer scrolls the sidebar strip back up a row so scrolled cameos stay clickable
+#3464,T-C117,code,cleanup,S,0.75,1.5,1,1.125,Renderer moves to wgpu 30.0.1 with queue presentation and sRGB output and exact limits kept; x1.5 renderer; landed in #3473
+#3465,T-F667,code,tools,S,0.75,1,1,0.75,Scale benchmark fills all player starts and uses the map grid and optional client timing
+#3466,T-83DE,code,tools,S,0.75,1,1,0.75,Release promotion needs a maintainer-made version tag so other accounts cannot create release tags
+#3469,T-379F,code,multiplayer,S,0.75,1,1,0.75,Spawned matches poll the lobby once a minute after the start barrier instead of every second
+#3470,T-C117,code,cleanup,S,0.75,1,1,0.75,The portable state hasher moves into util so rules stop depending on sim and the architecture guard passes
+#3471,T-C117,code,sound,XS,0.25,1,1,0.25,Bink movies skip empty audio slots as FFmpeg does so trailing frames stop logging packet errors
+#3472,T-83DE,code,interface,S,0.75,1,1,0.75,Updater checks trust the system's certificate store first and fall back to the built-in roots
+#3474,T-F667,code,cleanup,S,0.75,1.5,1,1.125,Sight-border refresh reuses resolved interior cells; state hashes match at 20k units; x1.5 sim internals
+#3475,T-83DE,code,multiplayer,M,2,1,1,2,Guests' games accept the room settings by themselves so only the host presses Start in LAN and online rooms
+#3476,T-83DE,docs,docs,XS,0.25,1,1,0.25,Settings section removed from the README in all ten languages
+#3477,T-83DE,code,tools,S,0.75,1,1,0.75,All 55 workflow action references pinned to full commits so a moved upstream tag cannot change a build
+#3480,T-F667,code,tools,XS,0.25,1,1,0.25,WASM PR path filter includes replay diagnostics
+#3481,T-83DE,code,tools,S,0.75,1,1,0.75,Source guards pin engine platform and per-client reads so a new determinism risk fails a test
+#3482,T-83DE,code,multiplayer,XS,0.25,1.5,1,0.375,Quick Match treats a matchbot need reply without its space as an unknown server command as gamemd does; stale WOL notes fixed; x1.5 RE of gamemd code
+#3483,T-F667,code,tools,XS,0.25,1,1,0.25,Native core test dependency features match the workspace
+#3485,T-F667,code,gameplay,S,0.75,1.5,1,1.125,Garrisoned infantry leave a destroyed building after its death effects in the order gamemd uses; x1.5 sim internals
+#3486,T-83DE,code,cleanup,XS,0.25,1,1,0.25,Phobos warhead anim-interval counter gets an owner type so the root-slot guard passes again
+#3487,T-83DE,code,triggers,S,0.75,1.5,1,1.125,Script action 51 and trigger action anims bind their art at load and unbindable art no longer fails the map; x1.5 RE of gamemd code
+#3488,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Online Create Game and password popups use Red Alert 2's box art; clan and Observe boxes dropped and Limit moved clear of the art
+#3489,T-F667,code,cleanup,S,0.75,1.5,1,1.125,Map-cell edge updates read both channels from one resolved center; x1.5 sim internals
+#3490,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,VERA's online game room drops the Page button; chat's page command and the in-match key still page
+#3491,T-83DE,code,tools,XS,0.25,1,1,0.25,Release skill checks that the website's download links lead to R2 after a release
+#3492,T-83DE,code,multiplayer,M,2,1,1,2,VERA's game rooms move game options into a Game Options popup and page the roster by 12 rows
+#3493,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,Online lobby sign-in prints a welcome and how to send a private message
+#3495,T-83DE,code,tools,S,0.75,1,1,0.75,Update test also updates the newest published release to each dev build on all three platforms
+#3496,T-997B,code,gameplay,L,4,1,1,4,Opt-in skirmish AI commander personalities from rules that tilt AI team choice and play feedback clips
+#3497,T-F667,code,graphics,M,2,1.5,1,3,Buildings use native render bounds for viewport admission so roofs no longer vanish at screen edges; x1.5 renderer
+#3498,T-C117,code,gameplay,S,0.75,1.5,1,1.125,Phobos AllowAirstrike and AirstrikeTargets let airstrikes designate units and infantry with planes following a moving target; x1.5 sim internals; landed in #3521
+#3499,T-F667,code,interface,S,0.75,1.5,1,1.125,Building and Defense tab shortcuts no longer reopen submitted placements; x1.5 RE of gamemd code
+#3501+#3509,T-F667,code,gameplay,M,2,1.5,1,3,Buildings with installed upgrades select and fire the upgrade weapons with their firing offsets and attack rules; x1.5 sim internals
+#3502,T-379F,code,multiplayer,S,0.75,1,1,0.75,A spawn launch can name the browser gateway for its relay traffic
+#3505,T-C117,code,graphics,M,2,1.5,1,3,Phobos custom insignia: InsigniaTypes and per-rank weapon and passenger badges with offsets and visibility rules; x1.5 renderer; landed in #3521
+#3506,T-4BF7,code,gameplay,S,0.75,1.5,1,1.125,Finite-ammo infantry refill an empty magazine when their fear runs out; x1.5 sim internals
+#3508,T-C117,code,gameplay,M,2,1.5,1,3,Airburst and warhead-anim follow-ups: firer house on simulated shots and map-wide spread and child laser/bolt/beam effects and anim owners; x1.5 sim internals; landed in #3521
+#3511,T-C117,code,gameplay,M,2,1.5,1,3,Phobos Iron Curtain and Force Shield options for organics and kill warheads plus extra tint and curtains kept on deploy; x1.5 sim internals; landed in #3521
+#3512,T-4BF7,code,gameplay,S,0.75,1.5,1,1.125,Fraidycat infantry panic after firing their last round of finite ammo; x1.5 sim internals
+#3513,T-F667,code,gameplay,XS,0.25,1.5,1,0.375,Guarding weapons factories with HasStupidGuardMode off scatter units blocking their exit (unused in stock); x1.5 sim internals
+#3514,T-F667,code,sound,XS,0.25,1.5,1,0.375,GenericClick keeps its cue after a failed later sound lookup; x1.5 RE of gamemd code
+#3515,T-4BF7,code,triggers,S,0.75,1.5,1,1.125,Infantry teams that empty raise the map's team-leaves-map event before dissolving; x1.5 sim internals
+#3516,T-379F,code,multiplayer,S,0.75,1,1,0.75,A browser page can start another spawn launch after the engine exits
+#3517,T-4BF7,code,gameplay,S,0.75,1.5,1,1.125,Fraidycat infantry hit by an attacker take fright before the Fearless checks as in retail; x1.5 sim internals
+#3518,T-F667,code,interface,XS,0.25,1.5,1,0.375,Band selection admits 1x1 undeployable buildings as gamemd does (unused in stock); x1.5 RE of gamemd code
+#3519,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,The lobby operator's welcome from the sign-in response replaces the built-in one when set
+#3520,T-83DE,code,multiplayer,M,2,1.5,1,3,VERA's LAN and online rooms seat several spectators who can switch to play; every observer House skips score and defeat; x1.5 RE of gamemd code
+#3522,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Online chat lobby lines show the local time the lobby sent them
+#3525,T-C625,code,sound,S,0.75,1,1,0.75,Config profiles can choose the SOUNDMD and EVAMD root INIs
+#3526,T-E773,code,interface,XS,0.25,1,1,0.25,Campaign autosaves can replace a slot holding an older VERA save layout
+#3527,T-E773,code,interface,S,0.75,1,1,0.75,Loading a saved game presents its loading dialog for a frame before the blocking restore so it is seen
+#3533,T-379F,code,interface,M,2,1,1,2,Browser chat edits take input-method text such as Chinese
+#3535,T-83DE,code,tools,XS,0.25,1,1,0.25,Five Phobos-only tests gated on the phobos feature so default and Ares builds pass
+#3536+#3576,T-83DE,code,multiplayer,M,2,1,1,2,VERA rooms take Max players and spectators at Create Game and seat one row per map start with host AI and slot controls
+#3537+#3543,T-83DE,code,interface,XS,0.25,1,1,0.25,Main menu version line shows the VERA20K release instead of gamemd's fixed 1.001TUC
+#3538,T-83DE,code,gameplay,M,2,1.5,1,3,Frame pacer keeps native due times so 45 FPS network games no longer run at 30 on 60 Hz screens; x1.5 RE of gamemd code
+#3539,T-83DE,code,multiplayer,S,0.75,1,1,0.75,A player the host kicks from a VERA LAN or online room is kept out of it for five minutes
+#3540+#3542+#3544+#3547+#3548+#3571,T-83DE,code,tools,M,2,1,1,2,Mac dev installers are signed and notarized and stapled in CI; follow-ups fix keychain access and signing and the Apple wait
+#3541,T-4BF7,code,multiplayer,M,2,1.5,1,3,Planning-mode infantry orders reach LAN peers on time instead of stalling; replays regenerate them; x1.5 netcode
+#3546+#3549,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Players get clear messages when VERA20k Online is down or in maintenance and leave a lost lobby after a minute; browser build fix
+#3550,T-83DE,code,cleanup,XS,0.25,1,1,0.25,Phobos laser effect stops handing out a mutable birth so the architecture guard and Release tests pass
+#3552,T-379F,code,multiplayer,M,2,1.5,1,3,A crashed or closed player can rejoin a running relay match and catch up; x1.5 netcode
+#3553,T-83DE,code,multiplayer,M,2,1,1,2,Closing the game leaves the relay and lobby and LAN rooms cleanly so others no longer wait on timeouts
+#3554,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Online and LAN lobbies name the real failure (full lobby and taken LAN ports and host left) and map transfers retry through drops
+#3555,T-83DE,code,interface,M,2,1,1,2,Startup failures and panics show a system message box with driver advice and the log path instead of closing silently
+#3556,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Online matches with a stalled relay stream show Reconnecting and name the failed game server so Quit works; x1.5 netcode
+#3557,T-83DE,code,tools,XS,0.25,1,1,0.25,Mac signing runs wait for the maintainer's approval; release skill and signing README updated
+#3558,T-83DE,code,tools,S,0.75,1,1,0.75,Production promotion verifies the Mac image's notarization ticket and Gatekeeper acceptance first
+#3567,T-83DE,code,interface,XS,0.25,1.5,1,0.375,Phobos builds load 24-bit PCX cameos and superweapon art instead of SHP fallbacks (one-line gate); x1.5 RE of gamemd code
+#3573,T-E773,code,interface,S,0.75,1,1,0.75,Random Map Setup and Choose Map static text scales with the dialogs
+#3574,T-83DE,code,multiplayer,M,2,1.5,1,3,One relay room may carry a full 30-player 60 Hz match without stalls; relay load generator added; x1.5 netcode
+#3575,T-83DE,code,interface,M,2,1,1,2,Windowed play gets one cursor and a working cursor lock on macOS plus saved window placement and Alt+Enter full screen
+#3577,T-83DE,code,multiplayer,L,4,1,1,4,Online map library in Choose Map with verified downloads and search and favorites; guests download a room's missing map
+#3578,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,Online pause menu's Internet Game Controls sliders draw their rail frames
+#3579,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,VERA's online room shows the connection check box only after a second so Start no longer flashes it
+#3580+#3582,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,LAN and online matches keep the loading screen up two seconds once every player has loaded; #3582 fixes the browser build it broke
+#3581,T-83DE,code,interface,M,2,1,1,2,In-game Esc menu gains a Display group to change zoom and sidebar size and full screen and 4:3 shape mid-match
+#3583,T-83DE,code,multiplayer,L,4,1.5,1,6,Online relay matches slow by up to two speed rows while a player's PC cannot keep up then speed up again with chat notices; x1.5 netcode
+#3584,T-83DE,code,multiplayer,M,2,1,1,2,Players in VERA's online and LAN game rooms return to the same room after a match instead of the lobby
+#3585,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,VERA's online lobby and game rooms print a join line naming the lobby or the room's host
+#3587,T-83DE,code,tools,S,0.75,1,1,0.75,Log file rolls over past 10 MB and only the newest 20 diagnostic replays are kept
+#3588,T-4BF7,code,gameplay,S,0.75,1.5,1,1.125,Threat coefficients keep their stored per-type values across rules layers so guard target choice matches retail; x1.5 RE of gamemd code
+#3590,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,GameSpeed 0 and 1 and 60 FPS network matches run every due frame per refresh as gamemd's ThrottleFrame does; x1.5 RE of gamemd code
+#3591,T-997B,code,interface,L,4,1,0.75,3,Custom end-game cards and score pages and music from rules with Options switches and an art tool; x0.75 rework by others (23% of lines)
+#3595,T-4BF7,code,gameplay,S,0.75,1.5,1,1.125,Landed paratroopers free-fall from a later bridge collapse; the attached-animation flag follows native attach and detach; x1.5 sim internals
+#3596,T-379F,code,multiplayer,M,2,1,1,2,Spawn launches can start every stock mode but Cooperative through the network setup gates
+#3598,T-379F,code,cleanup,S,0.75,1,1,0.75,Optional threaded browser build runs simulation work on a Web Worker pool
+#3599,T-4BF7,code,gameplay,S,0.75,1.5,1,1.125,Walk infantry given JumpJet=yes can start short moves instead of aborting with an error; x1.5 sim internals
+#3600,T-379F,code,multiplayer,S,0.75,1,1,0.75,Spawn launches can play one Cooperative mission
+#3603,T-4BF7,code,gameplay,S,0.75,1.5,1,1.125,Infantry loaded mid-cloak restart the cloak transition as retail does; x1.5 sim internals
+#3604,T-4BF7,code,graphics,XS,0.25,1.5,1,0.375,Infantry bodies keep the native -10 depth adjustment so pixels near occluders show as in retail; x1.5 renderer
+#3607,T-83DE,code,tools,XS,0.25,1,1,0.25,Contributor rules keep code marked as a sim-scale deviation; moving it back toward native needs a 20000-unit bench
+#3608,T-83DE,code,tools,M,2,1,1,2,Intel Macs get a signed and notarized disk image in releases and the updater picks it
+#3609,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Online hosts can name their game room in the Create Game box and a taken name gets a clear message
+#3610,T-83DE,code,tools,XS,0.25,1,1,0.25,Three Python tool tests failing on main pass again
+#3611,T-83DE,code,tools,S,0.75,1,1,0.75,Review guard flags PRs that touch a sim-scale deviation and the review skill holds them without the 20000-unit bench
+#3612,T-4BF7,code,interface,S,0.75,1.5,1,1.125,Infantry with a healing primary weapon answer Area Guard on Ctrl-clicked ground instead of Attack; x1.5 RE of gamemd code
+#3617,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,Game room no longer flashes a Map transfer line under the map name
+#3618,T-4BF7,code,interface,XS,0.25,1.5,1,0.375,A berserk selected unit shows NoMove instead of Attack when Ctrl-hovering ground; x1.5 RE of gamemd code
+#3619,T-83DE,code,interface,S,0.75,1,1,0.75,Online Maps download box waits for OK or Cancel instead of leaving Choose Map at once
+#3620,T-83DE,code,interface,S,0.75,1.5,1,1.125,Long map names keep their first line inside their Choose Map list row as gamemd's top-aligned rows do; x1.5 RE of gamemd code
+#3621,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,A war factory captured while its door opens still lets its new unit drive out; x1.5 sim internals
+#3622,T-A015,code,interface,M,2,1,1,2,Optional right-click orders: left click selects and right click orders on the map and radar
+#3625,T-83DE,code,multiplayer,S,0.75,1.5,1,1.125,Esc menu speed and connection sliders send no events in relay-paced online matches so delays stay timed; x1.5 netcode
+#3626,T-83DE,code,tools,XS,0.25,1,1,0.25,Review skill squash-merges contributor PRs so GitHub credits the contributor alone
+#3629,T-BDA4,code,triggers,S,0.75,1,1,0.75,Player house tokens extend from A to H to A through AD so maps can name all 30 start slots
+#3630+#3631,T-83DE,code,tools,S,0.75,1,1,0.75,Six library tests failing on main pass again and the Intel Mac release build installs cargo-about
+#3634,T-379F,code,gameplay,S,0.75,1.5,1,1.125,Miner threat searches read zone record 0 as native so bridge maps no longer end online matches out of sync; x1.5 sim internals
+#3637,T-83DE,code,cleanup,S,0.75,1,1,0.75,Paused in-game menu pages stop redrawing every display refresh and draw only when something on them changes
+#3638+#3642,T-83DE,code,interface,S,0.75,1,1,0.75,Choose Map credits the selected map's author under its preview
+#3639,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Batched frame-start target scans removed by #2891 restored as a sim-scale deviation with new scan keys and save and replay handling; x1.5 sim internals
+#3640,T-83DE,code,tools,XS,0.25,1,1,0.25,Pillow raised to 13.0.0 for the tool tests which clears 41 Dependabot alerts
+#3641,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Shroud plane is kept without a CPU redraw or GPU upload when no cell in view changed; x1.5 renderer
+#3644,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Diplomacy sight brackets read each object once instead of once per house map; 30-house ticks about 20% faster; x1.5 sim internals
+#3645,T-83DE,code,tools,XS,0.25,1,1,0.25,Version raised to 0.2.5 after the 0.2.4 release
+#3646,T-83DE,code,cleanup,S,0.75,1,1,0.75,Sidebar reuses its derived simulation inputs until the world changes; skirmish process CPU down about 18%
+#3647,T-452E,code,graphics,S,0.75,1.5,1,1.125,Gates no longer vanish at low health; the native selectable gate frames enter the sprite atlas; x1.5 renderer
+#3648,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Path batches clear only the fact entries the last batch filled instead of whole-map tables; x1.5 sim internals
+#3649,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,House alliance questions answered from a derived ally bit matrix by house id instead of by name; x1.5 sim internals
+#3650+#3660,T-83DE,code,cleanup,M,2,1.5,1,3,A still battlefield is drawn again only when something on it changes; skirmish CPU and GPU use fall about 40%; x1.5 renderer; #3660 moves two debug reads so the architecture guard passes again
+#3651,T-83DE,code,cleanup,XS,0.25,1.5,1,0.375,Terrain tiles pack into the atlas in the same order every run so two capture runs can be compared; x1.5 renderer
+#3652,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Owner and RequiredHouses and ForbiddenHouses become house masks derived once per Country registry instead of every build check; x1.5 sim internals
+#3653,T-83DE,code,cleanup,S,0.75,1,1,0.75,Windowed games ask for the screen list only while a window placement is owed; about 7% of main-thread time saved
+#3654,T-83DE,code,cleanup,M,2,1.5,1,3,Bridge and overlay and smudge draw passes and building slot anims walk only the cells that can reach the view; x1.5 renderer
+#3655,T-83DE,code,multiplayer,S,0.75,1,1,0.75,A crash keeps the match replay and network match errors name the house and checksums that differed
+#3656,T-83DE,code,graphics,M,2,1.5,1,3,Laser jitter and electric bolts and line trails and other tactical effects step once per game tick as in gamemd instead of every refresh; x1.5 renderer
+#3657,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,AI recruitment and unit choice and base defense walk only their own house's objects of a class; x1.5 sim internals
+#3658,T-83DE,code,cleanup,M,2,1.5,1,3,Batched path searches stop cut re-paths early and repeat less lookup work; same answers and hash with mean tick about 7% lower at 20k units; x1.5 sim internals
+#3659,T-83DE,code,multiplayer,XS,0.25,1,1,0.25,Game room map button reads Choose Map so players stop taking it for the match settings
+#3661,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Removing an Anim reads derived slot and owner and holder indexes instead of walking the Logic vector and Anim array; same hash; x1.5 sim internals
+#3662,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Online lobby Create Game and room password popups scale with the page in large windows
+#3663,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Per-object rules type and weapon reads use handles resolved once instead of name lookups; main-thread CPU 69.8 to 67.3 ms per tick; x1.5 sim internals
+#3664,T-379F,code,interface,S,0.75,1,1,0.75,The game starts without the map and movie archives and reports them as optional
+#3665,T-43C6,code,interface,S,0.75,1,0.75,0.5625,Options box shows VERA's own icon artwork on the window and taskbar and Dock; x0.75 rework by others (99% of lines)
+#3666,T-452E,code,interface,S,0.75,1.5,1,1.125,Band-box drag selects units of player-controlled campaign Houses as retail does; x1.5 RE of gamemd code
+#3667,T-379F,code,multiplayer,S,0.75,1,1,0.75,The main menu shows a connecting backdrop while an external network launch joins
+#3668,T-83DE,code,multiplayer,L,4,1.5,1,6,Several players can share one House in LAN and online matches with their own command senders and leave rules; x1.5 netcode
+#3669,T-83DE,code,graphics,S,0.75,1.5,1,1.125,Damaged buildings with bibs such as war factories and refineries draw the damaged pad and its shadow; x1.5 renderer
+#3670,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,A destroyed Tank Bunker releases its tank before its C4 sweep so the tank survives; x1.5 sim internals
+#3671,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,Repair depots and shipyards admit ships at 200 leptons and wait for the arm to rise before Guard; x1.5 sim internals
+#3672,T-83DE,code,interface,S,0.75,1.5,1,1.125,Capturing a player's Construction Yard drops their building placement cursor as gamemd does; x1.5 sim internals
+#3673,T-83DE,code,interface,S,0.75,1.5,1,1.125,With fog of war on fogged enemy buildings leave the radar unless a sensor covers them; x1.5 RE of gamemd code
+#3674+#3698,T-83DE,code,graphics,S,0.75,1.5,1,1.125,An opening or open gate draws its body without the BUILDNGZ z-shape or ExtraLight so its raised arm shows whole; x1.5 renderer
+#3676,T-83DE,research,research,fact,1,1,1,1,Corrects BuildingClass audit notes from native evidence: EjectBunker has no player sender and EMPulseCannon is dormant; records a garrison residual
+#3678,T-83DE,code,maps,S,0.75,1.5,1,1.125,Map [Structures] lines carry upgrade slots across lines and apply the light column as gamemd's reader does; x1.5 RE of gamemd code
+#3679,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,A Construction Yard in Repair runs its native arm: PreProductionAnim then Guard once out of contact; x1.5 sim internals
+#3680,T-83DE,code,gameplay,XS,0.25,1.5,1,0.375,Technos pushed aside by placement may return on bridge cells as the native nearby-cell flag says; x1.5 sim internals
+#3683,T-83DE,code,graphics,M,2,1.5,1,3,Placing a defense draws its range ring and the rings of its nearest same-type buildings; Unit Action Lines gates them; x1.5 renderer
+#3684,T-83DE,code,maps,S,0.75,1.5,1,1.125,Maps below NewINIFormat 4 read packed object cells so old maps place their starting objects right; x1.5 RE of gamemd code
+#3685,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,AI base defence starts its call-for-help cooldown when the defence budget goes negative; x1.5 sim internals
+#3686,T-83DE,code,cleanup,XS,0.25,1.5,1,0.375,No-exit garrison occupants of a sold or destroyed building go through the one KillOccupants port; copied loop removed; x1.5 sim internals
+#3688,T-83DE,code,interface,S,0.75,1.5,1,1.125,A Construction Yard repacks on a ground click while it builds up or repacks; a second click redirects the MCV; x1.5 RE of gamemd code
+#3689,T-83DE,code,gameplay,M,2,1.5,1,3,Cloak-granted buildings fade out and back with native fade stages and sensor scan and slot-anim ramp; x1.5 sim internals
+#3690,T-83DE,code,interface,S,0.75,1.5,1,1.125,Skirmish and network matches open the view on the average of the player's starting objects; x1.5 RE of gamemd code
+#3691,T-83DE,code,gameplay,XS,0.25,1.5,1,0.375,EMP-held Ares buildings stay offline when power toggles or triggers call GoOnline; x1.5 sim internals
+#3692,T-83DE,code,gameplay,XS,0.25,1.5,1,0.375,Garrison MuzzleFlash ports read past a missing index so mod art fires from the right ports; x1.5 RE of gamemd code
+#3693,T-83DE,code,tools,S,0.75,1,1,0.75,Live LAN battle and timeout and quit and two-game capture routes run again after four production changes
+#3694,T-83DE,code,maps,S,0.75,1.5,1,1.125,Generated maps lose their black impassable water diamonds: 2x2 water keeps sea level and the native tile divisor; x1.5 RE of gamemd code
+#3695,T-379F,code,interface,M,2,1,1,2,VERA's own interface text is translatable through English and Chinese language files that fill labels the CSF lacks
+#3696,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Destination edits draw in fewer render passes (58 to 48.6 per frame) with the same pixels; x1.5 renderer
+#3697,T-83DE,code,gameplay,XS,0.25,1.5,1,0.375,Skirmish launches ignore map House Allies= lists as gamemd does; no visible stock change; x1.5 RE of gamemd code
+#3701,T-997B,code,interface,M,2,1,1,2,An abandoned skirmish ends on its score page and the custom end-game card and clip follow the simulation's result frame
+#3702,T-83DE,code,tools,XS,0.25,1,1,0.25,Architecture guard pins the new opening-view and building-cloak per-client reads so Release tests pass again
+#3708,T-83DE,code,sound,XS,0.25,1.5,1,0.375,Online game rooms keep the lobby music instead of restarting the main-menu INTRO; x1.5 RE of gamemd code
+#3709+#3711+#3714+#3715+#3717+#3720,T-83DE,code,tools,S,0.75,1,1,0.75,Manual SignPath test-signing workflow for the Windows game and installer with payload checks and noninteractive retries; #3715 #3717 and #3720 fix the connector and installer metadata
+#3710+#3736,T-83DE,code,multiplayer,M,2,1,1,2,Game room host options for destroyable bridges and in-game allying plus No Yuri and No France and No Spy and No Stolen Tech bans; #3736 rebaselines the replay hashes it changed
+#3712,T-83DE,code,cleanup,M,2,1.5,1,3,Computer_Paranoid's brackets walk only the maps that may change; a 12.6 s sim freeze at 20k units drops to 0.7 s; x1.5 sim internals
+#3713,T-83DE,code,multiplayer,S,0.75,1,1,0.75,Relay journal counts match slowdowns each minute; the relay compatibility check no longer blocks relay deploys
+#3716,T-83DE,code,interface,S,0.75,1.5,1,1.125,Sidebar scroll-arrow tooltips add the Disabled suffix while the arrows are disabled as the tab tips do; x1.5 RE of gamemd code
+#3718,T-83DE,code,interface,S,0.75,1.5,1,1.125,The cameo under the mouse gets retail's one-pixel side-colour outline and art-less cameos keep masks clock and text; x1.5 renderer
+#3719,T-83DE,code,interface,S,0.75,1.5,1,1.125,Superweapon cameo labels such as Charging and On Hold draw under the clock as in retail; x1.5 renderer
+#3721,T-83DE,code,cleanup,S,0.75,1.5,1,1.125,Sidebar cameos follow only native StripClass::Recalculate; two invented Ready-building exceptions removed with no visible change; x1.5 RE of gamemd code
+#3723,T-83DE,code,interface,S,0.75,1.5,1,1.125,Loading a save opens every sidebar strip at its top row as retail does; saves stop storing scroll rows; x1.5 RE of gamemd code
+#3724,T-83DE,code,interface,S,0.75,1.5,1,1.125,Mouse wheel and SidebarUp/Down queue one row that the strip rolls on its next update like the arrows; x1.5 RE of gamemd code
+#3725,T-83DE,docs,docs,XS,0.25,1,1,0.25,Two sidebar audit residual notes beside their code; its cursor and tall-screen notes were replaced by #3731 and #3733
+#3726,T-83DE,docs,docs,removed,0,1,1,0,Sidebar label colour packing residual note; removed again by #3732
+#3728+#3729,T-83DE,docs,docs,XS,0.25,1,1,0.25,Every SidebarClass and StripClass function cited beside the Rust that covers it or given a reason it has no port
+#3730,T-83DE,code,tools,XS,0.25,1,1,0.25,Sidebar geometry oracle runs native GetVisibleSlotCount and a test checks VERA's slot count on 21 layouts
+#3731,T-83DE,code,interface,S,0.75,1.5,1,1.125,Holding the left button over the sidebar keeps the last cursor as retail does instead of the arrow; x1.5 RE of gamemd code
+#3732,T-83DE,code,cleanup,XS,0.25,1.5,1,0.375,Sidebar labels and credits take the side colour through the native 16-bit packing owner; no visible change; x1.5 renderer
+#3733,T-83DE,research,research,fact,1,1,1,1,Shows native's select buttons overrun their 60-slot array on screens 1810 px or taller so VERA keeps its uncapped grid
+#3734,T-83DE,code,tools,S,0.75,1,1,0.75,Map-capture drags record the held cursor and may end over the sidebar so the held-cursor fix has an in-game check
+#3735,T-83DE,code,gameplay,XS,0.25,1.5,1,0.375,A Kirov or Floating Disc still tethered low to its factory cannot be fired at as in gamemd; x1.5 sim internals
+#3737,T-83DE,code,interface,S,0.75,1.5,1,1.125,A local player's selected object leaves the selection when mind control or capture or theft changes its owner; x1.5 sim internals
+#3738,T-83DE,code,interface,M,2,1.5,1,3,Ctrl+Alt and Alt clicks on units follow each receiver's native key and attack rungs incl. self-guard and units the player cannot control; x1.5 RE of gamemd code
+#3739,T-83DE,code,interface,S,0.75,1.5,1,1.125,Units on the bottom playfield row keep a radar dot on the radar's edge as in gamemd; x1.5 renderer
+#3740,T-83DE,docs,docs,XS,0.25,1,1,0.25,TechnoClass audit notes; only the Stun correction and CTF cloak note survive as #3747 #3749 #3750 #3752 and #3754 fixed the rest
+#3741+#3753,T-83DE,research,research,fact,1,1,1,1,Dormant TechnoClass fire and scan arms noted with the DestroyWalls gate identified and a whole-install search showing no retail INI or map wakes them; the thief arm was later ported by #3748
+#3742,T-83DE,research,research,fact,1,1,1,1,Identifies ChangeOwner's three tail calls as radar re-registration and UpdateReveal and names VERA's owner for each
+#3743,T-83DE,code,triggers,S,0.75,1.5,1,1.125,Team script action 52 shows a talk bubble over the team's first member and advances instead of freezing the team; x1.5 sim internals
+#3744,T-83DE,docs,docs,XS,0.25,1,1,0.25,Crush notes record that a crushed mind controller already frees its captives before the kill is booked
+#3747,T-83DE,code,gameplay,XS,0.25,1.5,1,0.375,Only a computer's freshly cloaked Unit scatters; infantry and aircraft cloaked by a crate or map stay put (no stock change); x1.5 sim internals
+#3748,T-83DE,code,gameplay,XS,0.25,1.5,1,0.375,Infantry vehicle thieves skip trains in the threat scan as in gamemd (no stock change); x1.5 sim internals
+#3749,T-83DE,code,graphics,XS,0.25,1.5,1,0.375,Scale pips stay off PixelSelectionBracketDelta while the health bar moves (no stock type has both); x1.5 renderer
+#3750,T-83DE,code,gameplay,XS,0.25,1.5,1,0.375,Buildings also run Stun's spawn kill and target clear and detach so a hit on a dead building drops its attackers; x1.5 sim internals
+#3752,T-83DE,code,gameplay,S,0.75,1.5,1,1.125,A unit killed by its bridge fall still plays its sounds and finishes that frame's scan and manager steps; x1.5 sim internals
+#3754,T-83DE,code,interface,S,0.75,1.5,1,1.125,One TechnoClass vt+0x398 port answers terrain fire for cell and object clicks and replaces the app copy; dormant in retail; x1.5 RE of gamemd code
+adjustment,T-83DE,code,,,,,,-107.125,maintainer-set 212 on their own grant (220 in total with research and docs); AI value 319.125
+adjustment,T-379F,code,,,,,,17.375,maintainer-set 60 after review; AI value 42.625
+adjustment,T-F667,code,,,,,,-11.5,maintainer-set 60 after review; AI value 71.5
+adjustment,T-C117,code,,,,,,-68.15625,maintainer-set 27 after review (30 in total with docs); AI value 95.15625
+adjustment,T-4BF7,code,,,,,,1.375,maintainer-set 18 after review; AI value 16.625
+adjustment,T-997B,code,,,,,,3,maintainer-set 14 after review; AI value 11
+adjustment,T-EC45,code,,,,,,-4.75,maintainer-set 14 after review; AI value 18.75
+adjustment,T-452E,code,,,,,,5.125,maintainer-set 11.5 after review (12 in total with docs); AI value 6.375
+adjustment,T-E773,code,,,,,,3.25,maintainer-set 8 after review; AI value 4.75
+adjustment,T-F3DD,code,,,,,,3,maintainer-set 6 after review; AI value 3

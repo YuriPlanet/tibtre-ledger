@@ -10,6 +10,7 @@ first: the `type` of each valued item in valuations/*.csv, then the category of
 each ledger row whose note cites no valuations file (grants from before itemized
 valuations). Correction rows count against their kind, and a kind is shown only
 while its total is positive, so a correction can move work to another kind.
+Adjustment rows (a maintainer-set total) name no kind of work and are skipped.
 
 Usage: python tally.py
 """
@@ -73,6 +74,8 @@ def load_valued_work() -> dict[str, dict[str, float]]:
     for path in sorted(VALUATIONS.glob("*.csv")):
         with path.open(newline="", encoding="utf-8-sig") as f:
             for row in csv.DictReader(f):
+                if row["item"].strip() == "adjustment":
+                    continue
                 kind = (row.get("type") or row["category"]).strip()
                 work[row["id"].strip()][kind] += float(row["value"])
     return work

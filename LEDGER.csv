@@ -86,3 +86,22 @@ date,id,tibtre,category,notes
 2026-10-25,T-E773,4,legal,issue #3066 license-compliance report with reproducible evidence of an unattributed redistribution of VERA20K code; moved from the 2026-10-25 T-E773 community grant; value 3.75 (valuations/2026-10-25.csv; rubric v1.6)
 2026-10-25,T-4BF7,-4,community,category correction: the 2026-10-25 T-4BF7 community grant moves to legal (valuations/2026-10-25.csv)
 2026-10-25,T-4BF7,4,legal,protecting VERA20k's copyright; moved from the 2026-10-25 T-4BF7 community grant; maintainer-set 4 (valuations/2026-10-25.csv; no rubric row)
+2026-11-03,T-83DE,212,code,265 items from 293 PRs (#3120 to #3754; each listed in the valuations file); AI value 319.125 (valuations/2026-11-03.csv; rubric v1.6); maintainer-set 212 on their own grant (220 in total with research and docs)
+2026-11-03,T-379F,60,code,23 PRs (#3139 to #3695; each listed in the valuations file); AI value 42.625 (valuations/2026-11-03.csv; rubric v1.6); maintainer-set 60 after review
+2026-11-03,T-F667,60,code,45 items from 46 PRs (#3115 to #3518; each listed in the valuations file); #3116 and #3117 merged before the 2026-10-25 update but left out of it; AI value 71.5 (valuations/2026-11-03.csv; rubric v1.6); maintainer-set 60 after review
+2026-11-03,T-C117,27,code,48 items from 50 PRs (#3088 to #3511; each listed in the valuations file); #3114 merged before the 2026-10-25 update but left out of it; their closed #3425 #3426 #3433 #3434 #3438 and #3464 landed through #3473 and #3498 #3505 #3508 and #3511 through #3521; AI value 95.15625 (valuations/2026-11-03.csv; rubric v1.6); maintainer-set 27 after review (30 in total with docs)
+2026-11-03,T-4BF7,18,code,17 PRs (#3344 to #3618; each listed in the valuations file); AI value 16.625 (valuations/2026-11-03.csv; rubric v1.6); maintainer-set 18 after review
+2026-11-03,T-997B,14,code,4 PRs (#3453 #3496 #3591 #3701); AI value 11 (valuations/2026-11-03.csv; rubric v1.6); maintainer-set 14 after review
+2026-11-03,T-EC45,14,code,13 items from 15 PRs (#3102 to #3311; each listed in the valuations file); #3102 merged before the 2026-10-25 update but left out of it; #3232 and #3244 landed through #3259 and #3255; AI value 18.75 (valuations/2026-11-03.csv; rubric v1.6); maintainer-set 14 after review
+2026-11-03,T-452E,11.5,code,5 PRs (#3112 #3142 #3148 #3647 #3666); AI value 6.375 (valuations/2026-11-03.csv; rubric v1.6); maintainer-set 11.5 after review (12 in total with docs)
+2026-11-03,T-E773,8,code,7 items from 9 PRs (#3290 #3291 #3302 #3306 #3312 #3397 #3526 #3527 #3573); #3290 landed with the fix in #3302 and their closed #3312 through #3397; AI value 4.75 (valuations/2026-11-03.csv; rubric v1.6); maintainer-set 8 after review
+2026-11-03,T-F3DD,6,code,1 PR (#3132); AI value 3 (valuations/2026-11-03.csv; rubric v1.6); maintainer-set 6 after review
+2026-11-03,T-BDA4,5.5,code,4 PRs (#3150 #3177 #3445 #3629); value 5.625 (valuations/2026-11-03.csv; rubric v1.6)
+2026-11-03,T-43C6,2,code,3 PRs (#3207 #3343 #3665); value 2.0625 (valuations/2026-11-03.csv; rubric v1.6)
+2026-11-03,T-A015,2,code,1 PR (#3622); value 2 (valuations/2026-11-03.csv; rubric v1.6)
+2026-11-03,T-C625,1.5,code,3 PRs (#3135 #3408 #3525); #3135 valued 0; value 1.5 (valuations/2026-11-03.csv; rubric v1.6)
+2026-11-03,T-3F83,1,code,1 PR (#3458); value 1.125 (valuations/2026-11-03.csv; rubric v1.6)
+2026-11-03,T-83DE,4,research,4 items from 5 PRs (#3676 #3733 #3741 #3742 #3753); value 4 (valuations/2026-11-03.csv; rubric v1.6)
+2026-11-03,T-83DE,4,docs,10 items from 11 PRs (#3118 to #3744; each listed in the valuations file); #3118 merged before the 2026-10-25 update but left out of it; #3726 valued 0; value 3.75 (valuations/2026-11-03.csv; rubric v1.6)
+2026-11-03,T-C117,3,docs,2 PRs (#3096 #3432); their closed #3432 landed through #3473; value 3.24 (valuations/2026-11-03.csv; rubric v1.6)
+2026-11-03,T-452E,0.5,docs,1 PR (#3134); value 0.25 (valuations/2026-11-03.csv; rubric v1.6)
