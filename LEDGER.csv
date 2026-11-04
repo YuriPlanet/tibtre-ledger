@@ -105,3 +105,4 @@ date,id,tibtre,category,notes
 2026-11-03,T-83DE,4,docs,10 items from 11 PRs (#3118 to #3744; each listed in the valuations file); #3118 merged before the 2026-10-25 update but left out of it; #3726 valued 0; value 3.75 (valuations/2026-11-03.csv; rubric v1.6)
 2026-11-03,T-C117,3,docs,2 PRs (#3096 #3432); their closed #3432 landed through #3473; value 3.24 (valuations/2026-11-03.csv; rubric v1.6)
 2026-11-03,T-452E,0.5,docs,1 PR (#3134); value 0.25 (valuations/2026-11-03.csv; rubric v1.6)
+2026-11-04,T-379F,80,code,work on the closed-source multiplayer client; maintainer-set 80 (valuations/2026-11-04.csv; no rubric row since its code is not public)

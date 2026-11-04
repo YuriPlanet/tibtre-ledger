@@ -1,15 +1,15 @@
 # Tibtre balances
 
-Generated from [`LEDGER.csv`](LEDGER.csv) - 106 grant(s), 2889 tibtre in circulation. Do not edit by hand; run `python tally.py`.
+Generated from [`LEDGER.csv`](LEDGER.csv) - 107 grant(s), 2969 tibtre in circulation. Do not edit by hand; run `python tally.py`.
 
 | # | Contributor | Tibtre | Work |
 |---|---|---|---|
 | 1 | hrusten | 1921.5 | multiplayer, gameplay, code cleanup and speed, menus and controls, graphics, tests and tools, maps and terrain, sound and video, map triggers and AI scripts, docs, research, earlier code |
 | 2 | zzzzzzh123 | 384.5 | gameplay, map triggers and AI scripts, menus and controls, graphics, sound and video, community, legal, maps and terrain, tests and tools, code cleanup and speed, earlier code |
-| 3 | 1372704087 | 115.5 | gameplay, menus and controls, graphics, tests and tools, code cleanup and speed, docs, sound and video, earlier code |
-| 4 | Krisztiaan | 84 | gameplay, graphics, tests and tools, earlier code |
-| 5 | EncoreAlpha | 72.5 | graphics, gameplay, menus and controls, community, legal, multiplayer, tests and tools, maps and terrain, sound and video, earlier code |
-| 6 | libi | 60 | multiplayer, menus and controls, graphics, gameplay, sound and video, code cleanup and speed |
+| 3 | libi | 140 | multiplayer, menus and controls, graphics, gameplay, sound and video, code cleanup and speed |
+| 4 | 1372704087 | 115.5 | gameplay, menus and controls, graphics, tests and tools, code cleanup and speed, docs, sound and video, earlier code |
+| 5 | Krisztiaan | 84 | gameplay, graphics, tests and tools, earlier code |
+| 6 | EncoreAlpha | 72.5 | graphics, gameplay, menus and controls, community, legal, multiplayer, tests and tools, maps and terrain, sound and video, earlier code |
 | 7 | 996666925 | 44.5 | menus and controls, graphics, community, legal, gameplay, map triggers and AI scripts, earlier code |
 | 8 | DavidTanner | 32.5 | menus and controls, earlier code |
 | 9 | HaoJun0823 | 32 | menus and controls, community, legal, gameplay, graphics, tests and tools, sound and video |
