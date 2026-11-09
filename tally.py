@@ -12,12 +12,17 @@ valuations). Correction rows count against their kind, and a kind is shown only
 while its total is positive, so a correction can move work to another kind.
 Adjustment rows (a maintainer-set total) name no kind of work and are skipped.
 
+The Owed table comes from DONATIONS.csv, which is append-only. A row's `kind` is
+`share` (one contributor's part of a donation) or `payout` (money actually sent,
+a positive `eur`). What someone is owed is their shares minus their payouts.
+
 Usage: python tally.py
 """
 
 import csv
 import re
 from collections import defaultdict
+from decimal import Decimal
 from pathlib import Path
 
 HERE = Path(__file__).parent
@@ -25,6 +30,9 @@ LEDGER = HERE / "LEDGER.csv"
 CONTRIBUTORS = HERE / "CONTRIBUTORS.csv"
 BALANCES = HERE / "BALANCES.md"
 VALUATIONS = HERE / "valuations"
+DONATIONS = HERE / "DONATIONS.csv"
+# The smallest amount paid out, in euros (RULES.md).
+PAYOUT_LIMIT = Decimal(20)
 
 # How BALANCES.md names each valuation `type` and each ledger category.
 WORK_NAMES = {
@@ -79,6 +87,18 @@ def load_valued_work() -> dict[str, dict[str, float]]:
                 kind = (row.get("type") or row["category"]).strip()
                 work[row["id"].strip()][kind] += float(row["value"])
     return work
+
+
+def load_donations() -> dict[str, dict[str, Decimal]]:
+    """Each contributor's total euros by kind: `share` and `payout`."""
+    totals: dict[str, dict[str, Decimal]] = defaultdict(lambda: defaultdict(Decimal))
+    with DONATIONS.open(newline="", encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            kind = row["kind"].strip()
+            if kind not in ("share", "payout"):
+                raise SystemExit(f"{DONATIONS.name}: unknown kind {kind!r}")
+            totals[row["id"].strip()][kind] += Decimal(row["eur"])
+    return totals
 
 
 def work_cell(valued: dict[str, float], earlier: dict[str, float]) -> str:
@@ -137,6 +157,33 @@ def main() -> None:
             lines.append(f"| {i} | {shown(cid)} | {fmt(balance)} | {work} |")
     else:
         lines.append("| - | *no grants yet* | 0 | |")
+
+    donations = load_donations()
+    owed = {
+        cid: kinds["share"] - kinds["payout"]
+        for cid, kinds in donations.items()
+        if kinds["share"] or kinds["payout"]
+    }
+    lines += [
+        "",
+        "## Owed from donations",
+        "",
+        f"Generated from [`DONATIONS.csv`](DONATIONS.csv) - "
+        f"{sum(k['share'] for k in donations.values()):.2f} euros shared out, "
+        f"{sum(k['payout'] for k in donations.values()):.2f} paid, "
+        f"{sum(owed.values()):.2f} still owed. "
+        f"A payout is made once someone is owed at least {PAYOUT_LIMIT} euros.",
+        "",
+        "| Contributor | Share (euros) | Paid (euros) | Owed (euros) | Ready to pay |",
+        "|---|---|---|---|---|",
+    ]
+    for cid, amount in sorted(owed.items(), key=lambda kv: (-kv[1], shown(kv[0]).lower())):
+        kinds = donations[cid]
+        ready = "yes" if amount >= PAYOUT_LIMIT else ""
+        lines.append(
+            f"| {shown(cid)} | {kinds['share']:.2f} | {kinds['payout']:.2f} "
+            f"| {amount:.2f} | {ready} |"
+        )
     lines.append("")
 
     BALANCES.write_text("\n".join(lines), encoding="utf-8", newline="\n")

@@ -27,3 +27,32 @@ Generated from [`LEDGER.csv`](LEDGER.csv) - 107 grant(s), 2969 tibtre in circula
 | 21 | Flactine | 1.5 | menus and controls, sound and video |
 | 22 | himhp | 1.5 | multiplayer, gameplay |
 | 23 | yeungtuzi | 1 | map triggers and AI scripts |
+
+## Owed from donations
+
+Generated from [`DONATIONS.csv`](DONATIONS.csv) - 80.00 euros shared out, 0.00 paid, 80.00 still owed. A payout is made once someone is owed at least 20 euros.
+
+| Contributor | Share (euros) | Paid (euros) | Owed (euros) | Ready to pay |
+|---|---|---|---|---|
+| zzzzzzzh321 | 29.36 | 0.00 | 29.36 | yes |
+| libi | 10.69 | 0.00 | 10.69 |  |
+| 1372704087 | 8.82 | 0.00 | 8.82 |  |
+| Krisztiaan | 6.42 | 0.00 | 6.42 |  |
+| EncoreAlpha | 5.54 | 0.00 | 5.54 |  |
+| 996666925 | 3.40 | 0.00 | 3.40 |  |
+| DavidTanner | 2.48 | 0.00 | 2.48 |  |
+| HaoJun0823 | 2.44 | 0.00 | 2.44 |  |
+| baixiong443 | 2.06 | 0.00 | 2.06 |  |
+| CCDawn | 1.99 | 0.00 | 1.99 |  |
+| AdrianLuo-X | 1.76 | 0.00 | 1.76 |  |
+| flitting | 1.53 | 0.00 | 1.53 |  |
+| ckbk456 | 1.15 | 0.00 | 1.15 |  |
+| iamapig120 | 0.92 | 0.00 | 0.92 |  |
+| ckbk123 | 0.38 | 0.00 | 0.38 |  |
+| 1152207863 | 0.31 | 0.00 | 0.31 |  |
+| adamanteye | 0.15 | 0.00 | 0.15 |  |
+| jamesulip | 0.15 | 0.00 | 0.15 |  |
+| luckyvermeil | 0.15 | 0.00 | 0.15 |  |
+| Flactine | 0.11 | 0.00 | 0.11 |  |
+| himhp | 0.11 | 0.00 | 0.11 |  |
+| yeungtuzi | 0.08 | 0.00 | 0.08 |  |
