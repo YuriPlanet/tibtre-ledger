@@ -20,6 +20,8 @@ Tibtre are points that record who helped build VERA20k, and how much.
 
 **Tibtre has no monetary value and no promise of future monetary value.** It is the founders' good-faith intention that **if this project ever forms a legal entity or shares out money, such as donations, this ledger guides the allocation.**
 
+**Donations.** Every donation is split by tibtre balance and recorded by contributor ID in [`DONATIONS.csv`](DONATIONS.csv). A payout is made once someone's shares add up to at least 20 euros. Smaller amounts are kept for them until then.
+
 ## Your name
 
 - Your first grant gives you a random contributor ID, like `T-9C41`. The ledger only ever shows IDs.
