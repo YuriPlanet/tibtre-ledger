@@ -5,7 +5,7 @@ Generated from [`LEDGER.csv`](LEDGER.csv) - 107 grant(s), 2969 tibtre in circula
 | # | Contributor | Tibtre | Work |
 |---|---|---|---|
 | 1 | hrusten | 1921.5 | multiplayer, gameplay, code cleanup and speed, menus and controls, graphics, tests and tools, maps and terrain, sound and video, map triggers and AI scripts, docs, research, earlier code |
-| 2 | zzzzzzh123 | 384.5 | gameplay, map triggers and AI scripts, menus and controls, graphics, sound and video, community, legal, maps and terrain, tests and tools, code cleanup and speed, earlier code |
+| 2 | zzzzzzzh321 | 384.5 | gameplay, map triggers and AI scripts, menus and controls, graphics, sound and video, community, legal, maps and terrain, tests and tools, code cleanup and speed, earlier code |
 | 3 | libi | 140 | multiplayer, menus and controls, graphics, gameplay, sound and video, code cleanup and speed |
 | 4 | 1372704087 | 115.5 | gameplay, menus and controls, graphics, tests and tools, code cleanup and speed, docs, sound and video, earlier code |
 | 5 | Krisztiaan | 84 | gameplay, graphics, tests and tools, earlier code |
