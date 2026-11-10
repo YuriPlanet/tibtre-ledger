@@ -106,3 +106,22 @@ date,id,tibtre,category,notes
 2026-11-03,T-C117,3,docs,2 PRs (#3096 #3432); their closed #3432 landed through #3473; value 3.24 (valuations/2026-11-03.csv; rubric v1.6)
 2026-11-03,T-452E,0.5,docs,1 PR (#3134); value 0.25 (valuations/2026-11-03.csv; rubric v1.6)
 2026-11-04,T-379F,80,code,work on the closed-source multiplayer client; maintainer-set 80 (valuations/2026-11-04.csv; no rubric row since its code is not public)
+2026-11-10,T-83DE,307.5,code,236 items from 278 PRs (#3589 to #4194; each listed in the valuations file); #3751 merged before the 2026-11-03 update but left out of it; value 307.5 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-379F,90,code,18 items from 23 PRs (#3813 to #4190; each listed in the valuations file); AI value 62.125 (valuations/2026-11-10.csv; rubric v1.6); maintainer-set 90 after review
+2026-11-10,T-1D2F,10,code,6 items from 7 PRs (#3965 #3967 #4041 #4042 #4091 #4103 #4162); AI value 8.25 (valuations/2026-11-10.csv; rubric v1.6); maintainer-set 10 after review
+2026-11-10,T-F667,6.5,code,7 PRs (#3971 #4017 #4019 #4022 #4023 #4029 #4038); value 6.625 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-997B,10,code,3 PRs (#3727 #3982 #4137); AI value 6.5 (valuations/2026-11-10.csv; rubric v1.6); maintainer-set 10 after review
+2026-11-10,T-0012,5.5,code,3 PRs (#3888 #3984 #4185); value 5.5 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-C117,5.5,code,3 items from 5 PRs (#3782 #3919 #3921 #3928 #3968); their closed #3919 and #3921 were folded into #3928; value 5.25 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-592B,4,code,4 PRs (#3875 #3876 #3880 #3881); value 3.75 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-452E,3.5,code,4 PRs (#3777 #3781 #3811 #4105); value 3.25 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-C625,2,code,1 PR (#3771); value 2 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-EB53,2,code,1 PR (#3805); value 2 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-913E,2,code,2 PRs (#3949 #3950); value 1.875 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-BDA4,1.5,code,3 PRs (#3772 #4018 #4083); value 1.625 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-E773,1.5,code,2 PRs (#4054 #4186); value 1.5 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-BA00,1,code,1 PR (#4099); value 1.125 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-C3E8,1,code,1 PR (#4090); value 0.75 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-3972,0.5,code,1 PR (#4169); value 0.375 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-83DE,8,research,8 items from 10 PRs (#3759 to #4075; each listed in the valuations file); value 8 (valuations/2026-11-10.csv; rubric v1.6)
+2026-11-10,T-83DE,59.5,docs,29 items from 34 PRs (#3779 to #4117; each listed in the valuations file); value 59.5 (valuations/2026-11-10.csv; rubric v1.6)
