@@ -1,40 +1,41 @@
 # Tibtre balances
 
-Generated from [`LEDGER.csv`](LEDGER.csv) - 126 grant(s), 3490.5 tibtre in circulation. Do not edit by hand; run `python tally.py`.
+Generated from [`LEDGER.csv`](LEDGER.csv) - 146 grant(s), 4107.5 tibtre in circulation. Do not edit by hand; run `python tally.py`.
 
 | # | Contributor | Tibtre | Work |
 |---|---|---|---|
-| 1 | hrusten | 2296.5 | multiplayer, gameplay, menus and controls, code cleanup and speed, graphics, tests and tools, docs, maps and terrain, sound and video, map triggers and AI scripts, research, earlier code |
-| 2 | zzzzzzzh321 | 391 | gameplay, map triggers and AI scripts, menus and controls, graphics, sound and video, community, legal, maps and terrain, tests and tools, code cleanup and speed, earlier code |
-| 3 | libi | 230 | multiplayer, gameplay, menus and controls, code cleanup and speed, graphics, maps and terrain, tests and tools, sound and video |
+| 1 | hrusten | 2614 | multiplayer, code cleanup and speed, gameplay, menus and controls, graphics, tests and tools, docs, maps and terrain, sound and video, map triggers and AI scripts, research, earlier code |
+| 2 | zzzzzzzh321 | 395.5 | gameplay, map triggers and AI scripts, graphics, menus and controls, sound and video, community, legal, maps and terrain, tests and tools, code cleanup and speed, earlier code |
+| 3 | libi | 375.5 | multiplayer, gameplay, code cleanup and speed, menus and controls, maps and terrain, graphics, tests and tools, sound and video |
 | 4 | 1372704087 | 121 | gameplay, menus and controls, graphics, tests and tools, code cleanup and speed, docs, sound and video, earlier code |
-| 5 | Krisztiaan | 84 | gameplay, graphics, tests and tools, earlier code |
-| 6 | EncoreAlpha | 72.5 | graphics, gameplay, menus and controls, community, legal, multiplayer, tests and tools, maps and terrain, sound and video, earlier code |
-| 7 | 996666925 | 46 | menus and controls, graphics, community, legal, gameplay, map triggers and AI scripts, tests and tools, maps and terrain, earlier code |
-| 8 | HaoJun0823 | 42 | menus and controls, community, legal, graphics, gameplay, tests and tools, sound and video |
-| 9 | DavidTanner | 32.5 | menus and controls, earlier code |
-| 10 | CCDawn | 29.5 | gameplay, tests and tools, graphics, menus and controls, code cleanup and speed, docs |
-| 11 | baixiong443 | 27 | gameplay, graphics, map triggers and AI scripts |
-| 12 | AdrianLuo-X | 23 | gameplay, multiplayer, legal, menus and controls, graphics, map triggers and AI scripts, tests and tools |
-| 13 | flitting | 20 | map triggers and AI scripts, gameplay, tests and tools, graphics, menus and controls |
-| 14 | ckbk456 | 15 | gameplay, graphics, menus and controls, map triggers and AI scripts, sound and video, maps and terrain, tests and tools, code cleanup and speed |
-| 15 | iamapig120 | 13.5 | menus and controls, legal, sound and video, multiplayer |
-| 16 | spy442299 | 10 | maps and terrain, code cleanup and speed |
-| 17 | hathlife | 5.5 | menus and controls |
-| 18 | ckbk123 | 5 | sound and video, gameplay, menus and controls, tests and tools |
-| 19 | 1152207863 | 4 | community |
-| 20 | yychatgpt0521-oss | 4 | graphics, map triggers and AI scripts, code cleanup and speed |
-| 21 | Flactine | 3.5 | graphics, menus and controls, sound and video |
-| 22 | adamanteye | 2 | menus and controls |
-| 23 | hamad-saif | 2 | gameplay, menus and controls |
-| 24 | jamesulip | 2 | menus and controls, tests and tools |
-| 25 | jarvis-jhk | 2 | menus and controls |
-| 26 | luckyvermeil | 2 | menus and controls |
-| 27 | himhp | 1.5 | multiplayer, gameplay |
-| 28 | icharge | 1 | tests and tools |
-| 29 | noobtech777 | 1 | gameplay |
-| 30 | yeungtuzi | 1 | map triggers and AI scripts |
-| 31 | 928274 | 0.5 | gameplay |
+| 5 | HaoJun0823 | 95 | menus and controls, gameplay, graphics, community, legal, tests and tools, maps and terrain, sound and video |
+| 6 | EncoreAlpha | 92.5 | gameplay, graphics, menus and controls, community, legal, multiplayer, tests and tools, maps and terrain, code cleanup and speed, research, sound and video, earlier code |
+| 7 | Krisztiaan | 84 | gameplay, graphics, tests and tools, earlier code |
+| 8 | 996666925 | 48.5 | menus and controls, graphics, community, legal, gameplay, map triggers and AI scripts, code cleanup and speed, tests and tools, maps and terrain, earlier code |
+| 9 | spy442299 | 41.5 | maps and terrain, code cleanup and speed, gameplay, menus and controls, tests and tools |
+| 10 | DavidTanner | 32.5 | menus and controls, earlier code |
+| 11 | CCDawn | 30.5 | gameplay, tests and tools, graphics, menus and controls, code cleanup and speed, docs |
+| 12 | baixiong443 | 27 | gameplay, graphics, map triggers and AI scripts |
+| 13 | AdrianLuo-X | 23 | gameplay, multiplayer, legal, menus and controls, graphics, map triggers and AI scripts, tests and tools |
+| 14 | flitting | 20 | map triggers and AI scripts, gameplay, tests and tools, graphics, menus and controls |
+| 15 | icharge | 19.5 | docs, tests and tools |
+| 16 | iamapig120 | 15.5 | menus and controls, legal, sound and video, multiplayer, docs |
+| 17 | ckbk456 | 15 | gameplay, graphics, menus and controls, map triggers and AI scripts, sound and video, maps and terrain, tests and tools, code cleanup and speed |
+| 18 | yychatgpt0521-oss | 11 | graphics, gameplay, map triggers and AI scripts, code cleanup and speed, menus and controls |
+| 19 | Flactine | 8.5 | graphics, menus and controls, sound and video |
+| 20 | hathlife | 7.5 | menus and controls, multiplayer |
+| 21 | 928274 | 6 | graphics, gameplay |
+| 22 | ckbk123 | 5 | sound and video, gameplay, menus and controls, tests and tools |
+| 23 | 1152207863 | 4 | community |
+| 24 | adamanteye | 2 | menus and controls |
+| 25 | hamad-saif | 2 | gameplay, menus and controls |
+| 26 | jamesulip | 2 | menus and controls, tests and tools |
+| 27 | jarvis-jhk | 2 | menus and controls |
+| 28 | luckyvermeil | 2 | menus and controls |
+| 29 | himhp | 1.5 | multiplayer, gameplay |
+| 30 | yeungtuzi | 1.5 | map triggers and AI scripts, maps and terrain |
+| 31 | noobtech777 | 1 | gameplay |
+| 32 | VVoidV | 1 | menus and controls |
 
 ## Owed from donations
 
